@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Treino de Speaking e Pronúncia em inglês: 100 Frases | Professor Leo Ramos</title>
+    <meta name="description" content="Pratique sua pronúncia em inglês com feedback imediato. Ferramenta interativa com 100 frases essenciais, áudio nativo e reconhecimento de voz.">
+    <meta name="author" content="Leo Ramos">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://teacherleoramos.com.br/ExListen/speaking.html">
+
+
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="../Images/logofavicion.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Images/logofavicion.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Images/logofavicion.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../Images/logofavicion.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../Images/logofavicion.png">
+
+    <meta property="og:title" content="Desafio de Speaking: 100 Frases em Inglês | Leo Ramos">
+    <meta property="og:description" content="Teste sua pronúncia agora! O computador ouve sua voz e dá feedback na hora. Pratique inglês de graça com o Professor Leo Ramos.">
+    <meta property="og:image" content="https://teacherleoramos.com.br/Images/preview-social.jpg"> 
+    <meta property="og:url" content="https://teacherleoramos.com.br/ExListen/speaking.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="FFES - Professor Leo Ramos">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Desafio de Speaking: 100 Frases em Inglês">
+    <meta name="twitter:description" content="Pratique sua pronúncia com feedback instantâneo. Ferramenta gratuita do Professor Leo Ramos.">
+    <meta name="twitter:image" content="https://teacherleoramos.com.br/Images/preview-social.jpg">
+    
+    <link rel="stylesheet" href="../CSS/universal.css"> 
+
+    <style>
+        .content-banner {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .content-banner h2 {
+            color: var(--cor-texto-claro); 
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+        }
+        .content-banner p {
+            color: #ecf0f1;
+            font-size: 1.15em;
+            margin-bottom: 20px;
+        }
+
+        /* Área de Seleção de Nível (Copiado dos outros jogos) */
+        .level-selection-area {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn-level {
+            padding: 12px 20px;
+            background-color: var(--cor-primaria); /* Azul Escuro */
+            color: var(--cor-texto-claro);
+            border: 2px solid var(--cor-acento);
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .btn-level:hover {
+            background-color: var(--cor-primaria-hover);
+            transform: translateY(-2px);
+        }
+
+        /* Botão de nível ativo/selecionado */
+        .btn-level.active {
+            background-color: var(--cor-acento);
+            color: var(--cor-primaria);
+            border-color: var(--cor-primaria);
+        }
+        
+        /* Container do Jogo (Ocultar até selecionar nível) */
+        .game-card-container {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            max-width: 800px;
+            margin: 20px auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            text-align: center;
+            border-top: 6px solid var(--cor-acento);
+
+            /* Oculta inicialmente */
+            opacity: 0;
+            max-height: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            overflow: hidden;
+            transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+        }
+
+        .game-card-container.visible {
+            opacity: 1;
+            max-height: 2000px; /* Valor alto para acomodar o conteúdo */
+            padding: 30px;
+        }
+
+        /* Estilo para feedback de 'Ouvindo...' */
+        .feedback-listening {
+            background-color: #fff3cd !important;
+            color: #856404 !important;
+            display: block !important;
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Treino de Speaking FFES",
+      "description": "Ferramenta interativa para prática de pronúncia em inglês com 100 frases essenciais e reconhecimento de voz.",
+      "url": "https://teacherleoramos.com.br/ExListen/speaking.html",
+      "image": "https://teacherleoramos.com.br/Images/preview-social.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Leo Ramos",
+        "jobTitle": "Professor de Inglês"
+      },
+      "applicationCategory": "EducationalApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BRL"
+      },
+      "provider": {
+        "@type": "ProfessionalService",
+        "name": "FFES - Professor Leo Ramos",
+        "telephone": "+5511955582118",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "BR"
+        }
+      }
+    }
+    </script>
+</head>
+<body>
+
+<div class="cabecalho-container">
+    <header class="bloco-identidade">
+        <div class="logo-and-title">
+            <a href="../index.html">
+                <img src="../Images/logo novo grande.png" alt="Logo FFES" class="logo-img">
+            </a>
+            
+            <a href="../index.html" style="text-decoration: none; color: inherit;">
+                <h1>Leo Ramos | Professor de Inglês</h1>
+            </a>
+        </div>
+    </header>
+
+    <div class="bloco-navegacao"> 
+        <nav class="nav-primary">
+            <ul>
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#sobre">Sobre Mim</a></li>
+                <li><a href="../index.html#exercicios">Exercícios</a></li>
+                <li><a href="../index.html#artigos-vocab">Artigos</a></li>
+                <li><a href="../index.html#cursos">Cursos e E-book</a></li>
+                <li><a href="../index.html#metodologia">Metodologia</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<main>
+    <section class="content-banner">
+        <h2>Desafio de Speaking e Pronúncia</h2>
+        <p>Selecione um nível. O computador ouvirá sua voz e dará feedback instantâneo.</p>
+        
+        <div class="level-selection-area">
+            <button class="btn-level" data-level="A1" onclick="selectLevel('A1', this)">A1 Básico</button>
+            <button class="btn-level" data-level="A2" onclick="selectLevel('A2', this)">A2 Pré-Intermediário</button>
+        </div>
+
+
+        <div id="game-card-container" class="game-card-container">
+            
+            <p id="level-info" style="font-style: italic; margin-bottom: 20px; color: #666;"></p>
+
+            <div id="english-display" class="big-phrase">Selecione um nível para começar.</div>
+            
+            <div id="portuguese-display" class="translation-text"></div>
+
+            <div class="action-area">
+                <button class="cta-button" id="audio-button" style="background-color: #e0e0e0; color: #333;" onclick="playAudio()" disabled>🔊 Ouvir</button>
+                <button class="cta-button btn-record" id="record-button" onclick="startRecording()" disabled>🎤 Gravar Voz</button>
+            </div>
+
+            <div id="feedback-display" class="feedback-area"></div>
+
+            <hr>
+
+            <button class="cta-button" id="next-phrase-button" style="width: 100%; font-size: 1.1em;" onclick="loadRandomPhrase()" disabled>↻ Próxima Frase</button>
+        </div>
+    </section>
+</main>
+
+<footer id="contato" class="site-footer">
+    <div class="footer-content">
+        <div class="social-media-links">
+            <h4>Siga-me nas redes sociais</h4>
+            <a href="https://www.youtube.com/@teacherleoramos" target="_blank" rel="noopener noreferrer" title="YouTube"><img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube"></a>
+            <a href="https://www.instagram.com/teacherleoramos/" target="_blank" rel="noopener noreferrer" title="Instagram"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram"></a>
+            <a href="https://www.tiktok.com/@teacherleoramos" target="_blank" rel="noopener noreferrer" title="TikTok"><img src="https://img.icons8.com/ios-filled/50/ffffff/tiktok.png" alt="TikTok"></a>
+            <a href="https://wa.me/5511955582118" target="_blank" rel="noopener noreferrer" title="WhatsApp"><img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp--v1.png" alt="WhatsApp"></a>
+        </div>
+        <p><strong>Contato</strong></p>
+        <p>Youtube: @teacherleoramos | Telefone - WhatsApp: (11) 95558-2118</p>
+        <p>Endereço: São Paulo, SP, Brasil</p>
+        <p>CNPJ: 43.226.983/0001-91</p>
+        <p>&copy; 2025 | FEATHERED FRIENDS ENGLISH SCHOOL - FFES. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script>
+    // --- BANCO DE DADOS: 100 FRASES (50 A1, 50 A2) ---
+    const phraseBank = [
+        // =========================================
+        //                 NÍVEL A1 (50 Frases)
+        // =========================================
+        {level: 'A1', en: "Hello, how are you?", pt: "Olá, como você está?"},
+        {level: 'A1', en: "My name is John.", pt: "Meu nome é John."},
+        {level: 'A1', en: "I am a student.", pt: "Eu sou um estudante."},
+        {level: 'A1', en: "She is happy today.", pt: "Ela está feliz hoje."},
+        {level: 'A1', en: "It is cold outside.", pt: "Está frio lá fora."},
+        {level: 'A1', en: "We are at home.", pt: "Nós estamos em casa."},
+        {level: 'A1', en: "They are my friends.", pt: "Eles são meus amigos."},
+        {level: 'A1', en: "I like coffee.", pt: "Eu gosto de café."},
+        {level: 'A1', en: "Do you speak English?", pt: "Você fala inglês?"},
+        {level: 'A1', en: "Yes, a little.", pt: "Sim, um pouco."},
+        {level: 'A1', en: "I don't have a car.", pt: "Eu não tenho um carro."},
+        {level: 'A1', en: "She works in a bank.", pt: "Ela trabalha em um banco."},
+        {level: 'A1', en: "He goes to school.", pt: "Ele vai para a escola."},
+        {level: 'A1', en: "What is your job?", pt: "Qual é o seu trabalho?"},
+        {level: 'A1', en: "I need help.", pt: "Eu preciso de ajuda."},
+        {level: 'A1', en: "Where are you from?", pt: "De onde você é?"},
+        {level: 'A1', en: "I am from Brazil.", pt: "Eu sou do Brasil."},
+        {level: 'A1', en: "How much is this?", pt: "Quanto custa isso?"},
+        {level: 'A1', en: "I want a sandwich.", pt: "Eu quero um sanduíche."},
+        {level: 'A1', en: "Please, sit down.", pt: "Por favor, sente-se."},
+        {level: 'A1', en: "Open the door, please.", pt: "Abra a porta, por favor."},
+        {level: 'A1', en: "Close the window.", pt: "Feche a janela."},
+        {level: 'A1', en: "I live here.", pt: "Eu moro aqui."},
+        {level: 'A1', en: "Turn left here.", pt: "Vire à esquerda aqui."},
+        {level: 'A1', en: "Go straight ahead.", pt: "Vá direto."},
+        {level: 'A1', en: "Have a nice day!", pt: "Tenha um bom dia!"},
+        {level: 'A1', en: "See you tomorrow.", pt: "Até amanhã."},
+        {level: 'A1', en: "Excuse me, where is the toilet?", pt: "Com licença, onde é o banheiro?"},
+        {level: 'A1', en: "What time is it?", pt: "Que horas são?"},
+        {level: 'A1', en: "It is four o'clock.", pt: "São quatro horas."},
+        {level: 'A1', en: "I like red.", pt: "Eu gosto de vermelho."},
+        {level: 'A1', en: "This is my book.", pt: "Este é o meu livro."},
+        {level: 'A1', en: "Can I have some water?", pt: "Posso beber um pouco de água?"},
+        {level: 'A1', en: "I eat breakfast every day.", pt: "Eu tomo café da manhã todos os dias."},
+        {level: 'A1', en: "She watches TV at night.", pt: "Ela assiste TV à noite."},
+        {level: 'A1', en: "We play soccer.", pt: "Nós jogamos futebol."},
+        {level: 'A1', en: "I went to the park yesterday.", pt: "Eu fui ao parque ontem."},
+        {level: 'A1', en: "Did you call me?", pt: "Você me ligou?"},
+        {level: 'A1', en: "I didn't see you.", pt: "Eu não te vi."},
+        {level: 'A1', en: "She bought a new phone.", pt: "Ela comprou um celular novo."},
+        {level: 'A1', en: "It was a good movie.", pt: "Foi um bom filme."},
+        {level: 'A1', en: "What did you do?", pt: "O que você fez?"},
+        {level: 'A1', en: "I feel tired.", pt: "Eu me sinto cansado."},
+        {level: 'A1', en: "I am hungry.", pt: "Eu estou com fome."},
+        {level: 'A1', en: "Be careful.", pt: "Tenha cuidado."},
+        {level: 'A1', en: "Come here.", pt: "Venha cá."},
+        {level: 'A1', en: "Let's go.", pt: "Vamos embora."},
+        {level: 'A1', en: "Thank you very much.", pt: "Muito obrigado."},
+        {level: 'A1', en: "You are welcome.", pt: "De nada."},
+        {level: 'A1', en: "Please, repeat that.", pt: "Por favor, repita isso."},
+        
+        // =========================================
+        //                 NÍVEL A2 (50 Frases)
+        // =========================================
+        {level: 'A2', en: "How are you doing today?", pt: "Como você está hoje?"},
+        {level: 'A2', en: "I am looking forward to seeing you.", pt: "Estou ansioso para te ver."},
+        {level: 'A2', en: "We have lived here since 2018.", pt: "Nós moramos aqui desde 2018."},
+        {level: 'A2', en: "She has gone to the supermarket.", pt: "Ela foi ao supermercado."},
+        {level: 'A2', en: "I've never been to New York.", pt: "Eu nunca estive em Nova York."},
+        {level: 'A2', en: "What were you doing at 10 pm?", pt: "O que você estava fazendo às 22h?"},
+        {level: 'A2', en: "While I was driving, it started raining.", pt: "Enquanto eu dirigia, começou a chover."},
+        {level: 'A2', en: "I can't swim very well.", pt: "Eu não sei nadar muito bem."},
+        {level: 'A2', en: "You should study more.", pt: "Você deveria estudar mais."},
+        {level: 'A2', en: "We must leave now.", pt: "Nós devemos sair agora."},
+        {level: 'A2', en: "I don't agree with the decision.", pt: "Eu não concordo com a decisão."},
+        {level: 'A2', en: "It depends on the time.", pt: "Depende do horário."},
+        {level: 'A2', en: "I enjoy reading books.", pt: "Eu gosto de ler livros."},
+        {level: 'A2', en: "They decided to buy a car.", pt: "Eles decidiram comprar um carro."},
+        {level: 'A2', en: "I stopped smoking last year.", pt: "Eu parei de fumar ano passado."},
+        {level: 'A2', en: "Can you explain this to me?", pt: "Você pode me explicar isso?"},
+        {level: 'A2', en: "I missed the last bus.", pt: "Eu perdi o último ônibus."},
+        {level: 'A2', en: "The house was built in 2005.", pt: "A casa foi construída em 2005."},
+        {level: 'A2', en: "The report was written by him.", pt: "O relatório foi escrito por ele."},
+        {level: 'A2', en: "If I were you, I would quit.", pt: "Se eu fosse você, eu pediria demissão."},
+        {level: 'A2', en: "If it rains, we will stay home.", pt: "Se chover, nós ficaremos em casa."},
+        {level: 'A2', en: "What would you do if you won the lottery?", pt: "O que você faria se ganhasse na loteria?"},
+        {level: 'A2', en: "I always feel tired.", pt: "Eu sempre me sinto cansado."},
+        {level: 'A2', en: "She drives carefully.", pt: "Ela dirige cuidadosamente."},
+        {level: 'A2', en: "He said he was hungry.", pt: "Ele disse que estava com fome."},
+        {level: 'A2', en: "They told us the truth.", pt: "Eles nos contaram a verdade."},
+        {level: 'A2', en: "She asked if I knew her.", pt: "Ela perguntou se eu a conhecia."},
+        {level: 'A2', en: "I have a new job as an editor.", pt: "Eu tenho um novo emprego como editor."},
+        {level: 'A2', en: "Life is difficult sometimes.", pt: "A vida é difícil às vezes."},
+        {level: 'A2', en: "I need some advice.", pt: "Eu preciso de um conselho."},
+        {level: 'A2', en: "He loves playing tennis.", pt: "Ele adora jogar tênis."},
+        {level: 'A2', en: "It is too hot to work.", pt: "Está muito quente para trabalhar."},
+        {level: 'A2', en: "I have enough money.", pt: "Eu tenho dinheiro suficiente."},
+        {level: 'A2', en: "It was such a beautiful day.", pt: "Foi um dia tão bonito."},
+        {level: 'A2', en: "We saw three mice.", pt: "Nós vimos três ratos."},
+        {level: 'A2', en: "I have a big old house.", pt: "Eu tenho uma casa grande e antiga."},
+        {level: 'A2', en: "He speaks English well.", pt: "Ele fala inglês bem."},
+        {level: 'A2', en: "I am bored.", pt: "Eu estou entediado."},
+        {level: 'A2', en: "The train is leaving soon.", pt: "O trem vai partir em breve."},
+        {level: 'A2', en: "I usually drive to work.", pt: "Eu geralmente vou de carro para o trabalho."},
+        {level: 'A2', en: "I prefer tea over coffee.", pt: "Eu prefiro chá a café."},
+        {level: 'A2', en: "Let's meet at the park.", pt: "Vamos nos encontrar no parque."},
+        {level: 'A2', en: "Don't give up.", pt: "Não desista."},
+        {level: 'A2', en: "Keep up the good work.", pt: "Continue o bom trabalho."},
+        {level: 'A2', en: "Everything will be fine.", pt: "Tudo vai ficar bem."},
+        {level: 'A2', en: "I agree with you.", pt: "Eu concordo com você."},
+        {level: 'A2', en: "That sounds like a plan.", pt: "Parece um bom plano."},
+        {level: 'A2', en: "I have a reservation.", pt: "Eu tenho uma reserva."},
+        {level: 'A2', en: "The food was delicious.", pt: "A comida estava deliciosa."},
+        {level: 'A2', en: "Make yourself at home.", pt: "Sinta-se em casa."}
+    ];
+
+    let currentLevel = null;
+    let filteredPhrases = [];
+    let currentPhraseObj = {};
+
+    const gameContainer = document.getElementById('game-card-container');
+    const displayEn = document.getElementById('english-display');
+    const displayPt = document.getElementById('portuguese-display');
+    const feedbackEl = document.getElementById('feedback-display');
+    const levelInfo = document.getElementById('level-info');
+    const audioButton = document.getElementById('audio-button');
+    const recordButton = document.getElementById('record-button');
+    const nextPhraseButton = document.getElementById('next-phrase-button');
+
+    // Inicialização ao carregar a página
+    document.addEventListener('DOMContentLoaded', () => {
+        displayEn.textContent = 'Selecione um nível acima para começar!';
+        displayPt.textContent = '';
+        levelInfo.textContent = '';
+        gameContainer.classList.remove('visible');
+        audioButton.disabled = true;
+        recordButton.disabled = true;
+        nextPhraseButton.disabled = true;
+    });
+
+    // Função para selecionar o nível (Copiado dos outros jogos)
+    window.selectLevel = function(level, button) {
+        // Remove a classe 'active' de todos os botões e adiciona ao clicado
+        document.querySelectorAll('.btn-level').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        currentLevel = level;
+        filteredPhrases = phraseBank.filter(p => p.level === level);
+
+        if (filteredPhrases.length > 0) {
+            gameContainer.classList.add('visible');
+            audioButton.disabled = false;
+            recordButton.disabled = false;
+            nextPhraseButton.disabled = false;
+            
+            levelInfo.innerHTML = `<strong>Nível: ${currentLevel} (${filteredPhrases.length} frases disponíveis)</strong>.`;
+            loadRandomPhrase(); // Carrega a primeira frase
+        } else {
+            gameContainer.classList.remove('visible');
+            displayEn.textContent = 'Nenhuma frase disponível para este nível.';
+        }
+
+        document.getElementById('game-card-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // Carrega uma frase aleatória
+    function loadRandomPhrase() {
+        if (!currentLevel || filteredPhrases.length === 0) return;
+
+        feedbackEl.style.display = 'none';
+        feedbackEl.className = 'feedback-area';
+        
+        const randomIndex = Math.floor(Math.random() * filteredPhrases.length);
+        currentPhraseObj = filteredPhrases[randomIndex];
+
+        displayEn.textContent = currentPhraseObj.en;
+        displayPt.textContent = currentPhraseObj.pt;
+    }
+
+    // Função para tocar o áudio
+    function playAudio() {
+        if ('speechSynthesis' in window) {
+            window.speechSynthesis.cancel();
+            const utterance = new SpeechSynthesisUtterance(currentPhraseObj.en);
+            utterance.lang = 'en-US';
+            utterance.rate = 0.9; 
+            window.speechSynthesis.speak(utterance);
+        } else {
+            alert("Seu navegador não suporta áudio de leitura (Speech Synthesis).");
+        }
+    }
+
+    // Função para iniciar a gravação de voz
+    function startRecording() {
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (!SpeechRecognition) {
+            alert("Seu navegador não suporta reconhecimento de voz. Use o Chrome ou Edge.");
+            return;
+        }
+
+        const recognition = new SpeechRecognition();
+        recognition.lang = 'en-US';
+        recognition.interimResults = false;
+        recognition.maxAlternatives = 1;
+
+        // Feedback de Ouvindo
+        feedbackEl.style.display = 'block';
+        feedbackEl.className = 'feedback-area feedback-listening'; // Nova classe para "Ouvindo"
+        feedbackEl.innerHTML = "🎤 Ouvindo... Fale agora!";
+
+        recognition.start();
+
+        recognition.onresult = (event) => {
+            const userSpeech = event.results[0][0].transcript;
+            // Normalização: minúsculas e remove pontuação básica
+            const cleanUser = userSpeech.toLowerCase().replace(/[.,?!]/g, '').trim();
+            const cleanTarget = currentPhraseObj.en.toLowerCase().replace(/[.,?!]/g, '').trim();
+
+            if (cleanUser === cleanTarget) {
+                feedbackEl.className = 'feedback-area feedback-success';
+                feedbackEl.innerHTML = `✔ Perfeito!<br><span style='font-weight:normal; font-size:0.9em'>Você disse: "${userSpeech}"</span>`;
+            } else {
+                feedbackEl.className = 'feedback-area feedback-error';
+                feedbackEl.innerHTML = `✖ Quase lá.<br><span style='font-weight:normal; font-size:0.9em'>O computador ouviu: "${userSpeech}"</span>`;
+            }
+        };
+
+        recognition.onerror = (event) => {
+            feedbackEl.className = 'feedback-area feedback-error';
+            feedbackEl.textContent = "Erro no microfone ou sem resposta audível. Tente novamente.";
+        };
+    }
+</script>
+
+</body>
+</html>
