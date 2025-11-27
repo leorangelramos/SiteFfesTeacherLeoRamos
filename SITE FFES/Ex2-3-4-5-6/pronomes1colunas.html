@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Exercício: Pronomes (Subject, Object, Possessive) | Professor Leo Ramos</title>
+    <meta name="description" content="Teste seu conhecimento de pronomes em inglês. Pratique Subject, Object, Possessive (Adjectives/Pronouns) e Reflexive Pronouns com este quiz.">
+    <meta name="author" content="Leo Ramos">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="pronomes em inglês, subject pronouns, object pronouns, possessive pronouns, reflexive pronouns, exercícios de inglês, Leo Ramos, FFES">
+    
+    <link rel="canonical" href="https://teacherleoramos.com.br/Ex2-3-4-5-6/pronomes1colunas.html">
+    <link rel="stylesheet" href="/CSS/universal.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/Images/logofavicion.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Images/logofavicion.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Images/logofavicion.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/Images/logofavicion.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/Images/logofavicion.png">
+
+    <meta property="og:title" content="Exercício: Pronomes (Subject, Object, Possessive) | Professor Leo Ramos">
+    <meta property="og:description" content="Teste seu conhecimento de pronomes em inglês. Pratique Subject, Object, Possessive (Adjectives/Pronouns) e Reflexive Pronouns com este quiz.">
+    <meta property="og:image" content="https://teacherleoramos.com.br/Images/preview-social.jpg">
+    <meta property="og:url" content="https://teacherleoramos.com.br/Ex2-3-4-5-6/pronomes1colunas.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="FFES - Professor Leo Ramos">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Exercício: Pronomes (Subject, Object, Possessive) | Professor Leo Ramos">
+    <meta name="twitter:description" content="Teste seu conhecimento de pronomes em inglês. Pratique Subject, Object, Possessive (Adjectives/Pronouns) e Reflexive Pronouns com este quiz.">
+    <meta name="twitter:image" content="https://teacherleoramos.com.br/Images/preview-social.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Quiz",
+      "name": "Jogo dos Pronomes Essenciais (Subject, Object, Possessive)",
+      "description": "Um quiz interativo para praticar o uso correto de pronomes sujeito, objeto, adjetivos possessivos, pronomes possessivos e pronomes reflexivos em inglês.",
+      "url": "https://teacherleoramos.com.br/Ex2-3-4-5-6/pronomes1colunas.html",
+      "image": "https://teacherleoramos.com.br/Images/preview-social.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Leo Ramos",
+        "url": "https://teacherleoramos.com.br"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "FFES - Professor Leo Ramos",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://teacherleoramos.com.br/Images/logo novo grande.png"
+        }
+      },
+      "learningResourceType": "Quiz",
+      "educationalLevel": "Beginner"
+    }
+    </script>
+    
+    <style>
+        .game-title {
+            color: var(--cor-texto-claro);
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+        }
+        #placar-geral-container {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--cor-texto-claro);
+            padding: 15px 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            font-size: 1.1em;
+        }
+        #placar-geral-container p { margin: 0; }
+        #placar-geral-container .nav-arrow {
+            color: inherit;
+            text-decoration: none;
+            font-size: 1.2em;
+            line-height: 1;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+        #placar-geral-container .nav-arrow:hover {
+            color: var(--cor-acento);
+            transform: scale(1.15);
+        }
+        .introducao-container, .exercicio-card {
+            background-color: var(--cor-fundo-secao);
+            width: 100%;
+            max-width: 900px;
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+            box-sizing: border-box;
+        }
+        .exercicio-card .question-container p { font-size: 1.1em; }
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .option-button {
+            width: 100%;
+            padding: 15px;
+            font-size: 1em;
+            text-align: left;
+            background-color: var(--cor-fundo-geral);
+            border: 2px solid var(--cor-borda-sutil);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .option-button:not(:disabled):hover {
+            background-color: var(--cor-acento-hover);
+            border-color: var(--cor-acento);
+            transform: translateY(-2px);
+        }
+        .option-button:disabled {
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+        .option-button.correto {
+            background-color: var(--cor-sucesso);
+            border-color: #27ae60;
+            color: white;
+            font-weight: bold;
+        }
+        .option-button.incorreto {
+            background-color: var(--cor-erro);
+            border-color: #c0392b;
+            color: white;
+            font-weight: bold;
+        }
+        .explanation-container {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.5s ease-out;
+            background-color: var(--cor-fundo-secao-destaque);
+            border-radius: 8px;
+            padding: 0 20px;
+            margin-top: 0;
+            border-left: 4px solid var(--cor-primaria-hover);
+        }
+        .explanation-container.visible {
+            max-height: 500px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        /* Estilos para a tabela de resumo */
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+        .summary-table th, .summary-table td {
+            border: 1px solid var(--cor-borda-sutil);
+            padding: 8px;
+            text-align: center;
+        }
+        .summary-table th {
+            background-color: var(--cor-fundo-secao-destaque);
+            color: var(--cor-primaria);
+        }
+        .summary-table td {
+            background-color: #fff;
+        }
+        /* Contêiner do botão "Voltar ao Topo" */
+        .rodape-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 800px) {
+            .game-title { font-size: 1.8em; }
+            h2 { font-size: 1.5em; }
+        }
+    </style>
+</head>
+<body id="topo">
+
+<div class="cabecalho-container">
+<header class="bloco-identidade">
+    <div class="logo-and-title">
+        <a href="/index.html">
+            <img src="/Images/logo novo grande.png" alt="Logo FFES" class="logo-img">
+        </a>
+        <a href="/index.html" style="text-decoration: none; color: inherit;">
+            <h1>Leo Ramos | Professor de Inglês</h1>
+        </a>
+    </div>
+</header>
+<div class="bloco-navegacao"> 
+    <nav class="nav-primary">
+        <ul>
+            <li><a href="/index.html#home">Home</a></li>
+            <li><a href="/index.html#sobre">Sobre Mim</a></li>
+            <li><a href="/index.html#exercicios">Exercícios</a></li>
+            <li><a href="/index.html#artigos-vocab">Artigos</a></li>
+            <li><a href="/index.html#cursos">Cursos e E-book</a></li>
+            <li><a href="/index.html#metodologia">Metodologia</a></li>
+        </ul>
+    </nav>
+</div>
+</div>
+<main>
+    <h1 class="game-title">Jogo dos Pronomes</h1>
+
+    <div id="placar-geral-container">
+        <p>Acertos Gerais: <strong id="acertos-geral">0</strong></p>
+        <a href="#contato" class="nav-arrow" title="Ir para o final da página">&#11015;</a>
+        <p>Erros Gerais: <strong id="erros-geral">0</strong></p>
+    </div>
+
+    <button id="reset-btn" class="cta-button">Jogar Novamente</button>
+
+    <div class="introducao-container" style="text-align: left;">
+        <h3>Guia Completo dos Pronomes em Inglês</h3>
+        <p>Um pronome é uma palavra usada para <strong>substituir um substantivo</strong> para evitar repetição.</p>
+        
+        <hr style="width: 100%; margin: 20px 0;">
+        <h4>1. Subject Pronouns (Pronomes Sujeito)</h4>
+        <p>São quem executa a ação e vêm <strong>antes do verbo</strong>. Lista: <strong>I, you, he, she, it, we, they</strong>.</p>
+        <ul><li>Exemplo: <strong>She</strong> called me yesterday. (<strong>Ela</strong> me ligou ontem.)</li></ul>
+
+        <hr style="width: 100%; margin: 20px 0;">
+        <h4>2. Object Pronouns (Pronomes Objeto)</h4>
+        <p>São quem recebe a ação e vêm <strong>depois do verbo ou de uma preposição</strong>. Lista: <strong>me, you, him, her, it, us, them</strong>.</p>
+        <ul><li>Exemplo: She called <strong>me</strong> yesterday. (Ela ligou para <strong>mim</strong> ontem.)</li></ul>
+
+        <hr style="width: 100%; margin: 20px 0;">
+        <h4>3. Possessives (Adjetivos e Pronomes Possessivos)</h4>
+        <p>Ambos indicam posse, mas são usados de formas diferentes.</p>
+        <p><strong>A) Possessive Adjectives:</strong> Vêm <strong>antes de um substantivo</strong>. Lista: <strong>my, your, his, her, its, our, their</strong>.</p>
+        <p><strong>B) Possessive Pronouns:</strong> <strong>Substituem o substantivo</strong> e ficam sozinhos. Lista: <strong>mine, yours, his, hers, its, ours, theirs</strong>.</p>
+        <table class="summary-table">
+            <thead><tr><th>Adjetivo Possessivo</th><th>Pronome Possessivo</th></tr></thead>
+            <tbody>
+                <tr><td>This is <strong>my book</strong>.</td><td>This book is <strong>mine</strong>.</td></tr>
+                <tr><td>Is that <strong>your car</strong>?</td><td>Is that car <strong>yours</strong>?</td></tr>
+            </tbody>
+        </table>
+
+        <hr style="width: 100%; margin: 20px 0;">
+        <h4>4. Reflexive Pronouns (Pronomes Reflexivos)</h4>
+        <p>Usados quando o sujeito e o objeto são a mesma pessoa, ou para dar ênfase (fazer algo "sozinho"). Lista: <strong>myself, yourself, himself, herself, itself, ourselves, yourselves, themselves</strong>.</p>
+        <ul>
+            <li><strong>Uso Reflexivo:</strong> I cut <strong>myself</strong>. (Eu me cortei.)</li>
+            <li><strong>Uso Enfático:</strong> She built the website <strong>herself</strong>. (Ela mesma/sozinha construiu o site.)</li>
+        </ul>
+
+        <hr style="width: 100%; margin: 20px 0;">
+        <h4>Tabela Resumo Completa</h4>
+        <table class="summary-table">
+            <thead>
+                <tr><th>Pessoa</th><th>Subject</th><th>Object</th><th>Possessive Adjective</th><th>Possessive Pronoun</th><th>Reflexive Pronoun</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>1ª Sing. (Eu)</td><td><strong>I</strong></td><td><strong>me</strong></td><td><strong>my</strong></td><td><strong>mine</strong></td><td><strong>myself</strong></td></tr>
+                <tr><td>2ª Sing. (Você)</td><td><strong>you</strong></td><td><strong>you</strong></td><td><strong>your</strong></td><td><strong>yours</strong></td><td><strong>yourself</strong></td></tr>
+                <tr><td>3ª Sing. (Ele)</td><td><strong>he</strong></td><td><strong>him</strong></td><td><strong>his</strong></td><td><strong>his</strong></td><td><strong>himself</strong></td></tr>
+                <tr><td>3ª Sing. (Ela)</td><td><strong>she</strong></td><td><strong>her</strong></td><td><strong>her</strong></td><td><strong>hers</strong></td><td><strong>herself</strong></td></tr>
+                <tr><td>3ª Sing. (Coisa)</td><td><strong>it</strong></td><td><strong>it</strong></td><td><strong>its</strong></td><td><strong>its</strong></td><td><strong>itself</strong></td></tr>
+                <tr><td>1ª Plural (Nós)</td><td><strong>we</strong></td><td><strong>us</strong></td><td><strong>our</strong></td><td><strong>ours</strong></td><td><strong>ourselves</strong></td></tr>
+                <tr><td>2ª Plural (Vocês)</td><td><strong>you</strong></td><td><strong>you</strong></td><td><strong>your</strong></td><td><strong>yours</strong></td><td><strong>yourselves</strong></td></tr>
+                <tr><td>3ª Plural (Eles/as)</td><td><strong>they</strong></td><td><strong>them</strong></td><td><strong>their</strong></td><td><strong>theirs</strong></td><td><strong>themselves</strong></td></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="exercicios-container"></div>
+
+    <div class="rodape-container">
+        <a href="#topo" class="nav-button" title="Ir para o início da página">&#11014;</a>
+    </div>
+</main>
+
+<footer id="contato" class="site-footer">
+    <div class="footer-content">
+        <div class="social-media-links">
+            <h4>Siga-me nas redes sociais</h4>
+            <a href="https://www.youtube.com/@teacherleoramos" target="_blank" title="YouTube">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube">
+            </a>
+            <a href="https://www.instagram.com/teacherleoramos/" target="_blank" title="Instagram">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@teacherleoramos" target="_blank" title="TikTok">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/tiktok.png" alt="TikTok">
+            </a>
+            <a href="https://wa.me/5511955582118" target="_blank" title="WhatsApp">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp--v1.png" alt="WhatsApp">
+            </a>
+        </div>
+        <p><strong>Contato</strong></p>
+        <p>Youtube: @teacherleoramos | Telefone - WhatsApp: (11) 95558-2118</p>
+        <p>Endereço: São Paulo, SP, Brasil</p>
+        <p>CNPJ: 43.226.983/0001-91</p>
+        <p>&copy; 2025 | FEATHERED FRIENDS ENGLISH SCHOOL - FFES. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // Array com 80 exercícios sobre Pronomes em Inglês
+    const dadosPronomes = [
+        // Subject Pronouns (I, you, he, she, it, we, they) - 16 exercícios
+        { id: 'pro-1', frase: '___ gave the book to Mary.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['He', 'Him', 'His', 'Himself'], respostaCorreta: 'He', explicacao: 'Precisamos de um Subject Pronoun (pronome sujeito) para executar a ação "gave" (deu). "He" é o sujeito.' },
+        { id: 'pro-2', frase: '___ are going to the cinema.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['Them', 'Their', 'Theirs', 'They'], respostaCorreta: 'They', explicacao: 'A frase precisa de um sujeito para o verbo "are going". "They" é o pronome sujeito plural.' },
+        { id: 'pro-3', frase: 'My sister and ___ went shopping.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['I', 'me', 'my', 'mine'], respostaCorreta: 'I', explicacao: 'Quando há mais de um sujeito, usamos "I". (My sister and I = Nós)' },
+        { id: 'pro-4', frase: 'Is ___ a good idea?', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['It', 'Its', 'Itself', 'Her'], respostaCorreta: 'It', explicacao: '"It" é o Subject Pronoun usado para coisas, ideias ou conceitos em geral.' },
+        { id: 'pro-5', frase: 'My friends and ___ love to play soccer on Saturdays.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['us', 'we', 'our', 'ours'], respostaCorreta: 'we', explicacao: 'O pronome precisa ser o sujeito da ação "love to play".' },
+        { id: 'pro-6', frase: '___ finished the project on time.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['Us', 'We', 'Our', 'Ourselves'], respostaCorreta: 'We', explicacao: 'Subject Pronoun é necessário para a ação "finished".' },
+        { id: 'pro-7', frase: 'Did ___ see that shooting star?', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['You', 'Your', 'Yours', 'Yourself'], respostaCorreta: 'You', explicacao: 'O pronome sujeito "You" pode ser singular ou plural.' },
+        { id: 'pro-8', frase: 'My dog is happy. ___ is wagging its tail.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['He', 'She', 'It', 'That'], respostaCorreta: 'It', explicacao: 'Usamos "It" para animais quando o gênero não é importante ou desconhecido.' },
+        { id: 'pro-9', frase: 'The kids are tired. ___ need to rest.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['Them', 'Their', 'Theirs', 'They'], respostaCorreta: 'They', explicacao: '"They" é o Subject Pronoun plural para pessoas.' },
+        { id: 'pro-10', frase: 'After the rain, ___ was very humid.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['This', 'That', 'It', 'There'], respostaCorreta: 'It', explicacao: '"It" é usado para expressar condições climáticas.' },
+        { id: 'pro-11', frase: 'Where did ___ go yesterday?', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['him', 'he', 'his', 'hers'], respostaCorreta: 'he', explicacao: 'Subject Pronoun é necessário para o verbo "go".' },
+        { id: 'pro-12', frase: 'Do ___ know the answer?', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['you', 'your', 'yours', 'me'], respostaCorreta: 'you', explicacao: 'O pronome "you" funciona como sujeito aqui.' },
+        { id: 'pro-13', frase: 'My mother is a doctor. ___ works in a hospital.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['She', 'Her', 'Hers', 'Herself'], respostaCorreta: 'She', explicacao: '"She" substitui "My mother" como sujeito.' },
+        { id: 'pro-14', frase: 'The building is tall. ___ has 50 floors.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['He', 'It', 'That', 'Them'], respostaCorreta: 'It', explicacao: '"It" é o sujeito para objetos inanimados ("The building").' },
+        { id: 'pro-15', frase: '___ should study more often.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['Us', 'We', 'Our', 'Ourselves'], respostaCorreta: 'We', explicacao: 'Subject Pronoun é necessário para o modal "should".' },
+        { id: 'pro-16', frase: 'The teachers are here. ___ are ready to begin.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['Them', 'Their', 'They', 'Theirs'], respostaCorreta: 'They', explicacao: '"They" substitui "The teachers" como sujeito.' },
+
+        // Object Pronouns (me, you, him, her, it, us, them) - 16 exercícios
+        { id: 'pro-25', frase: 'Mary gave the book to ___.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['he', 'him', 'his', 'himself'], respostaCorreta: 'him', explicacao: 'Precisamos de um Object Pronoun (pronome objeto) para receber a ação, vindo depois da preposição "to". "Him" é o objeto.' },
+        { id: 'pro-26', frase: 'Can you help ___ with this luggage?', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['I', 'me', 'my', 'mine'], respostaCorreta: 'me', explicacao: 'O pronome recebe a ação de "help", agindo como Object Pronoun.' },
+        { id: 'pro-27', frase: 'We saw ___ at the concert last night.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['they', 'them', 'their', 'theirs'], respostaCorreta: 'them', explicacao: '"Them" é o Object Pronoun que recebe a ação de "saw".' },
+        { id: 'pro-28', frase: 'The teacher called ___ to the front of the class.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['we', 'us', 'our', 'ours'], respostaCorreta: 'us', explicacao: '"Us" é o Object Pronoun que recebe a ação de "called".' },
+        { id: 'pro-29', frase: 'She showed ___ a picture of her new house.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['I', 'me', 'my', 'mine'], respostaCorreta: 'me', explicacao: 'O pronome atua como objeto indireto (quem recebe a foto), vindo depois do verbo "showed".' },
+        { id: 'pro-30', frase: 'Please give the note to ___.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['she', 'her', 'hers', 'herself'], respostaCorreta: 'her', explicacao: 'Depois da preposição "to", usamos o Object Pronoun "her".' },
+        { id: 'pro-31', frase: 'I don\'t understand this rule. Can you explain ___ to me?', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['it', 'its', 'itself', 'that'], respostaCorreta: 'it', explicacao: '"It" é o Object Pronoun que substitui "this rule".' },
+        { id: 'pro-32', frase: 'Don\'t wait for ___. We can walk by ourselves.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['we', 'us', 'our', 'ourselves'], respostaCorreta: 'us', explicacao: 'O Object Pronoun "us" vem depois da preposição "for".' },
+        { id: 'pro-33', frase: 'We invited John and Sarah to the party, but they didn\'t bring gifts for ___.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['we', 'us', 'our', 'ours'], respostaCorreta: 'us', explicacao: 'O Object Pronoun "us" vem depois da preposição "for".' },
+        { id: 'pro-34', frase: 'I saw Peter and talked to ___ for an hour.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['he', 'him', 'his', 'himself'], respostaCorreta: 'him', explicacao: 'O Object Pronoun "him" substitui "Peter" e vem depois do verbo/preposição "talked to".' },
+        { id: 'pro-35', frase: 'The joke was so funny. It made all of ___ laugh.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['we', 'us', 'our', 'ourselves'], respostaCorreta: 'us', explicacao: 'O Object Pronoun "us" recebe a ação de "made".' },
+        { id: 'pro-36', frase: 'Are you talking to ___?', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['I', 'me', 'my', 'mine'], respostaCorreta: 'me', explicacao: 'O Object Pronoun "me" vem depois da preposição "to".' },
+        { id: 'pro-37', frase: 'That book is for ___ (singular).', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['you', 'your', 'yours', 'yourself'], respostaCorreta: 'you', explicacao: '"You" é o Object Pronoun (igual ao Subject Pronoun) e vem depois da preposição "for".' },
+        { id: 'pro-38', frase: 'Don\'t tell ___ my secret.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['they', 'them', 'their', 'theirs'], respostaCorreta: 'them', explicacao: '"Them" é o Object Pronoun (objeto indireto) que recebe a ação de "tell".' },
+        { id: 'pro-39', frase: 'Can you see ___? I am standing right here!', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['I', 'me', 'my', 'mine'], respostaCorreta: 'me', explicacao: 'Object Pronoun para receber a ação de "see".' },
+        { id: 'pro-40', frase: 'The dog chased ___ all the way home.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['he', 'him', 'his', 'himself'], respostaCorreta: 'him', explicacao: 'O Object Pronoun "him" recebe a ação de "chased".' },
+
+        // Possessive Adjectives (my, your, his, her, its, our, their) - 16 exercícios
+        { id: 'pro-49', frase: 'Is this ___ coat?', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['you', 'your', 'yours', 'yourself'], respostaCorreta: 'your', explicacao: 'Precisamos de um Possessive Adjective (adjetivo possessivo) antes do substantivo "coat". "Your" é o adjetivo.' },
+        { id: 'pro-50', frase: 'I found ___ keys.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['she', 'her', 'hers', 'herself'], respostaCorreta: 'her', explicacao: '"Her" é o Possessive Adjective que deve vir antes do substantivo "keys".' },
+        { id: 'pro-51', frase: 'The children play with ___ toys in the garden.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['they', 'them', 'their', 'theirs'], respostaCorreta: 'their', explicacao: 'O Possessive Adjective "their" vem antes do substantivo "toys".' },
+        { id: 'pro-52', frase: 'We love ___ new house.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['we', 'us', 'our', 'ours'], respostaCorreta: 'our', explicacao: '"Our" é o Possessive Adjective que precede o substantivo "house".' },
+        { id: 'pro-53', frase: 'He left ___ wallet on the table.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['he', 'him', 'his', 'himself'], respostaCorreta: 'his', explicacao: '"His" é o Possessive Adjective que precede o substantivo "wallet".' },
+        { id: 'pro-54', frase: 'I need to finish ___ work before I leave.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['I', 'me', 'my', 'mine'], respostaCorreta: 'my', explicacao: '"My" é o Possessive Adjective que precede o substantivo "work".' },
+        { id: 'pro-55', frase: 'The dog hurt ___ paw.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['it', 'its', 'itself', 'he'], respostaCorreta: 'its', explicacao: '"Its" é o Possessive Adjective para animais/coisas, vindo antes do substantivo "paw".' },
+        { id: 'pro-56', frase: 'What is ___ name?', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['you', 'your', 'yours', 'yourself'], respostaCorreta: 'your', explicacao: '"Your" é o Possessive Adjective que precede o substantivo "name".' },
+        { id: 'pro-57', frase: 'The couple forgot ___ anniversary.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['they', 'them', 'their', 'theirs'], respostaCorreta: 'their', explicacao: '"Their" refere-se à posse do casal (plural), antes do substantivo "anniversary".' },
+        { id: 'pro-58', frase: 'She is proud of ___ son.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['she', 'her', 'hers', 'herself'], respostaCorreta: 'her', explicacao: '"Her" é o Possessive Adjective que precede o substantivo "son".' },
+        { id: 'pro-59', frase: 'This is ___ favorite song.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['we', 'us', 'our', 'ours'], respostaCorreta: 'our', explicacao: '"Our" é o Possessive Adjective para a 1ª pessoa do plural, antes do substantivo "song".' },
+        { id: 'pro-60', frase: 'Look at ___ new phone!', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['he', 'him', 'his', 'himself'], respostaCorreta: 'his', explicacao: '"His" é o Possessive Adjective que precede o substantivo "phone".' },
+        { id: 'pro-61', frase: 'They sold ___ old car.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['they', 'them', 'their', 'theirs'], respostaCorreta: 'their', explicacao: '"Their" é o Possessive Adjective que precede o substantivo "car".' },
+        { id: 'pro-62', frase: 'The company changed ___ logo.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['it', 'its', 'itself', 'that'], respostaCorreta: 'its', explicacao: '"Its" é o Possessive Adjective para "The company" (coisa), antes do substantivo "logo".' },
+        { id: 'pro-63', frase: 'I gave the waiter ___ tip.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['I', 'me', 'my', 'mine'], respostaCorreta: 'my', explicacao: '"My" é o Possessive Adjective para a 1ª pessoa do singular, antes do substantivo "tip".' },
+        { id: 'pro-64', frase: 'Is this ___ family photo?', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['you', 'your', 'yours', 'yourself'], respostaCorreta: 'your', explicacao: '"Your" é o Possessive Adjective, antes do substantivo "photo".' },
+
+        // Possessive Pronouns (mine, yours, his, hers, its, ours, theirs) - 16 exercícios
+        { id: 'pro-73', frase: 'No, this coat is not ___.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['I', 'me', 'my', 'mine'], respostaCorreta: 'mine', explicacao: 'Precisamos de um Possessive Pronoun (pronome possessivo) para substituir "my coat" e que possa ficar sozinho no final da frase. "Mine" é o pronome.' },
+        { id: 'pro-74', frase: 'Are these keys ___?', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['she', 'her', 'hers', 'herself'], respostaCorreta: 'hers', explicacao: '"Hers" é o Possessive Pronoun que substitui "her keys" e pode ficar sozinho no final da pergunta.' },
+        { id: 'pro-75', frase: 'That house is not ___ (plural).', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['they', 'them', 'their', 'theirs'], respostaCorreta: 'theirs', explicacao: '"Theirs" é o Possessive Pronoun que substitui "their house" e fica sozinho no final.' },
+        { id: 'pro-76', frase: 'The car is ___. We bought it yesterday.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['we', 'us', 'our', 'ours'], respostaCorreta: 'ours', explicacao: '"Ours" é o Possessive Pronoun que substitui "our car" e fica sozinho no final.' },
+        { id: 'pro-77', frase: 'The blue bicycle is ___.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['he', 'him', 'his', 'himself'], respostaCorreta: 'his', explicacao: '"His" é o Possessive Pronoun (igual ao adjetivo) que substitui "his bicycle".' },
+        { id: 'pro-78', frase: 'Is that laptop ___ (singular)?', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['you', 'your', 'yours', 'yourself'], respostaCorreta: 'yours', explicacao: '"Yours" é o Possessive Pronoun que substitui "your laptop" e fica sozinho.' },
+        { id: 'pro-79', frase: 'The problem is not ___ (referring to "it").', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['it', 'its', 'itself', 'that'], respostaCorreta: 'its', explicacao: '"Its" é o Possessive Pronoun para coisas (embora raro), substituindo "its problem".' },
+        { id: 'pro-80', frase: 'This phone is ___. I lost mine.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['you', 'your', 'yours', 'yourself'], respostaCorreta: 'yours', explicacao: '"Yours" substitui "your phone" e fica sozinho no final.' },
+        { id: 'pro-81', frase: 'I found a wallet. Is it ___?', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['he', 'him', 'his', 'himself'], respostaCorreta: 'his', explicacao: '"His" é o Possessive Pronoun, ficando sozinho no final da pergunta.' },
+        { id: 'pro-82', frase: 'Our apartment is bigger than ___.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['they', 'them', 'their', 'theirs'], respostaCorreta: 'theirs', explicacao: '"Theirs" substitui "their apartment" para evitar repetição.' },
+        { id: 'pro-83', frase: 'Don\'t touch that cake; it is ___.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['I', 'me', 'my', 'mine'], respostaCorreta: 'mine', explicacao: '"Mine" é o Possessive Pronoun que substitui "my cake" e fica sozinho.' },
+        { id: 'pro-84', frase: 'The red bag is ___. The green one is mine.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['she', 'her', 'hers', 'herself'], respostaCorreta: 'hers', explicacao: '"Hers" substitui "her bag" e fica sozinho no final da frase.' },
+        { id: 'pro-85', frase: 'Is this pen ___?', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['you', 'your', 'yours', 'yourself'], respostaCorreta: 'yours', explicacao: 'Possessive Pronoun, ficando sozinho no final da pergunta.' },
+        { id: 'pro-86', frase: 'The project success was not just ___, but theirs too.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['we', 'us', 'our', 'ours'], respostaCorreta: 'ours', explicacao: '"Ours" é o Possessive Pronoun que substitui "our success".' },
+        { id: 'pro-87', frase: 'They said the fault was ___, but I disagree.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['they', 'them', 'their', 'theirs'], respostaCorreta: 'theirs', explicacao: '"Theirs" substitui "their fault" e fica sozinho no final.' },
+        { id: 'pro-88', frase: 'This seat is ___. Yours is over there.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['I', 'me', 'my', 'mine'], respostaCorreta: 'mine', explicacao: 'Possessive Pronoun, fica sozinho e significa "my seat".' },
+
+        // Reflexive Pronouns (myself, yourself, himself, herself, itself, ourselves, yourselves, themselves) - 16 exercícios
+        { id: 'pro-97', frase: 'I looked at ___ in the mirror.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['I', 'me', 'my', 'myself'], respostaCorreta: 'myself', explicacao: 'A ação "looked at" (olhou para) reflete de volta ao sujeito "I". Portanto, usamos o pronome reflexivo "myself".' },
+        { id: 'pro-98', frase: 'She fixed the car all by ___.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['she', 'her', 'hers', 'herself'], respostaCorreta: 'herself', explicacao: 'Usamos o pronome reflexivo "herself" para enfatizar que ela consertou o carro sozinha, sem ajuda (Uso Enfático).' },
+        { id: 'pro-99', frase: 'The children made the cookies ___.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['they', 'them', 'their', 'themselves'], respostaCorreta: 'themselves', explicacao: 'O sujeito "The children" (They) é o mesmo que recebe a ação, indicando que fizeram sozinhos.' },
+        { id: 'pro-100', frase: 'We painted the entire room ___.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['we', 'us', 'our', 'ourselves'], respostaCorreta: 'ourselves', explicacao: 'O pronome reflexivo "ourselves" (plural) é usado para enfatizar que "nós" fizemos isso sozinhos.' },
+        { id: 'pro-101', frase: 'He cut ___ while chopping vegetables.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['he', 'him', 'his', 'himself'], respostaCorreta: 'himself', explicacao: 'A ação "cut" reflete de volta ao sujeito "He".' },
+        { id: 'pro-102', frase: 'Did you teach ___ (singular) how to knit?', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['you', 'your', 'yours', 'yourself'], respostaCorreta: 'yourself', explicacao: 'A ação de ensinar reflete de volta ao sujeito "You" (singular).' },
+        { id: 'pro-103', frase: 'The robot repaired ___.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['it', 'its', 'itself', 'that'], respostaCorreta: 'itself', explicacao: 'O pronome reflexivo "itself" é usado para o sujeito "The robot" (It).' },
+        { id: 'pro-104', frase: 'Please introduce ___ (plural) to the group.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['you', 'your', 'yours', 'yourselves'], respostaCorreta: 'yourselves', explicacao: 'O pronome reflexivo "yourselves" (plural) é usado para o sujeito "You" (plural).' },
+        { id: 'pro-105', frase: 'I organized the meeting ___.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['I', 'me', 'my', 'myself'], respostaCorreta: 'myself', explicacao: 'Uso enfático: Eu organizei a reunião sozinha/eu mesma.' },
+        { id: 'pro-106', frase: 'She often talks to ___ when she is alone.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['she', 'her', 'hers', 'herself'], respostaCorreta: 'herself', explicacao: 'A ação "talks to" reflete de volta ao sujeito "She".' },
+        { id: 'pro-107', frase: 'They must defend ___ in court.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['they', 'them', 'their', 'themselves'], respostaCorreta: 'themselves', explicacao: 'A ação "defend" reflete de volta ao sujeito "They".' },
+        { id: 'pro-108', frase: 'We prepared the presentation ___.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['we', 'us', 'our', 'ourselves'], respostaCorreta: 'ourselves', explicacao: 'Uso enfático: Nós preparamos a apresentação sozinhos.' },
+        { id: 'pro-109', frase: 'He built the whole house ___.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['he', 'him', 'his', 'himself'], respostaCorreta: 'himself', explicacao: 'Uso enfático: Ele construiu a casa sozinho/ele mesmo.' },
+        { id: 'pro-110', frase: 'You (singular) need to believe in ___ to succeed.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['you', 'your', 'yours', 'yourself'], respostaCorreta: 'yourself', explicacao: 'A ação "believe in" reflete de volta ao sujeito "You" (singular).' },
+        { id: 'pro-111', frase: 'The cat licked ___ clean.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['it', 'its', 'itself', 'he'], respostaCorreta: 'itself', explicacao: 'A ação "licked" reflete de volta ao sujeito "The cat" (It).' },
+        { id: 'pro-112', frase: 'We saw the results ___ on the board.', pergunta: 'Qual pronome completa a frase corretamente?', opcoes: ['we', 'us', 'our', 'ourselves'], respostaCorreta: 'ourselves', explicacao: 'Uso enfático: Nós mesmos vimos os resultados.' }
+    ];
+
+    const container = document.getElementById('exercicios-container');
+    const placarAcertosGeralEl = document.getElementById('acertos-geral');
+    const placarErrosGeralEl = document.getElementById('erros-geral');
+    const resetButton = document.getElementById('reset-btn');
+    
+    // Referência para o listener, para poder removê-lo
+    let eventListenerRef;
+
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+    function criarExercicioHTML(exercicioData, numeroExercicio) {
+        const opcoesEmbaralhadas = [...exercicioData.opcoes];
+        shuffleArray(opcoesEmbaralhadas);
+        const opcoesHTML = opcoesEmbaralhadas.map(opcao =>
+            `<button class="option-button" data-resposta="${opcao}">${opcao}</button>`
+        ).join('');
+        
+        const fraseFormatada = exercicioData.frase.replace('___', '<strong style="color: var(--cor-primaria-hover);">___</strong>');
+
+        return `
+            <section class="exercicio-card" id="exercicio-${exercicioData.id}" data-id="${exercicioData.id}">
+                <h2>Exercício ${numeroExercicio}</h2>
+                <div class="question-container">
+                    <p><strong>Frase:</strong> ${fraseFormatada}</p>
+                    <p>${exercicioData.pergunta}</p>
+                    <div class="options-container">${opcoesHTML}</div>
+                </div>
+                <div class="explanation-container" id="explicacao-${exercicioData.id}"><p>${exercicioData.explicacao}</p></div>
+            </section>
+        `;
+    }
+
+    function verificarResposta(exercicioId, btnClicado) {
+        const exercicioData = dadosPronomes.find(e => e.id === exercicioId);
+        const exercicioCard = document.getElementById(`exercicio-${exercicioData.id}`);
+        const botoes = exercicioCard.querySelectorAll('.option-button');
+        
+        botoes.forEach(btn => btn.disabled = true);
+
+        const explicacaoEl = document.getElementById(`explicacao-${exercicioData.id}`);
+        explicacaoEl.classList.add('visible');
+
+        if (btnClicado.dataset.resposta === exercicioData.respostaCorreta) {
+            btnClicado.classList.add('correto');
+            placarAcertosGeralEl.textContent = parseInt(placarAcertosGeralEl.textContent) + 1;
+        } else {
+            btnClicado.classList.add('incorreto');
+            placarErrosGeralEl.textContent = parseInt(placarErrosGeralEl.textContent) + 1;
+            
+            const respostaCorretaBtn = Array.from(botoes).find(btn => btn.dataset.resposta === exercicioData.respostaCorreta);
+            if (respostaCorretaBtn) {
+                respostaCorretaBtn.classList.add('correto');
+            }
+        }
+    }
+
+    function iniciarJogo() {
+        placarAcertosGeralEl.textContent = '0';
+        placarErrosGeralEl.textContent = '0';
+        shuffleArray(dadosPronomes);
+        container.innerHTML = dadosPronomes.map((dado, index) => criarExercicioHTML(dado, index + 1)).join('');
+        
+        // Remove o listener antigo se ele existir
+        if (eventListenerRef) {
+            container.removeEventListener('click', eventListenerRef);
+        }
+        
+        // Define o novo listener
+        eventListenerRef = (event) => {
+            if (event.target.classList.contains('option-button') && !event.target.disabled) {
+                const btnClicado = event.target;
+                const exercicioCard = btnClicado.closest('.exercicio-card');
+                const exercicioId = exercicioCard.dataset.id;
+                verificarResposta(exercicioId, btnClicado);
+            }
+        };
+        
+        // Adiciona o novo listener
+        container.addEventListener('click', eventListenerRef);
+        
+        // Rola a tela para o início do main content ao reiniciar
+        document.querySelector('main').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    resetButton.addEventListener('click', iniciarJogo);
+    iniciarJogo(); // Inicia o jogo pela primeira vez
+});
+
+</script>
+
+</body>
+</html>
+

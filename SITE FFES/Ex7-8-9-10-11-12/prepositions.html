@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Exercício de Preposições em Inglês (In, On, At) | Professor Leo Ramos</title>
+    <meta name="description" content="Aprenda e pratique as preposições em inglês (in, on, at), de movimento, lugar e expressões fixas com este jogo interativo.">
+    <meta name="author" content="Leo Ramos">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="preposições em inglês, in on at, prepositions, exercícios de inglês, Leo Ramos, FFES">
+
+    <link rel="canonical" href="https://teacherleoramos.com.br/Ex7-8-9-10-11-12/prepositions.html">
+    <link rel="stylesheet" href="/CSS/universal.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/Images/logofavicion.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Images/logofavicion.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Images/logofavicion.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/Images/logofavicion.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/Images/logofavicion.png">
+
+    <meta property="og:title" content="Exercício de Preposições em Inglês (In, On, At) | Professor Leo Ramos">
+    <meta property="og:description" content="Teste seu conhecimento de preposições (in, on, at), de movimento e expressões com este quiz interativo.">
+    <meta property="og:image" content="https://teacherleoramos.com.br/Images/preview-social.jpg">
+    <meta property="og:url" content="https://teacherleoramos.com.br/Ex7-8-9-10-11-12/prepositions.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="FFES - Professor Leo Ramos">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Exercício de Preposições em Inglês (In, On, At) | Professor Leo Ramos">
+    <meta name="twitter:description" content="Teste seu conhecimento de preposições (in, on, at), de movimento e expressões com este quiz interativo.">
+    <meta name="twitter:image" content="https://teacherleoramos.com.br/Images/preview-social.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Quiz",
+      "name": "Jogo das Preposições (in, on, at, etc.)",
+      "description": "Um quiz interativo para praticar o uso correto das preposições de tempo (in, on, at), lugar, movimento e expressões fixas em inglês.",
+      "url": "https://teacherleoramos.com.br/Ex7-8-9-10-11-12/prepositions.html",
+      "image": "https://teacherleoramos.com.br/Images/preview-social.jpg",
+      "author": {
+        "@type": "Person",
+        "name": "Leo Ramos",
+        "url": "https://teacherleoramos.com.br"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "FFES - Professor Leo Ramos",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://teacherleoramos.com.br/Images/logo novo grande.png"
+        }
+      },
+      "learningResourceType": "Quiz",
+      "educationalLevel": "Beginner/Intermediate"
+    }
+    </script>
+    
+    <style>
+        .game-title {
+            color: var(--cor-texto-claro);
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+        }
+        #placar-geral-container {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--cor-texto-claro);
+            padding: 15px 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            font-size: 1.1em;
+        }
+        #placar-geral-container p { margin: 0; }
+        #placar-geral-container .nav-arrow {
+            color: inherit;
+            text-decoration: none;
+            font-size: 1.2em;
+            line-height: 1;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+        #placar-geral-container .nav-arrow:hover {
+            color: var(--cor-acento);
+            transform: scale(1.15);
+        }
+        .introducao-container, .exercicio-card {
+            background-color: var(--cor-fundo-secao);
+            width: 100%;
+            max-width: 900px;
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+            box-sizing: border-box;
+        }
+        .exercicio-card .question-container p { font-size: 1.1em; }
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .option-button {
+            width: 100%;
+            padding: 15px;
+            font-size: 1em;
+            text-align: left;
+            background-color: var(--cor-fundo-geral);
+            border: 2px solid var(--cor-borda-sutil);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .option-button:not(:disabled):hover {
+            background-color: var(--cor-acento-hover);
+            border-color: var(--cor-acento);
+            transform: translateY(-2px);
+        }
+        .option-button:disabled {
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+        .option-button.correto {
+            background-color: var(--cor-sucesso);
+            border-color: #27ae60;
+            color: white;
+            font-weight: bold;
+        }
+        .option-button.incorreto {
+            background-color: var(--cor-erro);
+            border-color: #c0392b;
+            color: white;
+            font-weight: bold;
+        }
+        .explanation-container {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.5s ease-out;
+            background-color: var(--cor-fundo-secao-destaque);
+            border-radius: 8px;
+            padding: 0 20px;
+            margin-top: 0;
+            border-left: 4px solid var(--cor-primaria-hover);
+        }
+        .explanation-container.visible {
+            max-height: 500px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        /* Tabela de Resumo */
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+        .summary-table th, .summary-table td {
+            border: 1px solid var(--cor-borda-sutil);
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .summary-table th {
+            background-color: var(--cor-primaria);
+            color: var(--cor-texto-claro);
+            font-size: 1.1em;
+            text-align: center;
+        }
+        .summary-table ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+        /* Contêiner do botão "Voltar ao Topo" */
+        .rodape-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        @media (max-width: 800px) {
+            .game-title { font-size: 1.8em; }
+            h2 { font-size: 1.5em; }
+        }
+    </style>
+</head>
+<body id="topo">
+
+<div class="cabecalho-container">
+<header class="bloco-identidade">
+    <div class="logo-and-title">
+        <a href="/index.html">
+            <img src="/Images/logo novo grande.png" alt="Logo FFES" class="logo-img">
+        </a>
+        <a href="/index.html" style="text-decoration: none; color: inherit;">
+            <h1>Leo Ramos | Professor de Inglês</h1>
+        </a>
+    </div>
+</header>
+<div class="bloco-navegacao"> 
+    <nav class="nav-primary">
+        <ul>
+            <li><a href="/index.html#home">Home</a></li>
+            <li><a href="/index.html#sobre">Sobre Mim</a></li>
+            <li><a href="/index.html#exercicios">Exercícios</a></li>
+            <li><a href="/index.html#artigos-vocab">Artigos</a></li>
+            <li><a href="/index.html#cursos">Cursos e E-book</a></li>
+            <li><a href="/index.html#metodologia">Metodologia</a></li>
+        </ul>
+    </nav>
+</div>
+</div>
+<main>
+    <h1 class="game-title">Jogo das Preposições (in, on, at, etc.)</h1>
+    <div id="placar-geral-container">
+        <p>Acertos: <strong id="acertos-geral">0</strong></p>
+        <a href="#contato" class="nav-arrow" title="Ir para o final da página">&#11015;</a>
+        <p>Erros: <strong id="erros-geral">0</strong></p>
+    </div>
+    <button id="reset-btn" class="cta-button">Jogar Novamente</button>
+    <hr>
+    
+    <div class="introducao-container" style="text-align: left;">
+        <h3>Guia Completo de Preposições</h3>
+        
+        <h4>Parte 1: As Preposições Mais Comuns de Tempo e Lugar (IN, ON, AT)</h4>
+        <p>A melhor forma de entendê-las é pensar em uma pirâmide, do mais geral (IN) para o mais específico (AT).</p>
+        <table class="summary-table">
+             <thead>
+                <tr>
+                    <th>Preposição</th>
+                    <th>Uso para TEMPO ⏳</th>
+                    <th>Uso para LUGAR 🗺️</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>IN</strong><br>(Geral / Dentro)</td>
+                    <td><strong>Períodos Longos:</strong><ul><li>Partes do dia: <i>in the morning, in the afternoon</i></li><li>Meses, Estações, Anos: <i>in August, in the summer, in 2025</i></li></ul></td>
+                    <td><strong>Espaços Fechados ou Áreas Grandes:</strong><ul><li>Espaços: <i>in the box, in a car</i></li><li>Cidades, Países: <i>in São Paulo, in Brazil</i></li></ul></td>
+                </tr>
+                <tr>
+                    <td><strong>ON</strong><br>(Específico / Superfície)</td>
+                    <td><strong>Datas e Dias Específicos:</strong><ul><li>Dias da semana: <i>on Monday, on Friday</i></li><li>Datas completas: <i>on August 27th</i></li></ul></td>
+                    <td><strong>Superfícies ou Linhas:</strong><ul><li>Superfícies: <i>on the table, on the floor</i></li><li>Ruas e Avenidas: <i>on Paulista Avenue</i></li></ul></td>
+                </tr>
+                 <tr>
+                    <td><strong>AT</strong><br>(Muito Específico / Ponto)</td>
+                    <td><strong>Horas e Pontos Específicos:</strong><ul><li>Horas: <i>at 8 PM, at noon</i></li><li>Expressões: <i>at night, at the moment</i></li></ul></td>
+                    <td><strong>Pontos e Locais Específicos:</strong><ul><li>Endereços: <i>at 123 Main Street</i></li><li>Lugares: <i>at the bus stop, at home</i></li></ul></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h4>Parte 2: Outros Tipos e Usos</h4>
+        <h5>Prepositions of Movement (Preposições de Movimento)</h5>
+        <p>Descrevem a direção ou o trajeto. Exemplos: <strong>to</strong> (para), <strong>from</strong> (de, origem), <strong>into</strong> (para dentro), <strong>out of</strong> (para fora), <strong>across</strong> (através de), <strong>through</strong> (por dentro de), <strong>over</strong> (por cima), <strong>under</strong> (por baixo).</p>
+
+        <h5>Outras Preposições de Lugar Comuns</h5>
+        <p>Descrevem a posição estática. Exemplos: <strong>beside / next to</strong> (ao lado de), <strong>between</strong> (entre dois), <strong>among</strong> (entre vários), <strong>behind</strong> (atrás), <strong>in front of</strong> (na frente de).</p>
+
+        <h5>Preposições em Expressões Fixas e Collocations</h5>
+        <p>Muitas palavras "pedem" uma preposição específica. A escolha nem sempre é lógica, é uma questão de costume (collocation).</p>
+        <ul>
+            <li><strong>Verbo + Preposição:</strong> <i>depend <strong>on</strong></i>, <i>listen <strong>to</strong></i>, <i>wait <strong>for</strong></i>.</li>
+            <li><strong>Adjetivo + Preposição:</strong> <i>good <strong>at</strong></i>, <i>interested <strong>in</strong></i>, <i>afraid <strong>of</strong></i>.</li>
+            <li><strong>Expressões Fixas:</strong> <i><strong>on</strong> time</i> (na hora), <i><strong>in</strong> time</i> (a tempo), <i><strong>by</strong> car</i> (de carro), <i><strong>on</strong> foot</i> (a pé).</li>
+        </ul>
+    </div>
+    
+    <div id="exercicios-container"></div>
+    <div class="rodape-container">
+        <a href="#topo" class="nav-button">&#11014;</a>
+    </div>
+</main>
+
+<footer id="contato" class="site-footer">
+    <div class="footer-content">
+        <div class="social-media-links">
+            <h4>Siga-me nas redes sociais</h4>
+            <a href="https://www.youtube.com/@teacherleoramos" target="_blank" title="YouTube"><img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube"></a>
+            <a href="https://www.instagram.com/teacherleoramos/" target="_blank" title="Instagram"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram"></a>
+            <a href="https://www.tiktok.com/@teacherleoramos" target="_blank" title="TikTok"><img src="https://img.icons8.com/ios-filled/50/ffffff/tiktok.png" alt="TikTok"></a>
+            <a href="https://wa.me/5511955582118" target="_blank" title="WhatsApp"><img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp--v1.png" alt="WhatsApp"></a>
+        </div>
+        <p><strong>Contato</strong></p>
+        <p>Youtube: @teacherleoramos | Telefone - WhatsApp: (11) 95558-2118</p>
+        <p>Endereço: São Paulo, SP, Brasil</p>
+        <p>CNPJ: 43.226.983/0001-91</p>
+        <p>&copy; 2025 | FEATHERED FRIENDS ENGLISH SCHOOL - FFES. Todos os direitos reservados.</p>
+    </div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // REMOVIDA A INJEÇÃO DE HTML DO CABEÇALHO E RODAPÉ
+
+    const dadosPreposicoes = [
+        { id: 'prep-1', pergunta: 'Complete: "My birthday is ___ August 27th."', opcoes: ['in', 'on', 'at', 'for'], respostaCorreta: 'on', explicacao: 'Usamos <strong>"on"</strong> para datas completas e específicas (dia + mês). "In" seria usado apenas para o mês (in August), e "at" para horas.' },
+        { id: 'prep-2', pergunta: 'Complete: "The meeting is ___ the afternoon."', opcoes: ['in', 'on', 'at', 'to'], respostaCorreta: 'in', explicacao: 'Usamos <strong>"in"</strong> para partes do dia como "the morning", "the afternoon" e "the evening". A exceção é "at night".' },
+        { id: 'prep-3', pergunta: 'Complete: "I will see you ___ noon."', opcoes: ['in', 'on', 'at', 'from'], respostaCorreta: 'at', explicacao: 'Usamos <strong>"at"</strong> para horas (at 5 PM) e pontos específicos do dia como "at noon" (meio-dia), "at midnight" (meia-noite) e "at night" (à noite).' },
+        { id: 'prep-4', pergunta: 'Complete: "I live ___ Brazil."', opcoes: ['in', 'on', 'at', 'from'], respostaCorreta: 'in', explicacao: 'Usamos <strong>"in"</strong> para áreas grandes e delimitadas como cidades, estados e países.' },
+        { id: 'prep-5', pergunta: 'Complete: "The keys are ___ the table."', opcoes: ['in', 'on', 'at', 'under'], respostaCorreta: 'on', explicacao: 'Usamos <strong>"on"</strong> para indicar que algo está sobre uma superfície. As chaves estão tocando a superfície da mesa.' },
+        { id: 'prep-6', pergunta: 'Complete: "Let\'s meet ___ the bus stop."', opcoes: ['in', 'on', 'at', 'by'], respostaCorreta: 'at', explicacao: 'Usamos <strong>"at"</strong> para indicar um ponto ou local específico em um mapa ou cidade, como "at the entrance" ou "at the cinema".' },
+        { id: 'prep-7', pergunta: 'Complete: "The cat jumped ___ the box."', opcoes: ['in', 'on', 'into', 'to'], respostaCorreta: 'into', explicacao: '<strong>"Into"</strong> é uma preposição de movimento que significa "para dentro de". Indica a ação de entrar em um espaço fechado. "In" indicaria que o gato já estava dentro.' },
+        { id: 'prep-8', pergunta: 'Complete: "You should listen ___ your teacher."', opcoes: ['for', 'at', 'to', 'with'], respostaCorreta: 'to', explicacao: 'Esta é uma expressão fixa (collocation). O verbo "listen" (escutar com atenção) sempre pede a preposição <strong>"to"</strong>.' },
+        { id: 'prep-9', pergunta: 'Complete: "I am not very good ___ sports."', opcoes: ['in', 'on', 'at', 'for'], respostaCorreta: 'at', explicacao: 'Esta é uma expressão fixa. Para indicar habilidade em algo (ou falta dela), usamos "good <strong>at</strong>", "bad <strong>at</strong>", "terrible <strong>at</strong>", etc.' },
+        { id: 'prep-10', pergunta: 'Complete: "We need to swim ___ the river to get to the other side."', opcoes: ['through', 'across', 'along', 'over'], respostaCorreta: 'across', explicacao: '<strong>"Across"</strong> é a preposição de movimento usada para indicar a travessia de um lado para o outro. "Through" significaria passar por dentro de algo (como um túnel).' },
+        { id: 'prep-11', pergunta: 'Complete: "The concert is ___ Friday night."', opcoes: ['in', 'at', 'on', 'by'], respostaCorreta: 'on', explicacao: 'Quando combinamos um dia da semana (Friday) com uma parte do dia (night), a regra do dia da semana prevalece. Portanto, usamos <strong>"on"</strong>.' },
+        { id: 'prep-12', pergunta: 'Complete: "He is waiting for you ___ the entrance of the cinema."', opcoes: ['in', 'on', 'at', 'to'], respostaCorreta: 'at', explicacao: 'Usamos <strong>"at"</strong> para nos referirmos a um ponto de encontro específico ou localidade, como "a entrada do cinema".' },
+        { id: 'prep-13', pergunta: 'Complete: "She is very interested ___ science."', opcoes: ['on', 'for', 'about', 'in'], respostaCorreta: 'in', explicacao: 'É uma collocation. O adjetivo "interested" (interessado) é sempre seguido pela preposição <strong>"in"</strong>.' },
+        { id: 'prep-14', pergunta: 'Complete: "I usually go to work ___ car."', opcoes: ['on', 'in', 'by', 'with'], respostaCorreta: 'by', explicacao: 'Para meios de transporte em geral, usamos a preposição <strong>"by"</strong> (by car, by bus, by train). As exceções são "on foot" (a pé) e quando há um artigo ou possessivo ("in my car", "on the bus").' },
+        { id: 'prep-15', pergunta: 'Complete: "The pharmacy is right ___ the corner of the street."', opcoes: ['at', 'in', 'on', 'to'], respostaCorreta: 'on', explicacao: 'A expressão correta para indicar algo localizado em uma esquina é <strong>"on the corner"</strong>.' },
+        { id: 'prep-16', pergunta: 'Complete: "He came back home ___ midnight."', opcoes: ['in', 'on', 'at', 'since'], respostaCorreta: 'at', explicacao: 'Usamos <strong>"at"</strong> para pontos específicos do tempo, como horas (at 3 PM), "at noon", "at midnight" e "at night".' },
+        { id: 'prep-17', pergunta: 'Complete: "The train went ___ the tunnel."', opcoes: ['across', 'through', 'over', 'into'], respostaCorreta: 'through', explicacao: '<strong>"Through"</strong> é usado para descrever o movimento de entrar por um lado e sair pelo outro de um espaço tridimensional, como um túnel ou uma floresta.' },
+        { id: 'prep-18', pergunta: 'Complete: "My keys must be somewhere ___ this room."', opcoes: ['at', 'on', 'in', 'into'], respostaCorreta: 'in', explicacao: 'Usamos <strong>"in"</strong> para indicar que algo está dentro de um espaço fechado ou de uma área delimitada, como um quarto.' },
+        { id: 'prep-19', pergunta: 'Complete: "What are you talking ___?"', opcoes: ['of', 'about', 'with', 'for'], respostaCorreta: 'about', explicacao: 'É uma collocation. O verbo "talk" (conversar) usa a preposição <strong>"about"</strong> para indicar o assunto da conversa.' },
+        { id: 'prep-20', pergunta: 'Complete: "The bank is ___ the supermarket."', opcoes: ['between', 'next', 'among', 'opposite'], respostaCorreta: 'opposite', explicacao: '<strong>"Opposite"</strong> significa do outro lado da rua, em frente a. "Next to" seria ao lado, e "between" seria entre dois outros lugares.' },
+        { id: 'prep-21', pergunta: 'Complete: "Please, put the books ___ the shelf."', opcoes: ['in', 'at', 'on', 'into'], respostaCorreta: 'on', explicacao: 'Usamos <strong>"on"</strong> porque a prateleira (shelf) é uma superfície sobre a qual os livros são colocados.' },
+        { id: 'prep-22', pergunta: 'Complete: "This movie was directed ___ Quentin Tarantino."', opcoes: ['from', 'by', 'with', 'of'], respostaCorreta: 'by', explicacao: 'Usamos <strong>"by"</strong> para indicar o agente ou autor de uma ação na voz passiva (quem dirigiu, quem escreveu, quem fez).' },
+        { id: 'prep-23', pergunta: 'Complete: "I will be back ___ an hour."', opcoes: ['on', 'at', 'in', 'since'], respostaCorreta: 'in', explicacao: 'Usamos <strong>"in"</strong> para indicar um período de tempo no futuro. "In an hour" significa "daqui a uma hora".' },
+        { id: 'prep-24', pergunta: 'Complete: "She is afraid ___ spiders."', opcoes: ['from', 'about', 'of', 'with'], respostaCorreta: 'of', explicacao: 'É uma collocation. O adjetivo "afraid" (com medo) é sempre seguido pela preposição <strong>"of"</strong>.' },
+        { id: 'prep-25', pergunta: 'Complete: "He took the letter ___ his bag."', opcoes: ['out of', 'off', 'from', 'away'], respostaCorreta: 'out of', explicacao: 'A preposição de movimento <strong>"out of"</strong> significa "para fora de", indicando que a carta foi retirada de dentro da bolsa.' },
+        { id: 'prep-26', pergunta: 'Complete: "We live ___ the third floor."', opcoes: ['in', 'at', 'on', 'above'], respostaCorreta: 'on', explicacao: 'Usamos <strong>"on"</strong> para nos referirmos a andares de um prédio (on the first floor, on the second floor, etc.).' },
+        { id: 'prep-27', pergunta: 'Complete: "This success depends ___ your hard work."', opcoes: ['of', 'from', 'on', 'at'], respostaCorreta: 'on', explicacao: 'É uma collocation. O verbo "depend" (depender) é sempre seguido pela preposição <strong>"on"</strong>.' },
+        { id: 'prep-28', pergunta: 'Complete: "The cat is hiding ___ the door."', opcoes: ['under', 'behind', 'next', 'in front'], respostaCorreta: 'behind', explicacao: '<strong>"Behind"</strong> significa "atrás de", que é a posição lógica para se esconder.' },
+        { id: 'prep-29', pergunta: 'Complete: "He arrived right ___ time for the meeting."', opcoes: ['on', 'in', 'at', 'by'], respostaCorreta: 'on', explicacao: 'A expressão <strong>"on time"</strong> significa "na hora exata, pontualmente". "In time" significaria "a tempo" (com alguma folga).' },
+        { id: 'prep-30', pergunta: 'Complete: "I prefer to travel ___ foot."', opcoes: ['by', 'with', 'in', 'on'], respostaCorreta: 'on', explicacao: 'Esta é uma exceção à regra do "by" para transporte. A expressão correta é sempre <strong>"on foot"</strong> (a pé).' },
+        { id: 'prep-31', pergunta: 'Complete: "The secret was shared ___ the three friends."', opcoes: ['between', 'among', 'with', 'from'], respostaCorreta: 'among', explicacao: 'Usamos <strong>"among"</strong> para indicar algo que está no meio de um grupo de três ou mais pessoas/coisas. "Between" é usado para apenas duas.' },
+        { id: 'prep-32', pergunta: 'Complete: "He has been working here ___ 2010."', opcoes: ['for', 'since', 'at', 'in'], respostaCorreta: 'since', explicacao: 'Usamos <strong>"since"</strong> com o Present Perfect para indicar o ponto de início de uma ação. "For" seria usado para indicar a duração (for over a decade).' },
+        { id: 'prep-33', pergunta: 'Complete: "Can you translate this text ___ English?"', opcoes: ['to', 'in', 'into', 'for'], respostaCorreta: 'into', explicacao: 'Quando há uma transformação ou mudança de estado (neste caso, de um idioma para outro), usamos a preposição <strong>"into"</strong>.' },
+        { id: 'prep-34', pergunta: 'Complete: "She is married ___ a doctor."', opcoes: ['with', 'to', 'of', 'by'], respostaCorreta: 'to', explicacao: 'A expressão correta em inglês é "to be married <strong>to</strong> someone". O uso de "with" é um erro comum para falantes de português.' },
+        { id: 'prep-35', pergunta: 'Complete: "The airplane is flying ___ the clouds."', opcoes: ['under', 'through', 'above', 'on'], respostaCorreta: 'above', explicacao: '<strong>"Above"</strong> significa "acima de", sem contato físico. É a preposição ideal para descrever o voo de um avião sobre as nuvens.' },
+        { id: 'prep-36', pergunta: 'Complete: "What did you do ___ the weekend?"', opcoes: ['in', 'on', 'at', 'by'], respostaCorreta: 'on', explicacao: 'No inglês americano, o mais comum é usar <strong>"on the weekend"</strong>. No inglês britânico, "at the weekend" também é usado.' },
+        { id: 'prep-37', pergunta: 'Complete: "I am looking forward ___ seeing you soon."', opcoes: ['for', 'to', 'at', 'on'], respostaCorreta: 'to', explicacao: '"Look forward to" é um phrasal verb que significa "ansiar por" ou "estar ansioso para". Ele é sempre seguido pela preposição <strong>"to"</strong> e um verbo no gerúndio (-ing).' },
+        { id: 'prep-38', pergunta: 'Complete: "I received a letter ___ my aunt."', opcoes: ['of', 'by', 'from', 'to'], respostaCorreta: 'from', explicacao: 'Usamos <strong>"from"</strong> para indicar a origem ou o remetente de algo.' },
+        { id: 'prep-39', pergunta: 'Complete: "He apologized ___ his mistake."', opcoes: ['for', 'about', 'of', 'to'], respostaCorreta: 'for', explicacao: 'A expressão correta é "apologize <strong>for</strong> something" (pedir desculpas por algo) e "apologize <strong>to</strong> someone" (pedir desculpas a alguém).' },
+        { id: 'prep-40', pergunta: 'Complete: "The store is open every day ___ Sunday."', opcoes: ['of', 'except', 'without', 'unless'], respostaCorreta: 'except', explicacao: '<strong>"Except"</strong> é uma preposição que significa "exceto", "com exceção de", usada para excluir um item de um grupo.' }
+    ];
+
+    const container = document.getElementById('exercicios-container');
+    const placarAcertosGeralEl = document.getElementById('acertos-geral');
+    const placarErrosGeralEl = document.getElementById('erros-geral');
+    const resetButton = document.getElementById('reset-btn');
+    let acertos = 0;
+    let erros = 0;
+
+    function shuffleArray(array) { for (let i = array.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [array[i], array[j]] = [array[j], array[i]]; } }
+
+    function criarExercicioHTML(exercicioData, numeroExercicio) {
+        // Embaralha as opções para este exercício
+        const opcoesEmbaralhadas = [...exercicioData.opcoes];
+        shuffleArray(opcoesEmbaralhadas);
+        
+        const opcoesHTML = opcoesEmbaralhadas.map(opcao => `<button class="option-button" data-resposta="${opcao}">${opcao}</button>`).join('');
+        return `<section class="exercicio-card" id="exercicio-${exercicioData.id}" data-id="${exercicioData.id}"><h2 class="h2-exercicio">Exercício ${numeroExercicio}</h2><div class="question-container"><p>${exercicioData.pergunta}</p><div class="options-container">${opcoesHTML}</div></div><div class="explanation-container" id="explicacao-${exercicioData.id}"><p>${exercicioData.explicacao}</p></div></section>`;
+    }
+
+    function verificarResposta(exercicioId, btnClicado) {
+        const exercicioData = dadosPreposicoes.find(e => e.id === exercicioId);
+        const exercicioCard = document.getElementById(`exercicio-${exercicioData.id}`);
+        const botoes = exercicioCard.querySelectorAll('.option-button');
+        botoes.forEach(btn => btn.disabled = true);
+        const explicacaoEl = document.getElementById(`explicacao-${exercicioData.id}`);
+        explicacaoEl.classList.add('visible');
+        if (btnClicado.dataset.resposta === exercicioData.respostaCorreta) {
+            btnClicado.classList.add('correto');
+            acertos++;
+        } else {
+            btnClicado.classList.add('incorreto');
+            const respostaCorretaBtn = Array.from(botoes).find(btn => btn.dataset.resposta === exercicioData.respostaCorreta);
+            if (respostaCorretaBtn) { respostaCorretaBtn.classList.add('correto'); }
+            erros++;
+        }
+        placarAcertosGeralEl.textContent = acertos;
+        placarErrosGeralEl.textContent = erros;
+    }
+    
+    let eventListenerRef;
+    function iniciarJogo() {
+        acertos = 0;
+        erros = 0;
+        placarAcertosGeralEl.textContent = '0';
+        placarErrosGeralEl.textContent = '0';
+        shuffleArray(dadosPreposicoes);
+        container.innerHTML = dadosPreposicoes.map((dado, index) => criarExercicioHTML(dado, index + 1)).join('');
+        
+        // Correção do bug de múltiplos listeners
+        if(eventListenerRef) container.removeEventListener('click', eventListenerRef);
+
+        eventListenerRef = (event) => {
+            if (event.target.classList.contains('option-button') && !event.target.disabled) {
+                const btnClicado = event.target;
+                const exercicioCard = btnClicado.closest('.exercicio-card');
+                const exercicioId = exercicioCard.dataset.id;
+                verificarResposta(exercicioId, btnClicado);
+            }
+        };
+        container.addEventListener('click', eventListenerRef);
+        
+        // Rola a tela para o início do main content ao reiniciar
+        document.querySelector('main').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    resetButton.addEventListener('click', iniciarJogo);
+    iniciarJogo();
+});
+</script>
+
+</body>
+</html>
