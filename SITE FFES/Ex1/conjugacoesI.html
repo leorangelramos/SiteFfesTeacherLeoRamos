@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Exercício: 100 Verbos Irregulares em Inglês | Professor Leo Ramos</title>
+    <meta name="description" content="Pratique a conjugação dos 100 verbos irregulares mais comuns em inglês nos tempos presente, passado, particípio e gerúndio com este jogo interativo.">
+    
+    <meta name="author" content="Leo Ramos">
+    <meta name="robots" content="index, follow">
+    
+    <meta name="google-site-verification" content="9L-nEDj4G24e3JD1kt5bxcZ5_qHo9Q-03_DJkfIH_1M" />
+    
+    <link rel="canonical" href="https://teacherleoramos.com.br/Ex1/conjugacoesI.html">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/Images/logofavicion.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Images/logofavicion.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Images/logofavicion.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/Images/logofavicion.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/Images/logofavicion.png">
+    
+    <meta property="og:title" content="Exercício: 100 Verbos Irregulares | Professor Leo Ramos">
+    <meta property="og:description" content="Pratique a conjugação dos verbos irregulares mais comuns em inglês com este jogo interativo.">
+    <meta property="og:image" content="https://teacherleoramos.com.br/Images/preview-social.jpg">
+    <meta property="og:url" content="https://teacherleoramos.com.br/Ex1/conjugacoesI.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="FFES - Professor Leo Ramos">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Exercício: 100 Verbos Irregulares | Professor Leo Ramos">
+    <meta name="twitter:description" content="Pratique a conjugação dos verbos irregulares mais comuns em inglês com este jogo interativo.">
+    <meta name="twitter:image" content="https://teacherleoramos.com.br/Images/preview-social.jpg">
+
+    <link rel="stylesheet" href="/CSS/universal.css">
+    
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Quiz",
+      "name": "Jogo de Conjugação: 100 Verbos Irregulares",
+      "description": "Pratique a conjugação dos 100 verbos irregulares mais comuns em inglês nos tempos presente, passado, particípio e gerúndio.",
+      "inLanguage": "pt-BR",
+      "learningResourceType": "Practice",
+      "author": {
+        "@type": "Person",
+        "name": "Leo Ramos",
+        "jobTitle": "Professor de Inglês",
+        "url": "https://teacherleoramos.com.br/Ex1/conjugacoesI.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "FFES - Professor Leo Ramos",
+        "logo": "https://teacherleoramos.com.br/Images/logo novo grande.png"
+      }
+    }
+    </script>
+    
+    <style>
+        /* --- INÍCIO DO CSS EMBUTIDO (Idêntico ao 'conjugacoes100.html') --- */
+
+        /* 1. VARIÁVEIS DE CORES E ESTILOS GERAIS */
+        :root {
+            --cor-primaria: #0A2342;
+            --cor-primaria-hover: #103A6B;
+            --cor-acento: #FFB81C;
+            --cor-acento-hover: #E0A114;
+            --cor-texto-escuro: #2c3e50;
+            --cor-texto-claro: #FFFFFF;
+            --cor-texto-base: #333;
+            --cor-fundo-geral: #f4f7f9;
+            --cor-fundo-secao: #ffffff;
+            --cor-fundo-secao-destaque: #ecf0f1;
+            --cor-borda-sutil: #e0e0e0;
+            --gradiente-padrao: linear-gradient(135deg, var(--cor-primaria), #0d2f5b, #ffcb4e);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor-primaria);
+            background-image: var(--gradiente-padrao);
+            color: var(--cor-texto-base);
+            line-height: 1.6;
+            background-attachment: fixed;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3, h4 { color: var(--cor-texto-escuro); text-align: center; }
+
+        h2 {
+            color: var(--cor-primaria);
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid var(--cor-borda-sutil);
+            padding-bottom: 5px;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #bdc3c7;
+            margin: 30px 0;
+            width: 90%;
+            max-width: 900px;
+        }
+
+        /* 2. CABEÇALHO E NAVEGAÇÃO */
+        .cabecalho-container { width: 100%; padding: 0; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+        .bloco-identidade { display: flex; flex-direction: column; align-items: center; width: 100%; }
+        .logo-and-title {
+            background: var(--gradiente-padrao);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px 15px;
+            box-sizing: border-box;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .logo-and-title .logo-img { max-height: 80px; width: auto; border-radius: 50%; }
+        .logo-and-title h1 { color: var(--cor-texto-claro); font-size: 1.5em; margin: 0; text-shadow: 1px 1px 3px black; }
+        .bloco-navegacao { background: var(--gradiente-padrao); width: 100%; padding: 12px; box-sizing: border-box; }
+        .nav-primary ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        .nav-primary a {
+            text-decoration: none;
+            color: var(--cor-texto-claro);
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+            background-color: var(--cor-primaria-hover);
+            border: 1px solid black;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .nav-primary a:hover { background-color: var(--cor-acento); color: var(--cor-primaria); box-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+
+        /* 3. ESTILOS GERAIS DO JOGO */
+        .game-title { color: var(--cor-texto-claro); font-size: 2.5em; margin-bottom: 20px; text-shadow: 2px 2px 5px rgba(0,0,0,0.6); }
+        #placar-geral-container {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--cor-texto-claro);
+            padding: 15px 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            font-size: 1.1em;
+        }
+        #placar-geral-container p { margin: 0; }
+        #placar-geral-container .nav-arrow { color: inherit; text-decoration: none; font-size: 1.2em; line-height: 1; transition: color 0.2s ease, transform 0.2s ease; }
+        #placar-geral-container .nav-arrow:hover { color: var(--cor-acento); transform: scale(1.15); }
+        
+        /* 4. ESTILOS ESPECÍFICOS DO JOGO DE CONJUGAÇÃO */
+        .exercicio-card {
+            background-color: var(--cor-fundo-secao);
+            width: 100%;
+            max-width: 800px;
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+            box-sizing: border-box;
+        }
+
+        table { width: 100%; margin: 20px auto; border-collapse: collapse; }
+        
+        th, td { 
+            border: 1px solid var(--cor-borda-sutil); 
+            padding: 12px; 
+            text-align: center; 
+            vertical-align: top; 
+        }
+
+        th { background-color: var(--cor-primaria); color: white; font-weight: bold; }
+
+        .input-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 5px; /* Espaçamento entre os inputs */
+        }
+
+        .answer-input {
+            width: 95%; 
+            max-width: 120px; 
+            padding: 8px; 
+            box-sizing: border-box; 
+            border: 1px solid var(--cor-borda-sutil); 
+            border-radius: 4px;
+            font-size: 1em; 
+            text-align: center; 
+            transition: all 0.2s ease;
+        }
+        .answer-input:focus { outline: none; border-color: var(--cor-primaria-hover); box-shadow: 0 0 5px rgba(16, 58, 107, 0.5); }
+        .answer-input.correto { border-color: #27ae60; background-color: #e9f7ec; }
+        .answer-input.incorreto { border-color: #c0392b; background-color: #f8d7da; }
+        .answer-input.resposta-mostrada { background-color: #fffbe6; border-color: #f39c12; }
+        
+        /* NOVO ESTILO PARA O PADRÃO VERBAL */
+        .padrao-verbal {
+            font-size: 0.85em;
+            color: #7f8c8d; /* Cor cinza sutil */
+            font-weight: normal;
+            margin-left: 5px;
+        }
+
+        .button-container { text-align: center; margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 15px; }
+        .btn-verificar { background-color: #27ae60; } 
+        .btn-verificar:hover { background-color: #2ecc71; }
+        .btn-mostrar { background-color: #f39c12; } 
+        .btn-mostrar:hover { background-color: #f1c40f; }
+
+        .contador-local { font-weight: bold; font-size: 1.1em; color: var(--cor-texto-escuro); width: 100%; text-align: center; margin-top: 10px; }
+        .contador-acertos { color: #27ae60; }
+        .contador-erros { color: #c0392b; }
+
+        /* 5. BOTÕES E RODAPÉ */
+        .cta-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--cor-acento);
+            color: var(--cor-texto-escuro);
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .cta-button:hover { background-color: var(--cor-acento-hover); transform: scale(1.05); }
+        .nav-button {
+            font-size: 1.5em;
+            background-color: rgba(10, 35, 66, 0.7);
+            color: white;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+        .nav-button:hover { background-color: var(--cor-primaria); transform: scale(1.1); color: white; }
+        .site-footer { width: 100%; background-image: var(--gradiente-padrao); color: var(--cor-texto-claro); text-align: center; padding: 40px 20px; margin-top: 30px; box-sizing: border-box; }
+        .site-footer p { margin: 5px 0; font-size: 0.9em; }
+        .social-media-links h4 { color: var(--cor-texto-claro); }
+        .social-media-links a { display: inline-block; margin: 0 12px; transition: transform 0.2s ease; }
+        .social-media-links a:hover { transform: scale(1.1); }
+        .social-media-links img { width: 32px; height: 32px; }
+
+        /* 7. ESTILOS PARA OS LINKS ADICIONAIS */
+        .link-container-adicional {
+            text-align: center;
+            background-color: var(--cor-fundo-secao-destaque);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 15px;
+            margin-bottom: 25px;
+            max-width: 900px;
+            width: 100%;
+            box-sizing: border-box;
+            border-left: 5px solid var(--cor-acento);
+        }
+
+        .link-container-adicional p {
+            font-size: 1.1em;
+            color: var(--cor-texto-escuro);
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 600px) {
+            .link-container-adicional .cta-button {
+                width: 90%;
+            }
+        }
+        
+        /* 6. RESPONSIVIDADE */
+        @media (max-width: 800px) {
+            .logo-and-title h1 { font-size: 1.2em; }
+            .nav-primary a { font-size: 0.8em; padding: 8px 10px;}
+            .game-title { font-size: 1.8em; }
+            h2 { font-size: 1.5em; }
+            .exercicio-card { padding: 15px; }
+            th, td { padding: 6px; font-size: 0.9em; }
+            .button-container { flex-direction: column; gap: 12px; }
+        }
+
+        /* --- FIM DO CSS EMBUTIDO --- */
+    </style>
+</head>
+<body id="topo">
+
+<div class="cabecalho-container">
+<header class="bloco-identidade">
+    <div class="logo-and-title">
+        <a href="/index.html">
+            <img src="/Images/logo novo grande.png" alt="Logo FFES" class="logo-img">
+        </a>
+        <a href="https://www.youtube.com/@teacherleoramos/videos" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+            <h1>Leo Ramos | Professor de Inglês</h1>
+        </a>
+    </div>
+</header>
+
+
+<div class="bloco-navegacao"> 
+    <nav class="nav-primary">
+        <ul>
+            <li><a href="/index.html#home">Home</a></li>
+            <li><a href="/index.html#sobre">Sobre Mim</a></li>
+            <li><a href="/exercicios-e-artigos.html#exercicios">Exercícios</a></li>
+            <li><a href="/exercicios-e-artigos.html#artigos-vocab">Artigos</a></li>
+            <li><a href="/cursos-e-ebook.html#cursos">Cursos e E-book</a></li>
+            <li><a href="/index.html#metodologia">Metodologia</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+</div>
+
+<main>
+    <h1 class="game-title">Jogo de Conjugação de Verbos (Irregulares)</h1>
+    <div id="placar-geral-container">
+        <p>Acertos Gerais: <strong id="acertos-geral">0</strong></p>
+        <a href="#contato" class="nav-arrow" title="Ir para o final da página">&#11015;</a>
+        <p>Erros Gerais: <strong id="erros-geral">0</strong></p>
+    </div>
+    <button id="verificar-tudo-btn" class="cta-button">Verificar Todos</button>
+    <hr>
+
+    <div class="link-container-adicional">
+        <p>💡 Quer entender como os verbos Irregulares se organizam? Acesse nosso:</p>
+        <a href="padroesverbais.html" class="cta-button">
+            Jogo de Padrões Verbais (A-B-C, I-A-U, etc.)
+        </a>
+    </div>
+    <div id="exercicios-container"></div>
+
+    <div id="exercicios-container"></div>
+    <div class="rodape-container" style="text-align: center; margin: 20px 0;">
+        <a href="#topo" class="nav-button">&#11014;</a>
+    </div>
+</main>
+
+<footer id="contato" class="site-footer">
+    <div class="footer-content">
+        <div class="social-media-links">
+            <h4>Siga-me nas redes sociais</h4>
+            <a href="https://www.youtube.com/@teacherleoramos/videos" target="_blank" rel="noopener noreferrer" title="YouTube">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube">
+            </a>
+            <a href="https://www.instagram.com/teacherleoramos/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@teacherleoramos" target="_blank" rel="noopener noreferrer" title="TikTok">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/tiktok.png" alt="TikTok">
+            </a>
+            <a href="https://wa.me/5511955582118" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp--v1.png" alt="WhatsApp">
+            </a>
+        </div>
+        <p><strong>Contato</strong></p>
+        <p>Youtube: @teacherleoramos | Telefone - WhatsApp: (11) 95558-2118</p>
+        <p>Endereço: São Paulo, SP, Brasil</p>
+        <p>CNPJ: 43.226.983/0001-91</p>
+        <p>&copy; 2025 | FEATHERED FRIENDS ENGLISH SCHOOL - FFES. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // MODIFICAÇÃO: Adicionado o campo 'padrao' para cada verbo irregular
+    const dadosDosVerbos = [
+        // (B)
+        { id: 'tobe', numero: 1, infinitivo: 'TO BE', padrao: 'A-B-C', respostas: { traducao: ['ser', 'estar'], presente: ['am', 'is', 'are'], passado: ['was', 'were'], participio: ['been'], gerundio: ['being'] } },
+        { id: 'tobear', numero: 2, infinitivo: 'TO BEAR', padrao: 'A-B-C', respostas: { traducao: ['suportar', 'dar à luz'], presente: ['bear', 'bears'], passado: ['bore'], participio: ['born', 'borne'], gerundio: ['bearing'] } },
+        { id: 'tobecome', numero: 3, infinitivo: 'TO BECOME', padrao: 'A-B-A', respostas: { traducao: ['tornar-se'], presente: ['become', 'becomes'], passado: ['became'], participio: ['become'], gerundio: ['becoming'] } },
+        { id: 'tobegin', numero: 4, infinitivo: 'TO BEGIN', padrao: 'I-A-U', respostas: { traducao: ['começar'], presente: ['begin', 'begins'], passado: ['began'], participio: ['begun'], gerundio: ['beginning'] } },
+        { id: 'tobend', numero: 5, infinitivo: 'TO BEND', padrao: 'A-B-B', respostas: { traducao: ['curvar', 'dobrar'], presente: ['bend', 'bends'], passado: ['bent'], participio: ['bent'], gerundio: ['bending'] } },
+        { id: 'tobet', numero: 6, infinitivo: 'TO BET', padrao: 'A-A-A', respostas: { traducao: ['apostar'], presente: ['bet', 'bets'], passado: ['bet'], participio: ['bet'], gerundio: ['betting'] } },
+        { id: 'tobite', numero: 7, infinitivo: 'TO BITE', padrao: 'A-B-C', respostas: { traducao: ['morder'], presente: ['bite', 'bites'], passado: ['bit'], participio: ['bitten'], gerundio: ['biting'] } },
+        { id: 'tobleed', numero: 8, infinitivo: 'TO BLEED', padrao: 'A-B-B', respostas: { traducao: ['sangrar'], presente: ['bleed', 'bleeds'], passado: ['bled'], participio: ['bled'], gerundio: ['bleeding'] } },
+        { id: 'toblow', numero: 9, infinitivo: 'TO BLOW', padrao: 'A-B-C', respostas: { traducao: ['soprar', 'estourar'], presente: ['blow', 'blows'], passado: ['blew'], participio: ['blown'], gerundio: ['blowing'] } },
+        { id: 'tobreak', numero: 10, infinitivo: 'TO BREAK', padrao: 'A-B-C', respostas: { traducao: ['quebrar'], presente: ['break', 'breaks'], passado: ['broke'], participio: ['broken'], gerundio: ['breaking'] } },
+        { id: 'tobring', numero: 11, infinitivo: 'TO BRING', padrao: 'A-B-B', respostas: { traducao: ['trazer'], presente: ['bring', 'brings'], passado: ['brought'], participio: ['brought'], gerundio: ['bringing'] } },
+        { id: 'tobroadcast', numero: 12, infinitivo: 'TO BROADCAST', padrao: 'A-A-A', respostas: { traducao: ['transmitir'], presente: ['broadcast', 'broadcasts'], passado: ['broadcast'], participio: ['broadcast'], gerundio: ['broadcasting'] } },
+        { id: 'tobuild', numero: 13, infinitivo: 'TO BUILD', padrao: 'A-B-B', respostas: { traducao: ['construir'], presente: ['build', 'builds'], passado: ['built'], participio: ['built'], gerundio: ['building'] } },
+        { id: 'tobuy', numero: 14, infinitivo: 'TO BUY', padrao: 'A-B-B', respostas: { traducao: ['comprar'], presente: ['buy', 'buys'], passado: ['bought'], participio: ['bought'], gerundio: ['buying'] } },
+        // (C - D)
+        { id: 'tocatch', numero: 15, infinitivo: 'TO CATCH', padrao: 'A-B-B', respostas: { traducao: ['pegar', 'apanhar'], presente: ['catch', 'catches'], passado: ['caught'], participio: ['caught'], gerundio: ['catching'] } },
+        { id: 'tochoose', numero: 16, infinitivo: 'TO CHOOSE', padrao: 'A-B-C', respostas: { traducao: ['escolher'], presente: ['choose', 'chooses'], passado: ['chose'], participio: ['chosen'], gerundio: ['choosing'] } },
+        { id: 'tocome', numero: 17, infinitivo: 'TO COME', padrao: 'A-B-A', respostas: { traducao: ['vir'], presente: ['come', 'comes'], passado: ['came'], participio: ['come'], gerundio: ['coming'] } },
+        { id: 'tocost', numero: 18, infinitivo: 'TO COST', padrao: 'A-A-A', respostas: { traducao: ['custar'], presente: ['cost', 'costs'], passado: ['cost'], participio: ['cost'], gerundio: ['costing'] } },
+        { id: 'tocut', numero: 19, infinitivo: 'TO CUT', padrao: 'A-A-A', respostas: { traducao: ['cortar'], presente: ['cut', 'cuts'], passado: ['cut'], participio: ['cut'], gerundio: ['cutting'] } },
+        { id: 'todeal', numero: 20, infinitivo: 'TO DEAL', padrao: 'A-B-B', respostas: { traducao: ['lidar', 'negociar'], presente: ['deal', 'deals'], passado: ['dealt'], participio: ['dealt'], gerundio: ['dealing'] } },
+        { id: 'todig', numero: 21, infinitivo: 'TO DIG', padrao: 'A-B-B', respostas: { traducao: ['cavar'], presente: ['dig', 'digs'], passado: ['dug'], participio: ['dug'], gerundio: ['digging'] } },
+        { id: 'todo', numero: 22, infinitivo: 'TO DO', padrao: 'A-B-C', respostas: { traducao: ['fazer'], presente: ['do', 'does'], passado: ['did'], participio: ['done'], gerundio: ['doing'] } },
+        { id: 'todraw', numero: 23, infinitivo: 'TO DRAW', padrao: 'A-B-C', respostas: { traducao: ['desenhar', 'sacar'], presente: ['draw', 'draws'], passado: ['drew'], participio: ['drawn'], gerundio: ['drawing'] } },
+        { id: 'todrink', numero: 24, infinitivo: 'TO DRINK', padrao: 'I-A-U', respostas: { traducao: ['beber'], presente: ['drink', 'drinks'], passado: ['drank'], participio: ['drunk'], gerundio: ['drinking'] } },
+        { id: 'todrive', numero: 25, infinitivo: 'TO DRIVE', padrao: 'A-B-C', respostas: { traducao: ['dirigir'], presente: ['drive', 'drives'], passado: ['drove'], participio: ['driven'], gerundio: ['driving'] } },
+        // (E - G)
+        { id: 'toeat', numero: 26, infinitivo: 'TO EAT', padrao: 'A-B-C', respostas: { traducao: ['comer'], presente: ['eat', 'eats'], passado: ['ate'], participio: ['eaten'], gerundio: ['eating'] } },
+        { id: 'tofall', numero: 27, infinitivo: 'TO FALL', padrao: 'A-B-C', respostas: { traducao: ['cair'], presente: ['fall', 'falls'], passado: ['fell'], participio: ['fallen'], gerundio: ['falling'] } },
+        { id: 'tofeed', numero: 28, infinitivo: 'TO FEED', padrao: 'A-B-B', respostas: { traducao: ['alimentar'], presente: ['feed', 'feeds'], passado: ['fed'], participio: ['fed'], gerundio: ['feeding'] } },
+        { id: 'tofeel', numero: 29, infinitivo: 'TO FEEL', padrao: 'A-B-B', respostas: { traducao: ['sentir', 'sentir-se'], presente: ['feel', 'feels'], passado: ['felt'], participio: ['felt'], gerundio: ['feeling'] } },
+        { id: 'tofight', numero: 30, infinitivo: 'TO FIGHT', padrao: 'A-B-B', respostas: { traducao: ['lutar', 'brigar'], presente: ['fight', 'fights'], passado: ['fought'], participio: ['fought'], gerundio: ['fighting'] } },
+        { id: 'tofind', numero: 31, infinitivo: 'TO FIND', padrao: 'A-B-B', respostas: { traducao: ['encontrar', 'achar'], presente: ['find', 'finds'], passado: ['found'], participio: ['found'], gerundio: ['finding'] } },
+        { id: 'tofly', numero: 32, infinitivo: 'TO FLY', padrao: 'A-B-C', respostas: { traducao: ['voar'], presente: ['fly', 'flies'], passado: ['flew'], participio: ['flown'], gerundio: ['flying'] } },
+        { id: 'toforbid', numero: 33, infinitivo: 'TO FORBID', padrao: 'A-B-C', respostas: { traducao: ['proibir'], presente: ['forbid', 'forbids'], passado: ['forbade'], participio: ['forbidden'], gerundio: ['forbidding'] } },
+        { id: 'toforget', numero: 34, infinitivo: 'TO FORGET', padrao: 'A-B-C', respostas: { traducao: ['esquecer'], presente: ['forget', 'forgets'], passado: ['forgot'], participio: ['forgotten'], gerundio: ['forgetting'] } },
+        { id: 'toforgive', numero: 35, infinitivo: 'TO FORGIVE', padrao: 'A-B-C', respostas: { traducao: ['perdoar'], presente: ['forgive', 'forgives'], passado: ['forgave'], participio: ['forgiven'], gerundio: ['forgiving'] } },
+        { id: 'tofreeze', numero: 36, infinitivo: 'TO FREEZE', padrao: 'A-B-C', respostas: { traducao: ['congelar'], presente: ['freeze', 'freezes'], passado: ['froze'], participio: ['frozen'], gerundio: ['freezing'] } },
+        { id: 'toget', numero: 37, infinitivo: 'TO GET', padrao: 'A-B-B', respostas: { traducao: ['obter', 'conseguir', 'tornar-se'], presente: ['get', 'gets'], passado: ['got'], participio: ['got', 'gotten'], gerundio: ['getting'] } },
+        { id: 'togive', numero: 38, infinitivo: 'TO GIVE', padrao: 'A-B-C', respostas: { traducao: ['dar'], presente: ['give', 'gives'], passado: ['gave'], participio: ['given'], gerundio: ['giving'] } },
+        { id: 'togo', numero: 39, infinitivo: 'TO GO', padrao: 'A-B-C', respostas: { traducao: ['ir'], presente: ['go', 'goes'], passado: ['went'], participio: ['gone'], gerundio: ['going'] } },
+        { id: 'togrow', numero: 40, infinitivo: 'TO GROW', padrao: 'A-B-C', respostas: { traducao: ['crescer', 'cultivar'], presente: ['grow', 'grows'], passado: ['grew'], participio: ['grown'], gerundio: ['growing'] } },
+        // (H - L)
+        { id: 'tohang', numero: 41, infinitivo: 'TO HANG', padrao: 'A-B-B', respostas: { traducao: ['pendurar', 'suspender'], presente: ['hang', 'hangs'], passado: ['hung'], participio: ['hung'], gerundio: ['hanging'] } },
+        { id: 'tohave', numero: 42, infinitivo: 'TO HAVE', padrao: 'A-B-B', respostas: { traducao: ['ter', 'haver'], presente: ['have', 'has'], passado: ['had'], participio: ['had'], gerundio: ['having'] } },
+        { id: 'tohear', numero: 43, infinitivo: 'TO HEAR', padrao: 'A-B-B', respostas: { traducao: ['ouvir'], presente: ['hear', 'hears'], passado: ['heard'], participio: ['heard'], gerundio: ['hearing'] } },
+        { id: 'tohide', numero: 44, infinitivo: 'TO HIDE', padrao: 'A-B-C', respostas: { traducao: ['esconder', 'esconder-se'], presente: ['hide', 'hides'], passado: ['hid'], participio: ['hidden'], gerundio: ['hiding'] } },
+        { id: 'tohit', numero: 45, infinitivo: 'TO HIT', padrao: 'A-A-A', respostas: { traducao: ['bater', 'atingir'], presente: ['hit', 'hits'], passado: ['hit'], participio: ['hit'], gerundio: ['hitting'] } },
+        { id: 'tohold', numero: 46, infinitivo: 'TO HOLD', padrao: 'A-B-B', respostas: { traducao: ['segurar', 'realizar'], presente: ['hold', 'holds'], passado: ['held'], participio: ['held'], gerundio: ['holding'] } },
+        { id: 'tohurt', numero: 47, infinitivo: 'TO HURT', padrao: 'A-A-A', respostas: { traducao: ['machucar', 'doer'], presente: ['hurt', 'hurts'], passado: ['hurt'], participio: ['hurt'], gerundio: ['hurting'] } },
+        { id: 'tokeep', numero: 48, infinitivo: 'TO KEEP', padrao: 'A-B-B', respostas: { traducao: ['guardar', 'manter'], presente: ['keep', 'keeps'], passado: ['kept'], participio: ['kept'], gerundio: ['keeping'] } },
+        { id: 'toknow', numero: 49, infinitivo: 'TO KNOW', padrao: 'A-B-C', respostas: { traducao: ['saber', 'conhecer'], presente: ['know', 'knows'], passado: ['knew'], participio: ['known'], gerundio: ['knowing'] } },
+        { id: 'tolay', numero: 50, infinitivo: 'TO LAY', padrao: 'A-B-B', respostas: { traducao: ['pôr', 'deitar algo'], presente: ['lay', 'lays'], passado: ['laid'], participio: ['laid'], gerundio: ['laying'] } },
+        { id: 'tolead', numero: 51, infinitivo: 'TO LEAD', padrao: 'A-B-B', respostas: { traducao: ['liderar', 'guiar'], presente: ['lead', 'leads'], passado: ['led'], participio: ['led'], gerundio: ['leading'] } },
+        { id: 'toleave', numero: 52, infinitivo: 'TO LEAVE', padrao: 'A-B-B', respostas: { traducao: ['sair', 'deixar'], presente: ['leave', 'leaves'], passado: ['left'], participio: ['left'], gerundio: ['leaving'] } },
+        { id: 'tolend', numero: 53, infinitivo: 'TO LEND', padrao: 'A-B-B', respostas: { traducao: ['emprestar'], presente: ['lend', 'lends'], passado: ['lent'], participio: ['lent'], gerundio: ['lending'] } },
+        { id: 'tolet', numero: 54, infinitivo: 'TO LET', padrao: 'A-A-A', respostas: { traducao: ['deixar', 'permitir'], presente: ['let', 'lets'], passado: ['let'], participio: ['let'], gerundio: ['letting'] } },
+        { id: 'tolie', numero: 55, infinitivo: 'TO LIE', padrao: 'A-B-C', respostas: { traducao: ['deitar-se'], presente: ['lie', 'lies'], passado: ['lay'], participio: ['lain'], gerundio: ['lying'] } },
+        { id: 'tolose', numero: 56, infinitivo: 'TO LOSE', padrao: 'A-B-B', respostas: { traducao: ['perder'], presente: ['lose', 'loses'], passado: ['lost'], participio: ['lost'], gerundio: ['losing'] } },
+        // (M - R)
+        { id: 'tomake', numero: 57, infinitivo: 'TO MAKE', padrao: 'A-B-B', respostas: { traducao: ['fazer', 'fabricar'], presente: ['make', 'makes'], passado: ['made'], participio: ['made'], gerundio: ['making'] } },
+        { id: 'tomean', numero: 58, infinitivo: 'TO MEAN', padrao: 'A-B-B', respostas: { traducao: ['significar', 'querer dizer'], presente: ['mean', 'means'], passado: ['meant'], participio: ['meant'], gerundio: ['meaning'] } },
+        { id: 'tomeet', numero: 59, infinitivo: 'TO MEET', padrao: 'A-B-B', respostas: { traducao: ['encontrar', 'conhecer'], presente: ['meet', 'meets'], passado: ['met'], participio: ['met'], gerundio: ['meeting'] } },
+        { id: 'topay', numero: 60, infinitivo: 'TO PAY', padrao: 'A-B-B', respostas: { traducao: ['pagar'], presente: ['pay', 'pays'], passado: ['paid'], participio: ['paid'], gerundio: ['paying'] } },
+        { id: 'toput', numero: 61, infinitivo: 'TO PUT', padrao: 'A-A-A', respostas: { traducao: ['colocar', 'pôr'], presente: ['put', 'puts'], passado: ['put'], participio: ['put'], gerundio: ['putting'] } },
+        { id: 'toread', numero: 62, infinitivo: 'TO READ', padrao: 'A-A-A', respostas: { traducao: ['ler'], presente: ['read', 'reads'], passado: ['read'], participio: ['read'], gerundio: ['reading'] } },
+        { id: 'toride', numero: 63, infinitivo: 'TO RIDE', padrao: 'A-B-C', respostas: { traducao: ['andar de'], presente: ['ride', 'rides'], passado: ['rode'], participio: ['ridden'], gerundio: ['riding'] } },
+        { id: 'toring', numero: 64, infinitivo: 'TO RING', padrao: 'I-A-U', respostas: { traducao: ['tocar sino', 'telefonar'], presente: ['ring', 'rings'], passado: ['rang'], participio: ['rung'], gerundio: ['ringing'] } },
+        { id: 'torise', numero: 65, infinitivo: 'TO RISE', padrao: 'A-B-C', respostas: { traducao: ['subir', 'erguer-se'], presente: ['rise', 'rises'], passado: ['rose'], participio: ['risen'], gerundio: ['rising'] } },
+        { id: 'torun', numero: 66, infinitivo: 'TO RUN', padrao: 'A-B-A', respostas: { traducao: ['correr', 'administrar'], presente: ['run', 'runs'], passado: ['ran'], participio: ['run'], gerundio: ['running'] } },
+        // (S)
+        { id: 'tosay', numero: 67, infinitivo: 'TO SAY', padrao: 'A-B-B', respostas: { traducao: ['dizer'], presente: ['say', 'says'], passado: ['said'], participio: ['said'], gerundio: ['saying'] } },
+        { id: 'tosee', numero: 68, infinitivo: 'TO SEE', padrao: 'A-B-C', respostas: { traducao: ['ver'], presente: ['see', 'sees'], passado: ['saw'], participio: ['seen'], gerundio: ['seeing'] } },
+        { id: 'toseek', numero: 69, infinitivo: 'TO SEEK', padrao: 'A-B-B', respostas: { traducao: ['procurar', 'buscar'], presente: ['seek', 'seeks'], passado: ['sought'], participio: ['sought'], gerundio: ['seeking'] } },
+        { id: 'tosell', numero: 70, infinitivo: 'TO SELL', padrao: 'A-B-B', respostas: { traducao: ['vender'], presente: ['sell', 'sells'], passado: ['sold'], participio: ['sold'], gerundio: ['selling'] } },
+        { id: 'tosend', numero: 71, infinitivo: 'TO SEND', padrao: 'A-B-B', respostas: { traducao: ['enviar'], presente: ['send', 'sends'], passado: ['sent'], participio: ['sent'], gerundio: ['sending'] } },
+        { id: 'toset', numero: 72, infinitivo: 'TO SET', padrao: 'A-A-A', respostas: { traducao: ['pôr', 'ajustar', 'configurar'], presente: ['set', 'sets'], passado: ['set'], participio: ['set'], gerundio: ['setting'] } },
+        { id: 'toshake', numero: 73, infinitivo: 'TO SHAKE', padrao: 'A-B-C', respostas: { traducao: ['balançar', 'tremer'], presente: ['shake', 'shakes'], passado: ['shook'], participio: ['shaken'], gerundio: ['shaking'] } },
+        { id: 'toshine', numero: 74, infinitivo: 'TO SHINE', padrao: 'A-B-B', respostas: { traducao: ['brilhar'], presente: ['shine', 'shines'], passado: ['shone'], participio: ['shone'], gerundio: ['shining'] } },
+        { id: 'toshoot', numero: 75, infinitivo: 'TO SHOOT', padrao: 'A-B-B', respostas: { traducao: ['atirar', 'fotografar'], presente: ['shoot', 'shoots'], passado: ['shot'], participio: ['shot'], gerundio: ['shooting'] } },
+        { id: 'toshring', numero: 76, infinitivo: 'TO SHRINK', padrao: 'I-A-U', respostas: { traducao: ['encolher'], presente: ['shrink', 'shrinks'], passado: ['shrank'], participio: ['shrunk'], gerundio: ['shrinking'] } },
+        { id: 'toshut', numero: 77, infinitivo: 'TO SHUT', padrao: 'A-A-A', respostas: { traducao: ['fechar'], presente: ['shut', 'shuts'], passado: ['shut'], participio: ['shut'], gerundio: ['shutting'] } },
+        { id: 'tosing', numero: 78, infinitivo: 'TO SING', padrao: 'I-A-U', respostas: { traducao: ['cantar'], presente: ['sing', 'sings'], passado: ['sang'], participio: ['sung'], gerundio: ['singing'] } },
+        { id: 'tosink', numero: 79, infinitivo: 'TO SINK', padrao: 'I-A-U', respostas: { traducao: ['afundar'], presente: ['sink', 'sinks'], passado: ['sank'], participio: ['sunk'], gerundio: ['sinking'] } },
+        { id: 'tosit', numero: 80, infinitivo: 'TO SIT', padrao: 'A-B-B', respostas: { traducao: ['sentar'], presente: ['sit', 'sits'], passado: ['sat'], participio: ['sat'], gerundio: ['sitting'] } },
+        { id: 'tosleep', numero: 81, infinitivo: 'TO SLEEP', padrao: 'A-B-B', respostas: { traducao: ['dormir'], presente: ['sleep', 'sleeps'], passado: ['slept'], participio: ['slept'], gerundio: ['sleeping'] } },
+        { id: 'tospeak', numero: 82, infinitivo: 'TO SPEAK', padrao: 'A-B-C', respostas: { traducao: ['falar'], presente: ['speak', 'speaks'], passado: ['spoke'], participio: ['spoken'], gerundio: ['speaking'] } },
+        { id: 'tospend', numero: 83, infinitivo: 'TO SPEND', padrao: 'A-B-B', respostas: { traducao: ['gastar', 'passar tempo'], presente: ['spend', 'spends'], passado: ['spent'], participio: ['spent'], gerundio: ['spending'] } },
+        { id: 'tospread', numero: 84, infinitivo: 'TO SPREAD', padrao: 'A-A-A', respostas: { traducao: ['espalhar', 'disseminar'], presente: ['spread', 'spreads'], passado: ['spread'], participio: ['spread'], gerundio: ['spreading'] } },
+        { id: 'tostand', numero: 85, infinitivo: 'TO STAND', padrao: 'A-B-B', respostas: { traducao: ['ficar de pé', 'aguentar'], presente: ['stand', 'stands'], passado: ['stood'], participio: ['stood'], gerundio: ['standing'] } },
+        { id: 'tosteal', numero: 86, infinitivo: 'TO STEAL', padrao: 'A-B-C', respostas: { traducao: ['roubar'], presente: ['steal', 'steals'], passado: ['stole'], participio: ['stolen'], gerundio: ['stealing'] } },
+        { id: 'tostick', numero: 87, infinitivo: 'TO STICK', padrao: 'A-B-B', respostas: { traducao: ['grudar', 'fincar'], presente: ['stick', 'sticks'], passado: ['stuck'], participio: ['stuck'], gerundio: ['sticking'] } },
+        { id: 'toswear', numero: 88, infinitivo: 'TO SWEAR', padrao: 'A-B-C', respostas: { traducao: ['jurar', 'xingar'], presente: ['swear', 'swears'], passado: ['swore'], participio: ['sworn'], gerundio: ['swearing'] } },
+        { id: 'toswim', numero: 89, infinitivo: 'TO SWIM', padrao: 'I-A-U', respostas: { traducao: ['nadar'], presente: ['swim', 'swims'], passado: ['swam'], participio: ['swum'], gerundio: ['swimming'] } },
+        // (T - W)
+        { id: 'totake', numero: 90, infinitivo: 'TO TAKE', padrao: 'A-B-C', respostas: { traducao: ['pegar', 'levar', 'tomar'], presente: ['take', 'takes'], passado: ['took'], participio: ['taken'], gerundio: ['taking'] } },
+        { id: 'toteach', numero: 91, infinitivo: 'TO TEACH', padrao: 'A-B-B', respostas: { traducao: ['ensinar'], presente: ['teach', 'teaches'], passado: ['taught'], participio: ['taught'], gerundio: ['teaching'] } },
+        { id: 'totear', numero: 92, infinitivo: 'TO TEAR', padrao: 'A-B-C', respostas: { traducao: ['rasgar'], presente: ['tear', 'tears'], passado: ['tore'], participio: ['torn'], gerundio: ['tearing'] } },
+        { id: 'totell', numero: 93, infinitivo: 'TO TELL', padrao: 'A-B-B', respostas: { traducao: ['contar', 'dizer'], presente: ['tell', 'tells'], passado: ['told'], participio: ['told'], gerundio: ['telling'] } },
+        { id: 'tothink', numero: 94, infinitivo: 'TO THINK', padrao: 'A-B-B', respostas: { traducao: ['pensar', 'achar'], presente: ['think', 'thinks'], passado: ['thought'], participio: ['thought'], gerundio: ['thinking'] } },
+        { id: 'tothrow', numero: 95, infinitivo: 'TO THROW', padrao: 'A-B-C', respostas: { traducao: ['jogar', 'arremessar'], presente: ['throw', 'throws'], passado: ['threw'], participio: ['thrown'], gerundio: ['throwing'] } },
+        { id: 'tounderstand', numero: 96, infinitivo: 'TO UNDERSTAND', padrao: 'A-B-B', respostas: { traducao: ['entender', 'compreender'], presente: ['understand', 'understands'], passado: ['understood'], participio: ['understood'], gerundio: ['understanding'] } },
+        { id: 'towake', numero: 97, infinitivo: 'TO WAKE', padrao: 'A-B-C', respostas: { traducao: ['acordar'], presente: ['wake', 'wakes'], passado: ['woke'], participio: ['woken'], gerundio: ['waking'] } },
+        { id: 'towear', numero: 98, infinitivo: 'TO WEAR', padrao: 'A-B-C', respostas: { traducao: ['vestir', 'usar roupa'], presente: ['wear', 'wears'], passado: ['wore'], participio: ['worn'], gerundio: ['wearing'] } },
+        { id: 'towin', numero: 99, infinitivo: 'TO WIN', padrao: 'A-B-B', respostas: { traducao: ['vencer', 'ganhar'], presente: ['win', 'wins'], passado: ['won'], participio: ['won'], gerundio: ['winning'] } },
+        { id: 'towrite', numero: 100, infinitivo: 'TO WRITE', padrao: 'A-B-C', respostas: { traducao: ['escrever'], presente: ['write', 'writes'], passado: ['wrote'], participio: ['written'], gerundio: ['writing'] } }
+    ];
+
+    const container = document.getElementById('exercicios-container');
+    const placarAcertosGeralEl = document.getElementById('acertos-geral'); 
+    
+    // --- CORREÇÃO DO BUG AQUI ---
+    // A variável estava declarada duas vezes com o mesmo nome
+    const placarErrosGeralEl = document.getElementById('erros-geral');   
+    // --- FIM DA CORREÇÃO ---
+
+    const btnVerificarTudo = document.getElementById('verificar-tudo-btn');
+
+    window.verificarRespostas = verificarRespostas;
+    window.mostrarRespostas = mostrarRespostas;
+    
+    btnVerificarTudo.addEventListener('click', () => {
+        dadosDosVerbos.forEach(verbo => verificarRespostas(verbo.id));
+    });
+    
+    function criarExercicioHTML(verboData) {
+        const criarInputs = (tipo, respostas) => {
+            let inputsHTML = '';
+            const numInputs = Math.max(1, respostas.length); 
+            for (let i = 0; i < numInputs; i++) {
+                inputsHTML += `<input type="text" class="answer-input" data-tipo="${tipo}" autocomplete="off">`;
+            }
+            return `<div class="input-wrapper">${inputsHTML}</div>`;
+        };
+        // MODIFICAÇÃO: Inserção do padrão verbal no H2
+        return `
+            <section class="exercicio-card" id="exercicio-${verboData.id}">
+                <h2>(${verboData.numero}) Verbo ${verboData.infinitivo} <span class="padrao-verbal">(${verboData.padrao})</span></h2>
+                <table>
+                    <thead>
+                        <tr><th>Tradução</th><th>Presente</th><th>Passado</th><th>Particípio</th><th>Gerúndio</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>${criarInputs('traducao', verboData.respostas.traducao)}</td>
+                            <td>${criarInputs('presente', verboData.respostas.presente)}</td>
+                            <td>${criarInputs('passado', verboData.respostas.passado)}</td>
+                            <td>${criarInputs('participio', verboData.respostas.participio)}</td>
+                            <td>${criarInputs('gerundio', verboData.respostas.gerundio)}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="button-container">
+                    <button class="cta-button btn-mostrar" onclick="mostrarRespostas('${verboData.id}')">Mostrar Respostas</button>
+                    <button class="cta-button btn-verificar" onclick="verificarRespostas('${verboData.id}')">Verificar</button>
+                </div>
+                 <div class="contador-local">
+                    <span class="contador-acertos">Acertos: <strong id="acertos-${verboData.id}">0</strong></span> | 
+                    <span class="contador-erros">Erros: <strong id="erros-${verboData.id}">0</strong></span>
+                </div>
+            </section>
+        `;
+    }
+
+    function verificarRespostas(verboId) {
+        const gabarito = dadosDosVerbos.find(v => v.id === verboId).respostas;
+        const exercicioCard = document.getElementById(`exercicio-${verboId}`);
+        let acertosLocais = 0;
+        let errosLocais = 0;
+
+        for (const tipo in gabarito) {
+            const respostasCorretas = new Set(gabarito[tipo]);
+            const inputsDoUsuario = Array.from(exercicioCard.querySelectorAll(`input[data-tipo="${tipo}"]`));
+            const valoresUsuario = new Set(
+                inputsDoUsuario
+                    .map(input => input.value.trim().toLowerCase())
+                    .filter(v => v !== '')
+            );
+
+            const acertosNesteTipo = new Set([...valoresUsuario].filter(x => respostasCorretas.has(x)));
+            acertosLocais += acertosNesteTipo.size;
+            
+            const totalDeSlots = Math.max(valoresUsuario.size, respostasCorretas.size);
+            const errosNesteTipo = totalDeSlots - acertosNesteTipo.size;
+            errosLocais += errosNesteTipo;
+
+            inputsDoUsuario.forEach(input => {
+                const valor = input.value.trim().toLowerCase();
+                if (valor === '') {
+                    input.className = 'answer-input';
+                } else if (respostasCorretas.has(valor)) {
+                    input.className = 'answer-input correto';
+                } else {
+                    input.className = 'answer-input incorreto';
+                }
+            });
+        }
+        
+        document.getElementById(`acertos-${verboId}`).textContent = acertosLocais;
+        document.getElementById(`erros-${verboId}`).textContent = errosLocais;
+        calcularPlacarGeral();
+    }
+    
+    function mostrarRespostas(verboId) {
+        const gabarito = dadosDosVerbos.find(v => v.id === verboId).respostas;
+        const exercicioCard = document.getElementById(`exercicio-${verboId}`);
+        for (const tipo in gabarito) {
+            const respostasCorretas = gabarito[tipo];
+            const inputs = exercicioCard.querySelectorAll(`input[data-tipo="${tipo}"]`);
+            inputs.forEach((input, index) => {
+                if (respostasCorretas[index]) {
+                    input.value = respostasCorretas[index];
+                    input.className = 'answer-input resposta-mostrada';
+                } else {
+                    input.value = '';
+                    input.className = 'answer-input';
+                }
+            });
+        }
+        document.getElementById(`acertos-${verboId}`).textContent = 0;
+        document.getElementById(`erros-${verboId}`).textContent = 0;
+        calcularPlacarGeral();
+    }
+
+    function calcularPlacarGeral() {
+        let totalAcertos = 0, totalErros = 0;
+        dadosDosVerbos.forEach(verbo => {
+            totalAcertos += parseInt(document.getElementById(`acertos-${verbo.id}`).textContent, 10) || 0;
+            totalErros += parseInt(document.getElementById(`erros-${verbo.id}`).textContent, 10) || 0;
+        });
+        placarAcertosGeralEl.textContent = totalAcertos;
+        placarErrosGeralEl.textContent = totalErros;
+    }
+
+    container.innerHTML = dadosDosVerbos.map(verbo => criarExercicioHTML(verbo)).join('');
+});
+</script>
+
+</body>
+</html>
