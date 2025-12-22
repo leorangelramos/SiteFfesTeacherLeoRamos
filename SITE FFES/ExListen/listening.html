@@ -317,13 +317,8 @@
 
 <script>
     
-    // --- BANCO DE QUESTÕES DE LISTENING ---
-    // Estrutura: { level: 'Ax', correct: 'Frase Correta', distractors: ['Erro Gramatical/Semântico', 'Erro Vocabular/Fônico'] }
     const allQuestions = [
         
-        // =========================================
-        //                 NÍVEL A1 (50 Frases)
-        // =========================================
         { level: 'A1', correct: "I am a student.", distractors: ["I have a student.", "I am student."] },
         { level: 'A1', correct: "She is happy today.", distractors: ["She are happy today.", "She happy today."] },
         { level: 'A1', correct: "Do you speak English?", distractors: ["You speak English?", "Does you speak English?"] },
@@ -359,21 +354,7 @@
         { level: 'A1', correct: "The bag is theirs.", distractors: ["The bag is their.", "The bag is them."] },
         { level: 'A1', correct: "Give the keys to me.", distractors: ["Give the keys me.", "Give me the key."] },
         { level: 'A1', correct: "She sings well.", distractors: ["She sings good.", "She sings happily."] },
-        { level: 'A1', correct: "I am thirsty.", distractors: ["I have thirsty.", "I am feeling thirsty."] },
-        { level: 'A1', correct: "We went shopping.", distractors: ["We go shopping.", "We did went shopping."] },
-        { level: 'A1', correct: "He is my father.", distractors: ["He my father.", "He is father."] },
-        { level: 'A1', correct: "I usually read books.", distractors: ["I read usually books.", "I am usually reading books."] },
-        { level: 'A1', correct: "Don't forget your coat.", distractors: ["Not forget your coat.", "Don't forgets your coat."] },
-        { level: 'A1', correct: "I am cold.", distractors: ["I have cold.", "I am coldness."] },
-        { level: 'A1', correct: "Can I help you?", distractors: ["I can help you?", "Can helping you?"] },
-        { level: 'A1', correct: "The water is hot.", distractors: ["The water are hot.", "The water hot."] },
-        { level: 'A1', correct: "She needs to rest.", distractors: ["She need to rest.", "She needs rest."] },
-        { level: 'A1', correct: "I live on this street.", distractors: ["I live in this street.", "I live to this street."] },
-        { level: 'A1', correct: "Is he your brother?", distractors: ["He is your brother?", "Are he your brother?"] },
-        { level: 'A1', correct: "We bought a house.", distractors: ["We buyed a house.", "We are buying a house."] },
-        { level: 'A1', correct: "He runs fast.", distractors: ["He run fast.", "He is running fast."] },
-        { level: 'A1', correct: "I am happy.", distractors: ["I am happiness.", "I has happy."] },
-        { level: 'A1', correct: "Please, hurry up!", distractors: ["Please, hurry.", "Please, quick up!"] },
+       
         
         // =========================================
         //                 NÍVEL A2 (50 Frases)
@@ -412,22 +393,6 @@
         { level: 'A2', correct: "I have too many worries.", distractors: ["I have too much worries.", "I have too many worry."] },
         { level: 'A2', correct: "There is too much noise.", distractors: ["There are too much noise.", "There is too many noise."] },
         { level: 'A2', correct: "I don't have enough time.", distractors: ["I don't have time enough.", "I don't have too time."] },
-        { level: 'A2', correct: "She is tired, so she went to bed.", distractors: ["She is tired, so went to bed.", "She is tired, so she go to bed."] },
-        { level: 'A2', correct: "I missed the train.", distractors: ["I lost the train.", "I missed the bus."] },
-        { level: 'A2', correct: "I need to take a break.", distractors: ["I need to take break.", "I need take a break."] },
-        { level: 'A2', correct: "They prefer tea over coffee.", distractors: ["They prefer tea than coffee.", "They prefer tea to coffee."] },
-        { level: 'A2', correct: "I am fed up with this mess.", distractors: ["I am fed up of this mess.", "I am fed with this mess."] },
-        { level: 'A2', correct: "We saw a beautiful red flower.", distractors: ["We saw a red beautiful flower.", "We saw a flower red beautiful."] },
-        { level: 'A2', correct: "The computer broke down.", distractors: ["The computer break down.", "The computer was broke down."] },
-        { level: 'A2', correct: "I look like my mother.", distractors: ["I look my mother.", "I look to my mother."] },
-        { level: 'A2', correct: "I am excited about the trip.", distractors: ["I am excited with the trip.", "I am exciting about the trip."] },
-        { level: 'A2', correct: "The movie started ten minutes ago.", distractors: ["The movie has started ten minutes ago.", "The movie started before ten minutes."] },
-        { level: 'A2', correct: "She began to cry.", distractors: ["She begun to cry.", "She beginning to cry."] },
-        { level: 'A2', correct: "Did you put the book there?", distractors: ["Did you putted the book there?", "You put the book there?"] },
-        { level: 'A2', correct: "I hope to see you soon.", distractors: ["I hope seeing you soon.", "I hope that see you soon."] },
-        { level: 'A2', correct: "It is dangerous to walk alone.", distractors: ["It is dangerous walk alone.", "It is a dangerous to walk alone."] },
-        { level: 'A2', correct: "I am ready to leave.", distractors: ["I am ready for leave.", "I am ready leaving."] },
-        { level: 'A2', correct: "We must hurry.", distractors: ["We must to hurry.", "We must hurried."] },
 
         // =========================================
         //                 NÍVEL B1 (50 Frases)
@@ -466,22 +431,7 @@
         { level: 'B1', correct: "He is likely to succeed.", distractors: ["He is likely succeed.", "He is probable to succeed."] },
         { level: 'B1', correct: "The car needs cleaning.", distractors: ["The car needs to clean.", "The car need cleaning."] },
         { level: 'B1', correct: "He denied stealing the money.", distractors: ["He denied to steal the money.", "He denied having stole the money."] },
-        { level: 'B1', correct: "We must carry on with the project.", distractors: ["We must carry in with the project.", "We must carrying on with the project."] },
-        { level: 'B1', correct: "I insisted on paying the bill.", distractors: ["I insisted to pay the bill.", "I insisted in paying the bill."] },
-        { level: 'B1', correct: "I'm going to have my car repaired.", distractors: ["I'm going to repair my car.", "I'm going to get my car to repair."] },
-        { level: 'B1', correct: "She took up painting as a hobby.", distractors: ["She took over painting as a hobby.", "She took painting as a hobby."] },
-        { level: 'B1', correct: "They are planning on moving soon.", distractors: ["They are planning to moving soon.", "They planning on moving soon."] },
-        { level: 'B1', correct: "I saw her cross the street.", distractors: ["I saw her crossing the street.", "I saw her to cross the street."] },
-        { level: 'B1', correct: "He keeps complaining about the food.", distractors: ["He keep complaining about the food.", "He keeps to complain about the food."] },
-        { level: 'B1', correct: "I'd better go now.", distractors: ["I had better to go now.", "I better go now."] },
-        { level: 'B1', correct: "I was able to finish the report on time.", distractors: ["I could finish the report on time.", "I was able finishing the report on time."] },
-        { level: 'B1', correct: "The news was shocking.", distractors: ["The news were shocking.", "The new was shocking."] },
-        { level: 'B1', correct: "There's a good deal of work to do.", distractors: ["There's a good many work to do.", "There are a good deal of work to do."] },
-        { level: 'B1', correct: "What does he look like?", distractors: ["What is he like?", "How does he look like?"] },
-        { level: 'B1', correct: "I need to get used to the cold.", distractors: ["I need to used to the cold.", "I need getting used to the cold."] },
-        { level: 'B1', correct: "We live in an area where it rains a lot.", distractors: ["We live in an area which it rains a lot.", "We live where it rains a lot."] },
-        { level: 'B1', correct: "The book which I bought is fascinating.", distractors: ["The book what I bought is fascinating.", "The book as I bought is fascinating."] },
-        { level: 'B1', correct: "He made me laugh.", distractors: ["He made me to laugh.", "He make me laugh."] },
+     
 
         // =========================================
         //                 NÍVEL B2 (50 Frases)
@@ -519,23 +469,7 @@
         { level: 'B2', correct: "The rumor turned out to be false.", distractors: ["The rumor turned out false.", "The rumor turned into false."] },
         { level: 'B2', correct: "He is said to be recovering.", distractors: ["He said to be recovering.", "It is said he is recovering."] },
         { level: 'B2', correct: "She put her success down to hard work.", distractors: ["She put her success on hard work.", "She put her success down by hard work."] },
-        { level: 'B2', correct: "They took the liberty of using my car.", distractors: ["They took the liberty to use my car.", "They took the liberty in using my car."] },
-        { level: 'B2', correct: "I'd prefer not to be disturbed.", distractors: ["I'd prefer don't be disturbed.", "I'd prefer not being disturbed."] },
-        { level: 'B2', correct: "Such was the storm that all flights were canceled.", distractors: ["So was the storm that all flights were canceled.", "Such was the storm all flights were canceled."] },
-        { level: 'B2', correct: "I was wondering if you could help me.", distractors: ["I was wondering could you help me.", "I wonder if you could help me."] },
-        { level: 'B2', correct: "Far from helping, he just made things worse.", distractors: ["Far from to help, he just made things worse.", "Far from help, he just made things worse."] },
-        { level: 'B2', correct: "The longer you wait, the less likely you are to succeed.", distractors: ["The longest you wait, the less likely you are to succeed.", "Longer you wait, less likely you are to succeed."] },
-        { level: 'B2', correct: "He is prone to making mistakes.", distractors: ["He is prone for making mistakes.", "He is prone to make mistakes."] },
-        { level: 'B2', correct: "She took it for granted that she would be promoted.", distractors: ["She took it as granted that she would be promoted.", "She took for granted that she would be promoted."] },
-        { level: 'B2', correct: "I don't mind you smoking.", distractors: ["I don't mind you to smoke.", "I don't mind your smoking."] },
-        { level: 'B2', correct: "The noise prevented me from concentrating.", distractors: ["The noise prevented me to concentrate.", "The noise prevented my concentrating."] },
-        { level: 'B2', correct: "He is believed to be living abroad.", distractors: ["He is believed living abroad.", "He believes to be living abroad."] },
-        { level: 'B2', correct: "The committee consists of ten members.", distractors: ["The committee is consisting of ten members.", "The committee consists in ten members."] },
-        { level: 'B2', correct: "I wish I hadn't said that.", distractors: ["I wish I didn't say that.", "I wish I wouldn't have said that."] },
-        { level: 'B2', correct: "They would rather have gone to the concert.", distractors: ["They would rather go to the concert.", "They would rather had gone to the concert."] },
-        { level: 'B2', correct: "I'm sick and tired of this weather.", distractors: ["I'm sick and tired from this weather.", "I'm sick and tired with this weather."] },
-        { level: 'B2', correct: "This is what I have been looking for.", distractors: ["This is that I have been looking for.", "This is what I am looking for."] },
-        { level: 'B2', correct: "It is essential that he be informed immediately.", distractors: ["It is essential that he is informed immediately.", "It is essential that he will be informed immediately."] },
+       
 
         // =========================================
         //                 NÍVEL C1 (50 Frases)
@@ -570,26 +504,7 @@
         { level: 'C1', correct: "I took pains to ensure everything was correct.", distractors: ["I took pain to ensure everything was correct.", "I took efforts to ensure everything was correct."] },
         { level: 'C1', correct: "I am intent on finishing this project.", distractors: ["I am intent in finishing this project.", "I am intent to finish this project."] },
         { level: 'C1', correct: "The two issues are inextricably linked.", distractors: ["The two issues are inextricable linked.", "The two issues are inextricably link."] },
-        { level: 'C1', correct: "We made allowances for his inexperience.", distractors: ["We made allowance for his inexperience.", "We made an allowance for his inexperience."] },
-        { level: 'C1', correct: "He is adept at handling difficult clients.", distractors: ["He is adept in handling difficult clients.", "He is adept to handling difficult clients."] },
-        { level: 'C1', correct: "They were loath to admit their error.", distractors: ["They were loath in admit their error.", "They were loathe to admit their error."] },
-        { level: 'C1', correct: "It dawned on me that I had forgotten my wallet.", distractors: ["It dawned in me that I had forgotten my wallet.", "It dawned to me that I had forgotten my wallet."] },
-        { level: 'C1', correct: "She took great pleasure in confounding the experts.", distractors: ["She took great pleasure to confound the experts.", "She took great pleasure from confounding the experts."] },
-        { level: 'C1', correct: "I took up her offer without hesitation.", distractors: ["I took on her offer without hesitation.", "I took her offer up without hesitation."] },
-        { level: 'C1', correct: "The outcome is a foregone conclusion.", distractors: ["The outcome is a for gone conclusion.", "The outcome is a foregone concluding."] },
-        { level: 'C1', correct: "We are at liberty to leave whenever we wish.", distractors: ["We are at liberty for leave whenever we wish.", "We are in liberty to leave whenever we wish."] },
-        { level: 'C1', correct: "He spoke with a view to influencing the decision.", distractors: ["He spoke with a view of influencing the decision.", "He spoke with a view to influence the decision."] },
-        { level: 'C1', correct: "The company is on the verge of collapse.", distractors: ["The company is in the verge of collapse.", "The company is on the verge to collapse."] },
-        { level: 'C1', correct: "She got bogged down in detail.", distractors: ["She got bogged in detail.", "She got bogged down with detail."] },
-        { level: 'C1', correct: "In retrospect, it was a bad decision.", distractors: ["In retrospection, it was a bad decision.", "In retrospect, it is a bad decision."] },
-        { level: 'C1', correct: "He is highly regarded by his peers.", distractors: ["He is highly regarded from his peers.", "He is highly regarding by his peers."] },
-        { level: 'C1', correct: "This report is long overdue.", distractors: ["This report is long over due.", "This report is long due over."] },
-        { level: 'C1', correct: "I put the failure down to bad luck.", distractors: ["I put the failure on bad luck.", "I put down the failure to bad luck."] },
-        { level: 'C1', correct: "The evidence bears out his claim.", distractors: ["The evidence bears up his claim.", "The evidence bears with his claim."] },
-        { level: 'C1', correct: "She is a force to be reckoned with.", distractors: ["She is a force to be reckoned.", "She is a force to reckon with."] },
-        { level: 'C1', correct: "The book is predicated upon a careful analysis of the data.", distractors: ["The book is predicated in a careful analysis of the data.", "The book is predicated to a careful analysis of the data."] },
-        { level: 'C1', correct: "There's no point in arguing with him.", distractors: ["There's no point to argue with him.", "There's no point of arguing with him."] },
-        { level: 'C1', correct: "He is wont to arrive late.", distractors: ["He is wont to arriving late.", "He is wanting to arrive late."] },
+     
 
         // =========================================
         //                 NÍVEL C2 (50 Frases)
@@ -613,37 +528,7 @@
         { level: 'C2', correct: "Her eloquence was something of a phenomenon.", distractors: ["Her eloquence was something of phenomenon.", "Her eloquence was something in a phenomenon."] },
         { level: 'C2', correct: "The project was deemed to be unviable.", distractors: ["The project deemed to be unviable.", "The project was deemed unviable."] },
         { level: 'C2', correct: "I wouldn't venture to guess the outcome.", distractors: ["I wouldn't venture guessing the outcome.", "I wouldn't venture to a guess the outcome."] },
-        { level: 'C2', correct: "She acted with a view to promoting her own interests.", distractors: ["She acted with a view of promoting her own interests.", "She acted with the view to promoting her own interests."] },
-        { level: 'C2', correct: "His dismissal was a foregone conclusion.", distractors: ["His dismissal was a foregone concluding.", "His dismissal was a for gone conclusion."] },
-        { level: 'C2', correct: "The proposal met with considerable resistance.", distractors: ["The proposal met against considerable resistance.", "The proposal met for considerable resistance."] },
-        { level: 'C2', correct: "The company is heavily reliant on overseas markets.", distractors: ["The company is heavily reliant in overseas markets.", "The company is heavily reliant with overseas markets."] },
-        { level: 'C2', correct: "It is a moot point whether technology helps or hinders.", distractors: ["It is a mute point whether technology helps or hinders.", "It is a mooted point whether technology helps or hinders."] },
-        { level: 'C2', correct: "She evinced a propensity for procrastination.", distractors: ["She evinced a propensity to procrastination.", "She evinced a propensity for to procrastinate."] },
-        { level: 'C2', correct: "The treaty was ratified in due course.", distractors: ["The treaty was ratified in due time.", "The treaty was ratified for due course."] },
-        { level: 'C2', correct: "The outcome remains shrouded in mystery.", distractors: ["The outcome remains shrouded with mystery.", "The outcome remains shroud in mystery."] },
-        { level: 'C2', correct: "He spoke at length on the matter.", distractors: ["He spoke in length on the matter.", "He spoke at lengthy on the matter."] },
-        { level: 'C2', correct: "The argument hinged on a single clause.", distractors: ["The argument hinged in a single clause.", "The argument hinged at a single clause."] },
-        { level: 'C2', correct: "It is a testament to his determination.", distractors: ["It is a testaments to his determination.", "It is a testament of his determination."] },
-        { level: 'C2', correct: "I am constrained to disagree with your premise.", distractors: ["I am constrain to disagree with your premise.", "I am constrained for disagree with your premise."] },
-        { level: 'C2', correct: "She took exception to the inference.", distractors: ["She took exceptions to the inference.", "She took exception from the inference."] },
-        { level: 'C2', correct: "The decision has far-reaching implications.", distractors: ["The decision has far reaching implications.", "The decision has far-reach implications."] },
-        { level: 'C2', correct: "The document is replete with jargon.", distractors: ["The document is replete of jargon.", "The document is replete by jargon."] },
-        { level: 'C2', correct: "We must strive for parity.", distractors: ["We must strive to parity.", "We must strive by parity."] },
-        { level: 'C2', correct: "He is adept at skirting the issue.", distractors: ["He is adept in skirting the issue.", "He is adept to skirting the issue."] },
-        { level: 'C2', correct: "The evidence adduced by the defense was weak.", distractors: ["The evidence adduced from the defense was weak.", "The evidence adduced on the defense was weak."] },
-        { level: 'C2', correct: "The concept is wholly alien to my understanding.", distractors: ["The concept is whole alien to my understanding.", "The concept is wholly alien from my understanding."] },
-        { level: 'C2', correct: "I cannot fathom how they reached that conclusion.", distractors: ["I cannot fathom to how they reached that conclusion.", "I cannot fathom that how they reached that conclusion."] },
-        { level: 'C2', correct: "The situation demands a measure of circumspection.", distractors: ["The situation demands a measure of circumspection.", "The situation demands a measure for circumspection."] },
-        { level: 'C2', correct: "He felt obliged to acquiesce.", distractors: ["He felt obliged acquiesce.", "He felt obliged in acquiesce."] },
-        { level: 'C2', correct: "The argument descended into acrimony.", distractors: ["The argument descended with acrimony.", "The argument descended to acrimony."] },
-        { level: 'C2', correct: "She is not one to suffer fools gladly.", distractors: ["She is not one to suffer fools with gladly.", "She is not one to suffer gladly fools."] },
-        { level: 'C2', correct: "The whole affair was fraught with danger.", distractors: ["The whole affair was fraught by danger.", "The whole affair was fraught in danger."] },
-        { level: 'C2', correct: "His comments were utterly devoid of substance.", distractors: ["His comments were utterly devoid from substance.", "His comments were utterly devoid with substance."] },
-        { level: 'C2', correct: "I am cognizant of the risks involved.", distractors: ["I am cognizant with the risks involved.", "I am cognizant in the risks involved."] },
-        { level: 'C2', correct: "The company came under intense scrutiny.", distractors: ["The company came over intense scrutiny.", "The company came into intense scrutiny."] },
-        { level: 'C2', correct: "I am disinclined to accept the offer.", distractors: ["I am disinclined from accept the offer.", "I am disinclined to accepting the offer."] },
-        { level: 'C2', correct: "The solution lies in greater transparency.", distractors: ["The solution lies on greater transparency.", "The solution lies at greater transparency."] },
-        { level: 'C2', correct: "It is deemed imperative that we proceed.", distractors: ["It is deemed imperative we proceed.", "It is deemed imperative that we will proceed."] }
+       
 
     ];
 
