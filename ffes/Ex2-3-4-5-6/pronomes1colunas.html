@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Pronomes em Inglês: O Guia Definitivo e Quiz Prático 🇺🇸 | Leo Ramos</title>
+    
+    <meta name="description" content="Pare de confundir MY com MINE ou ME com I. 🛑 Entenda a lógica dos 5 tipos de pronomes em inglês com nossa tabela exclusiva e teste seu nível agora!">
+    
+    <meta name="author" content="Leo Ramos">
+    <meta name="robots" content="index, follow">
+    
+    <meta name="keywords" content="pronomes em inglês, subject pronouns, object pronouns, tabela de pronomes, exercícios de inglês, possessive adjectives, reflexive pronouns, aula de inglês grátis, Leo Ramos">
+
+    <link rel="canonical" href="https://teacherleoramos.com.br/Ex2-3-4-5-6/pronomes1colunas.html">
+    <link rel="stylesheet" href="/CSS/universal.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/Images/logofavicion.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Images/logofavicion.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Images/logofavicion.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/Images/logofavicion.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/Images/logofavicion.png">
+
+    <meta property="og:title" content="Desafio dos Pronomes: Você sabe usar I, ME, MY e MINE? 🧠">
+    <meta property="og:description" content="Acesse a Tabela Mestra dos Pronomes e faça o Quiz Interativo para nunca mais travar na hora de falar.">
+    <meta property="og:image" content="https://teacherleoramos.com.br/Images/preview-social.jpg">
+    <meta property="og:url" content="https://teacherleoramos.com.br/Ex2-3-4-5-6/pronomes1colunas.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="FFES - Professor Leo Ramos">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Desafio de Inglês: Dominando os Pronomes 🎯">
+    <meta name="twitter:description" content="Teste seu conhecimento sobre Subject, Object e Possessive Pronouns agora.">
+    <meta name="twitter:image" content="https://teacherleoramos.com.br/Images/preview-social.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Quiz",
+      "name": "Quiz Completo de Pronomes em Inglês",
+      "description": "Teste interativo sobre os 5 tipos de pronomes da língua inglesa.",
+      "url": "https://teacherleoramos.com.br/Ex2-3-4-5-6/pronomes1colunas.html",
+      "author": {
+        "@type": "Person",
+        "name": "Leo Ramos",
+        "url": "https://teacherleoramos.com.br"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "FFES - Professor Leo Ramos",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://teacherleoramos.com.br/Images/logo novo grande.png"
+        }
+      },
+      "educationalLevel": "Beginner",
+      "assesses": "English Pronouns Mastery"
+    }
+    </script>
+    
+    <style>
+        .game-title {
+            color: var(--cor-texto-claro);
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+        }
+        #placar-geral-container {
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--cor-texto-claro);
+            padding: 15px 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            font-size: 1.1em;
+        }
+        #placar-geral-container p { margin: 0; }
+        #placar-geral-container .nav-arrow {
+            color: inherit;
+            text-decoration: none;
+            font-size: 1.2em;
+            line-height: 1;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+        #placar-geral-container .nav-arrow:hover {
+            color: var(--cor-acento);
+            transform: scale(1.15);
+        }
+        .introducao-container, .exercicio-card {
+            background-color: var(--cor-fundo-secao);
+            width: 100%;
+            max-width: 900px;
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+            box-sizing: border-box;
+        }
+        .introducao-container h3 {
+            color: var(--cor-primaria);
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        .introducao-container h4 {
+            color: var(--cor-primaria-hover);
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .exercicio-card .question-container p { font-size: 1.1em; }
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .option-button {
+            width: 100%;
+            padding: 15px;
+            font-size: 1em;
+            text-align: left;
+            background-color: var(--cor-fundo-geral);
+            border: 2px solid var(--cor-borda-sutil);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .option-button:not(:disabled):hover {
+            background-color: var(--cor-acento-hover);
+            border-color: var(--cor-acento);
+            transform: translateY(-2px);
+        }
+        .option-button:disabled {
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+        .option-button.correto {
+            background-color: var(--cor-sucesso);
+            border-color: #27ae60;
+            color: white;
+            font-weight: bold;
+        }
+        .option-button.incorreto {
+            background-color: var(--cor-erro);
+            border-color: #c0392b;
+            color: white;
+            font-weight: bold;
+        }
+        .explanation-container {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.5s ease-out;
+            background-color: var(--cor-fundo-secao-destaque);
+            border-radius: 8px;
+            padding: 0 20px;
+            margin-top: 0;
+            border-left: 4px solid var(--cor-primaria-hover);
+        }
+        .explanation-container.visible {
+            max-height: 500px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        /* Estilos para a tabela de resumo */
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.9em;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .summary-table th, .summary-table td {
+            border: 1px solid var(--cor-borda-sutil);
+            padding: 10px;
+            text-align: center;
+        }
+        .summary-table th {
+            background-color: var(--cor-primaria);
+            color: #fff;
+            font-weight: bold;
+        }
+        .summary-table tr:nth-child(even) {
+            background-color: var(--cor-fundo-geral);
+        }
+        .summary-table td {
+            background-color: #fff;
+            color: #333;
+        }
+
+        /* Contêiner do botão "Voltar ao Topo" */
+        .rodape-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 800px) {
+            .game-title { font-size: 1.8em; }
+            h2 { font-size: 1.5em; }
+            .summary-table { font-size: 0.8em; }
+            .summary-table th, .summary-table td { padding: 5px; }
+        }
+    </style>
+</head>
+<body id="topo">
+
+<div class="cabecalho-container">
+<header class="bloco-identidade">
+    <div class="logo-and-title">
+        <a href="/index.html">
+            <img src="/Images/logo novo grande.png" alt="Logo FFES" class="logo-img">
+        </a>
+        <a href="/index.html" style="text-decoration: none; color: inherit;">
+            <h1>Leo Ramos | Professor de Inglês</h1>
+        </a>
+    </div>
+</header>
+
+<div class="bloco-navegacao"> 
+    <nav class="nav-primary">
+        <ul>
+            <li><a href="/index.html#home">Home</a></li>
+            <li><a href="/index.html#sobre">Sobre Mim</a></li>
+            <li><a href="/exercicios-e-artigos.html#exercicios">Exercícios</a></li>
+            <li><a href="/exercicios-e-artigos.html#artigos-vocab">Artigos</a></li>
+            <li><a href="/cursos-e-ebook.html#cursos">Cursos e E-book</a></li>
+            <li><a href="/index.html#metodologia">Metodologia</a></li>
+        </ul>
+    </nav>
+</div>
+</div>
+
+<main>
+    <h1 class="game-title">Master dos Pronomes</h1>
+
+    <div id="placar-geral-container">
+        <p>Acertos: <strong id="acertos-geral">0</strong></p>
+        <a href="#contato" class="nav-arrow" title="Ir para o final da página">&#11015;</a>
+        <p>Erros: <strong id="erros-geral">0</strong></p>
+    </div>
+
+    <button id="reset-btn" class="cta-button">Jogar Novamente</button>
+
+    <div class="introducao-container" style="text-align: left;">
+        <h3>A Lógica dos Pronomes em Inglês 🧩</h3>
+        <p>Para dominar o inglês, você precisa entender que os pronomes mudam de acordo com a <strong>função</strong> deles na frase. Não basta traduzir, é preciso saber onde eles se encaixam.</p>
+        
+        <hr style="width: 100%; margin: 20px 0; border: 0; border-top: 1px solid var(--cor-borda-sutil);">
+        
+        <h4>1. Subject Pronouns (O Ator) 🎭</h4>
+        <p>Executam a ação. Vêm <strong>ANTES</strong> do verbo.</p>
+        <ul><li><em><strong>She</strong> loves pizza.</em> (Ela ama pizza).</li></ul>
+
+        <h4>2. Object Pronouns (O Alvo) 🎯</h4>
+        <p>Recebem a ação. Vêm <strong>DEPOIS</strong> do verbo ou preposição.</p>
+        <ul><li><em>Paul loves <strong>her</strong>.</em> (Paul ama ela/a ama).</li></ul>
+
+        <h4>3. Possessives (Os Donos) 🔑</h4>
+        <p><strong>Adjective:</strong> Vem antes da coisa. (<em>This is <strong>my</strong> car.</em>)<br>
+        <strong>Pronoun:</strong> Substitui a coisa. (<em>The car is <strong>mine</strong>.</em>)</p>
+
+        <h4>4. Reflexive (O Espelho) 🪞</h4>
+        <p>A ação volta para quem fez. (<em>I cut <strong>myself</strong>.</em> - Eu me cortei).</p>
+
+        <h4 style="text-align: center; margin-top: 30px;">Tabela Mestra dos Pronomes</h4>
+        <div style="overflow-x:auto;">
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>Subject<br>(Antes Verbo)</th>
+                        <th>Object<br>(Depois Verbo)</th>
+                        <th>Possessive Adj.<br>(Antes Coisa)</th>
+                        <th>Possessive Pron.<br>(Sem Coisa)</th>
+                        <th>Reflexive<br>(Ação Volta)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>I</td><td>me</td><td>my</td><td>mine</td><td>myself</td></tr>
+                    <tr><td>You</td><td>you</td><td>your</td><td>yours</td><td>yourself</td></tr>
+                    <tr><td>He</td><td>him</td><td>his</td><td>his</td><td>himself</td></tr>
+                    <tr><td>She</td><td>her</td><td>her</td><td>hers</td><td>herself</td></tr>
+                    <tr><td>It</td><td>it</td><td>its</td><td>its</td><td>itself</td></tr>
+                    <tr><td>We</td><td>us</td><td>our</td><td>ours</td><td>ourselves</td></tr>
+                    <tr><td>They</td><td>them</td><td>their</td><td>theirs</td><td>themselves</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div id="exercicios-container"></div>
+
+    <div class="rodape-container">
+        <a href="#topo" class="nav-button" title="Ir para o início da página">&#11014;</a>
+    </div>
+</main>
+
+
+<footer id="contato" class="site-footer">
+    <div class="footer-content">
+        <div class="social-media-links">
+            <h4>Siga-me nas redes sociais e acesse o App</h4>
+            <a href="https://www.youtube.com/@teacherleoramos/videos" target="_blank" rel="noopener noreferrer" title="Canal YouTube Teacher Leo Ramos" aria-label="YouTube">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="Ícone YouTube" width="30" height="30" loading="lazy">
+            </a>
+            <a href="https://www.instagram.com/teacherleoramos/" target="_blank" rel="noopener noreferrer" title="Instagram Teacher Leo Ramos" aria-label="Instagram">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Ícone Instagram" width="30" height="30" loading="lazy">
+            </a>
+            <a href="https://www.tiktok.com/@teacherleoramos" target="_blank" rel="noopener noreferrer" title="TikTok Teacher Leo Ramos" aria-label="TikTok">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/tiktok.png" alt="Ícone TikTok" width="30" height="30" loading="lazy">
+            </a>
+            <a href="https://wa.me/5511955582118" target="_blank" rel="noopener noreferrer" title="WhatsApp Agendamento" aria-label="WhatsApp">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp--v1.png" alt="Ícone WhatsApp" width="30" height="30" loading="lazy">
+            </a>
+            <a href="https://ffesapp.netlify.app" target="_blank" rel="noopener noreferrer" title="Acesse o FFES App" aria-label="FFES App">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/controller.png" alt="Ícone FFES App" width="30" height="30" loading="lazy">
+            </a>
+        </div>
+        <p><strong>Contato</strong></p>
+        <p>Youtube: @teacherleoramos | Telefone - WhatsApp: (11) 95558-2118</p>
+        <p>Endereço: Caraguatatuba, SP, Brasil</p>
+        <p>CNPJ: 43.226.983/0001-91</p>
+        <p>&copy; <span id="year">2025</span> | FEATHERED FRIENDS ENGLISH SCHOOL - FFES. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Base de dados com 150 exercícios
+    const dadosPronomes = [
+        // --- SUBJECT PRONOUNS (I, you, he, she, it, we, they) ---
+        { id: 'subj-1', frase: '___ is my best friend.', pergunta: 'Qual a opção correta?', opcoes: ['Him', 'He', 'His', 'Himself'], respostaCorreta: 'He', explicacao: 'Sujeito antes do verbo "is".' },
+        { id: 'subj-2', frase: '___ work in a bank.', pergunta: 'Qual a opção correta?', opcoes: ['Them', 'They', 'Their', 'Theirs'], respostaCorreta: 'They', explicacao: 'Sujeito antes do verbo "work".' },
+        { id: 'subj-3', frase: 'My brother and ___ like soccer.', pergunta: 'Qual a opção correta?', opcoes: ['I', 'me', 'my', 'mine'], respostaCorreta: 'I', explicacao: 'Parte do sujeito composto (We).' },
+        { id: 'subj-4', frase: '___ rains a lot here.', pergunta: 'Qual a opção correta?', opcoes: ['It', 'Its', 'He', 'She'], respostaCorreta: 'It', explicacao: 'Sujeito neutro para clima.' },
+        { id: 'subj-5', frase: '___ are very beautiful.', pergunta: 'Qual a opção correta?', opcoes: ['You', 'Your', 'Yours', 'Yourself'], respostaCorreta: 'You', explicacao: 'Sujeito (pode ser singular ou plural).' },
+        { id: 'subj-6', frase: 'Where is Mary? ___ is late.', pergunta: 'Qual a opção correta?', opcoes: ['Her', 'She', 'Hers', 'Herself'], respostaCorreta: 'She', explicacao: 'Substitui "Mary" (sujeito).' },
+        { id: 'subj-7', frase: '___ am a teacher.', pergunta: 'Qual a opção correta?', opcoes: ['I', 'Me', 'My', 'Mine'], respostaCorreta: 'I', explicacao: 'Sujeito da 1ª pessoa singular.' },
+        { id: 'subj-8', frase: '___ looks happy today.', pergunta: 'Qual a opção correta?', opcoes: ['Him', 'He', 'His', 'Us'], respostaCorreta: 'He', explicacao: 'Sujeito 3ª pessoa singular.' },
+        { id: 'subj-9', frase: 'The dog is fast. ___ runs all day.', pergunta: 'Qual a opção correta?', opcoes: ['It', 'He', 'She', 'They'], respostaCorreta: 'It', explicacao: 'Sujeito para animal.' },
+        { id: 'subj-10', frase: '___ must study hard.', pergunta: 'Qual a opção correta?', opcoes: ['Us', 'We', 'Our', 'Ours'], respostaCorreta: 'We', explicacao: 'Sujeito antes do modal "must".' },
+        { id: 'subj-11', frase: 'John and Sarah are married. ___ live in London.', pergunta: 'Qual a opção correta?', opcoes: ['They', 'Them', 'Their', 'Theirs'], respostaCorreta: 'They', explicacao: 'Sujeito plural.' },
+        { id: 'subj-12', frase: '___ will call you later.', pergunta: 'Qual a opção correta?', opcoes: ['Me', 'I', 'My', 'Mine'], respostaCorreta: 'I', explicacao: 'Sujeito da ação futura.' },
+        { id: 'subj-13', frase: '___ is a good idea.', pergunta: 'Qual a opção correta?', opcoes: ['It', 'Its', 'Her', 'Him'], respostaCorreta: 'It', explicacao: 'Sujeito para ideias abstratas.' },
+        { id: 'subj-14', frase: '___ play tennis every Sunday.', pergunta: 'Qual a opção correta?', opcoes: ['We', 'Us', 'Our', 'Ours'], respostaCorreta: 'We', explicacao: 'Sujeito da ação.' },
+        { id: 'subj-15', frase: '___ loves chocolate.', pergunta: 'Qual a opção correta?', opcoes: ['She', 'Her', 'Hers', 'Herself'], respostaCorreta: 'She', explicacao: 'Sujeito 3ª pessoa.' },
+        { id: 'subj-16', frase: 'Do ___ understand?', pergunta: 'Qual a opção correta?', opcoes: ['you', 'your', 'yours', 'yourself'], respostaCorreta: 'you', explicacao: 'Sujeito em pergunta.' },
+        { id: 'subj-17', frase: '___ is my brother.', pergunta: 'Qual a opção correta?', opcoes: ['He', 'Him', 'His', 'Himself'], respostaCorreta: 'He', explicacao: 'Sujeito masculino.' },
+        { id: 'subj-18', frase: '___ are my students.', pergunta: 'Qual a opção correta?', opcoes: ['They', 'Them', 'Their', 'Theirs'], respostaCorreta: 'They', explicacao: 'Sujeito plural.' },
+        { id: 'subj-19', frase: '___ tastes delicious.', pergunta: 'Qual a opção correta?', opcoes: ['It', 'Its', 'He', 'She'], respostaCorreta: 'It', explicacao: 'Sujeito para comida/coisa.' },
+        { id: 'subj-20', frase: '___ went to the party.', pergunta: 'Qual a opção correta?', opcoes: ['I', 'Me', 'My', 'Mine'], respostaCorreta: 'I', explicacao: 'Sujeito passado.' },
+        { id: 'subj-21', frase: '___ can swim very well.', pergunta: 'Qual a opção correta?', opcoes: ['He', 'Him', 'His', 'Himself'], respostaCorreta: 'He', explicacao: 'Sujeito antes de modal.' },
+        { id: 'subj-22', frase: '___ is 10 o\'clock.', pergunta: 'Qual a opção correta?', opcoes: ['It', 'Its', 'That', 'This'], respostaCorreta: 'It', explicacao: 'Sujeito para tempo/hora.' },
+        { id: 'subj-23', frase: '___ told me the truth.', pergunta: 'Qual a opção correta?', opcoes: ['She', 'Her', 'Hers', 'Herself'], respostaCorreta: 'She', explicacao: 'Sujeito da ação.' },
+        { id: 'subj-24', frase: '___ bought a new car.', pergunta: 'Qual a opção correta?', opcoes: ['We', 'Us', 'Our', 'Ours'], respostaCorreta: 'We', explicacao: 'Sujeito da ação.' },
+        { id: 'subj-25', frase: '___ is very expensive.', pergunta: 'Qual a opção correta?', opcoes: ['It', 'Its', 'He', 'She'], respostaCorreta: 'It', explicacao: 'Sujeito para objeto.' },
+        { id: 'subj-26', frase: '___ need some help.', pergunta: 'Qual a opção correta?', opcoes: ['I', 'Me', 'My', 'Mine'], respostaCorreta: 'I', explicacao: 'Sujeito.' },
+        { id: 'subj-27', frase: '___ are good friends.', pergunta: 'Qual a opção correta?', opcoes: ['They', 'Them', 'Their', 'Theirs'], respostaCorreta: 'They', explicacao: 'Sujeito plural.' },
+        { id: 'subj-28', frase: '___ should go now.', pergunta: 'Qual a opção correta?', opcoes: ['You', 'Your', 'Yours', 'Yourself'], respostaCorreta: 'You', explicacao: 'Sujeito.' },
+        { id: 'subj-29', frase: '___ is reading a book.', pergunta: 'Qual a opção correta?', opcoes: ['He', 'Him', 'His', 'Himself'], respostaCorreta: 'He', explicacao: 'Sujeito da ação.' },
+        { id: 'subj-30', frase: '___ want to travel.', pergunta: 'Qual a opção correta?', opcoes: ['We', 'Us', 'Our', 'Ours'], respostaCorreta: 'We', explicacao: 'Sujeito.' },
+
+        // --- OBJECT PRONOUNS (me, you, him, her, it, us, them) ---
+        { id: 'obj-31', frase: 'She called ___ yesterday.', pergunta: 'Qual a opção correta?', opcoes: ['I', 'me', 'my', 'mine'], respostaCorreta: 'me', explicacao: 'Objeto após verbo.' },
+        { id: 'obj-32', frase: 'I saw ___ at the park.', pergunta: 'Qual a opção correta?', opcoes: ['he', 'him', 'his', 'himself'], respostaCorreta: 'him', explicacao: 'Objeto após verbo.' },
+        { id: 'obj-33', frase: 'Can you help ___?', pergunta: 'Qual a opção correta?', opcoes: ['we', 'us', 'our', 'ours'], respostaCorreta: 'us', explicacao: 'Objeto após verbo.' },
+        { id: 'obj-34', frase: 'I like ___.', pergunta: 'Qual a opção correta?', opcoes: ['she', 'her', 'hers', 'herself'], respostaCorreta: 'her', explicacao: 'Objeto após verbo.' },
+        { id: 'obj-35', frase: 'Give ___ the book.', pergunta: 'Qual a opção correta?', opcoes: ['they', 'them', 'their', 'theirs'], respostaCorreta: 'them', explicacao: 'Objeto indireto.' },
+        { id: 'obj-36', frase: 'Wait for ___!', pergunta: 'Qual a opção correta?', opcoes: ['I', 'me', 'my', 'mine'], respostaCorreta: 'me', explicacao: 'Objeto após preposição.' },
+        { id: 'obj-37', frase: 'I spoke to ___.', pergunta: 'Qual a opção correta?', opcoes: ['he', 'him', 'his', 'himself'], respostaCorreta: 'him', explicacao: 'Objeto após preposição.' },
+        { id: 'obj-38', frase: 'She doesn\'t know ___.', pergunta: 'Qual a opção correta?', opcoes: ['we', 'us', 'our', 'ours'], respostaCorreta: 'us', explicacao: 'Objeto após verbo.' },
+        { id: 'obj-39', frase: 'Do you like ___?', pergunta: 'Qual a opção correta?', opcoes: ['it', 'its', 'he', 'she'], respostaCorreta: 'it', explicacao: 'Objeto neutro.' },
+        { id: 'obj-40', frase: 'I will invite ___.', pergunta: 'Qual a opção correta?', opcoes: ['she', 'her', 'hers', 'herself'], respostaCorreta: 'her', explicacao: 'Objeto.' },
+        { id: 'obj-41', frase: 'They saw ___ running.', pergunta: 'Qual a opção correta?', opcoes: ['he', 'him', 'his', 'himself'], respostaCorreta: 'him', explicacao: 'Objeto.' },
+        { id: 'obj-42', frase: 'This letter is for ___.', pergunta: 'Qual a opção correta?', opcoes: ['you', 'your', 'yours', 'yourself'], respostaCorreta: 'you', explicacao: 'Objeto após preposição.' },
+        { id: 'obj-43', frase: 'Don\'t tell ___.', pergunta: 'Qual a opção correta?', opcoes: ['they', 'them', 'their', 'theirs'], respostaCorreta: 'them', explicacao: 'Objeto.' },
+        { id: 'obj-44', frase: 'Look at ___!', pergunta: 'Qual a opção correta?', opcoes: ['I', 'me', 'my', 'mine'], respostaCorreta: 'me', explicacao: 'Objeto após preposição.' },
+        { id: 'obj-45', frase: 'I understand ___.', pergunta: 'Qual a opção correta?', opcoes: ['he', 'him', 'his', 'himself'], respostaCorreta: 'him', explicacao: 'Objeto.' },
+        { id: 'obj-46', frase: 'She lives near ___.', pergunta: 'Qual a opção correta?', opcoes: ['we', 'us', 'our', 'ours'], respostaCorreta: 'us', explicacao: 'Objeto após preposição.' },
+        { id: 'obj-47', frase: 'I found ___ under the bed.', pergunta: 'Qual a opção correta?', opcoes: ['it', 'its', 'he', 'she'], respostaCorreta: 'it', explicacao: 'Objeto neutro.' },
+        { id: 'obj-48', frase: 'He kissed ___.', pergunta: 'Qual a opção correta?', opcoes: ['she', 'her', 'hers', 'herself'], respostaCorreta: 'her', explicacao: 'Objeto.' },
+        { id: 'obj-49', frase: 'Can you see ___?', pergunta: 'Qual a opção correta?', opcoes: ['they', 'them', 'their', 'theirs'], respostaCorreta: 'them', explicacao: 'Objeto.' },
+        { id: 'obj-50', frase: 'Listen to ___.', pergunta: 'Qual a opção correta?', opcoes: ['I', 'me', 'my', 'mine'], respostaCorreta: 'me', explicacao: 'Objeto.' },
+        { id: 'obj-51', frase: 'I believe ___', pergunta: 'Qual a opção correta?', opcoes: ['he', 'him', 'his', 'himself'], respostaCorreta: 'him', explicacao: 'Objeto.' },
+        { id: 'obj-52', frase: 'They joined ___.', pergunta: 'Qual a opção correta?', opcoes: ['we', 'us', 'our', 'ours'], respostaCorreta: 'us', explicacao: 'Objeto.' },
+        { id: 'obj-53', frase: 'I bought ___ yesterday.', pergunta: 'Qual a opção correta?', opcoes: ['it', 'its', 'he', 'she'], respostaCorreta: 'it', explicacao: 'Objeto neutro.' },
+        { id: 'obj-54', frase: 'She taught ___ English.', pergunta: 'Qual a opção correta?', opcoes: ['they', 'them', 'their', 'theirs'], respostaCorreta: 'them', explicacao: 'Objeto.' },
+        { id: 'obj-55', frase: 'He loves ___.', pergunta: 'Qual a opção correta?', opcoes: ['she', 'her', 'hers', 'herself'], respostaCorreta: 'her', explicacao: 'Objeto.' },
+        { id: 'obj-56', frase: 'Please help ___.', pergunta: 'Qual a opção correta?', opcoes: ['I', 'me', 'my', 'mine'], respostaCorreta: 'me', explicacao: 'Objeto.' },
+        { id: 'obj-57', frase: 'I want to see ___.', pergunta: 'Qual a opção correta?', opcoes: ['you', 'your', 'yours', 'yourself'], respostaCorreta: 'you', explicacao: 'Objeto.' },
+        { id: 'obj-58', frase: 'We invited ___.', pergunta: 'Qual a opção correta?', opcoes: ['he', 'him', 'his', 'himself'], respostaCorreta: 'him', explicacao: 'Objeto.' },
+        { id: 'obj-59', frase: 'She visited ___.', pergunta: 'Qual a opção correta?', opcoes: ['we', 'us', 'our', 'ours'], respostaCorreta: 'us', explicacao: 'Objeto.' },
+        { id: 'obj-60', frase: 'I know ___.', pergunta: 'Qual a opção correta?', opcoes: ['they', 'them', 'their', 'theirs'], respostaCorreta: 'them', explicacao: 'Objeto.' },
+
+        // --- POSSESSIVE ADJECTIVES (my, your, his, her, its, our, their) ---
+        { id: 'posadj-61', frase: 'This is ___ book.', pergunta: 'Qual a opção correta?', opcoes: ['I', 'me', 'my', 'mine'], respostaCorreta: 'my', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-62', frase: 'Where is ___ car?', pergunta: 'Qual a opção correta?', opcoes: ['you', 'your', 'yours', 'yourself'], respostaCorreta: 'your', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-63', frase: 'He lost ___ keys.', pergunta: 'Qual a opção correta?', opcoes: ['he', 'him', 'his', 'himself'], respostaCorreta: 'his', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-64', frase: 'She washed ___ hands.', pergunta: 'Qual a opção correta?', opcoes: ['she', 'her', 'hers', 'herself'], respostaCorreta: 'her', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-65', frase: 'The dog hurt ___ leg.', pergunta: 'Qual a opção correta?', opcoes: ['it', 'its', 'it\'s', 'itself'], respostaCorreta: 'its', explicacao: 'Adjetivo neutro.' },
+        { id: 'posadj-66', frase: 'We love ___ parents.', pergunta: 'Qual a opção correta?', opcoes: ['we', 'us', 'our', 'ours'], respostaCorreta: 'our', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-67', frase: 'They sold ___ house.', pergunta: 'Qual a opção correta?', opcoes: ['they', 'them', 'their', 'theirs'], respostaCorreta: 'their', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-68', frase: 'Is that ___ bag?', pergunta: 'Qual a opção correta?', opcoes: ['my', 'mine', 'me', 'I'], respostaCorreta: 'my', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-69', frase: 'What is ___ name?', pergunta: 'Qual a opção correta?', opcoes: ['you', 'your', 'yours', 'yourself'], respostaCorreta: 'your', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-70', frase: 'He broke ___ arm.', pergunta: 'Qual a opção correta?', opcoes: ['he', 'him', 'his', 'himself'], respostaCorreta: 'his', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-71', frase: 'She loves ___ dog.', pergunta: 'Qual a opção correta?', opcoes: ['she', 'her', 'hers', 'herself'], respostaCorreta: 'her', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-72', frase: 'The cat ate ___ food.', pergunta: 'Qual a opção correta?', opcoes: ['it', 'its', 'he', 'she'], respostaCorreta: 'its', explicacao: 'Adjetivo neutro.' },
+        { id: 'posadj-73', frase: 'This is ___ school.', pergunta: 'Qual a opção correta?', opcoes: ['we', 'us', 'our', 'ours'], respostaCorreta: 'our', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-74', frase: '___ friends are here.', pergunta: 'Qual a opção correta?', opcoes: ['They', 'Them', 'Their', 'Theirs'], respostaCorreta: 'Their', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-75', frase: 'I cleaned ___ room.', pergunta: 'Qual a opção correta?', opcoes: ['I', 'me', 'my', 'mine'], respostaCorreta: 'my', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-76', frase: 'Close ___ eyes.', pergunta: 'Qual a opção correta?', opcoes: ['you', 'your', 'yours', 'yourself'], respostaCorreta: 'your', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-77', frase: '___ father is a doctor.', pergunta: 'Qual a opção correta?', opcoes: ['He', 'Him', 'His', 'Himself'], respostaCorreta: 'His', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-78', frase: '___ mother is nice.', pergunta: 'Qual a opção correta?', opcoes: ['She', 'Her', 'Hers', 'Herself'], respostaCorreta: 'Her', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-79', frase: 'London is famous for ___ parks.', pergunta: 'Qual a opção correta?', opcoes: ['it', 'its', 'it\'s', 'itself'], respostaCorreta: 'its', explicacao: 'Adjetivo neutro.' },
+        { id: 'posadj-80', frase: '___ car is blue.', pergunta: 'Qual a opção correta?', opcoes: ['We', 'Us', 'Our', 'Ours'], respostaCorreta: 'Our', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-81', frase: '___ names are Paul and John.', pergunta: 'Qual a opção correta?', opcoes: ['They', 'Them', 'Their', 'Theirs'], respostaCorreta: 'Their', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-82', frase: 'Don\'t touch ___ things.', pergunta: 'Qual a opção correta?', opcoes: ['my', 'mine', 'me', 'I'], respostaCorreta: 'my', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-83', frase: 'Is this ___ phone?', pergunta: 'Qual a opção correta?', opcoes: ['your', 'yours', 'you', 'yourself'], respostaCorreta: 'your', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-84', frase: 'He likes ___ job.', pergunta: 'Qual a opção correta?', opcoes: ['his', 'him', 'he', 'himself'], respostaCorreta: 'his', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-85', frase: 'She did ___ homework.', pergunta: 'Qual a opção correta?', opcoes: ['her', 'hers', 'she', 'herself'], respostaCorreta: 'her', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-86', frase: 'The tree lost ___ leaves.', pergunta: 'Qual a opção correta?', opcoes: ['its', 'it', 'it\'s', 'itself'], respostaCorreta: 'its', explicacao: 'Adjetivo neutro.' },
+        { id: 'posadj-87', frase: 'We want ___ money.', pergunta: 'Qual a opção correta?', opcoes: ['our', 'ours', 'us', 'we'], respostaCorreta: 'our', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-88', frase: 'They forgot ___ tickets.', pergunta: 'Qual a opção correta?', opcoes: ['their', 'theirs', 'they', 'them'], respostaCorreta: 'their', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-89', frase: 'I like ___ hair.', pergunta: 'Qual a opção correta?', opcoes: ['your', 'yours', 'you', 'yourself'], respostaCorreta: 'your', explicacao: 'Adjetivo antes de substantivo.' },
+        { id: 'posadj-90', frase: 'She called ___ brother.', pergunta: 'Qual a opção correta?', opcoes: ['her', 'hers', 'she', 'herself'], respostaCorreta: 'her', explicacao: 'Adjetivo antes de substantivo.' },
+
+        // --- POSSESSIVE PRONOUNS (mine, yours, his, hers, its, ours, theirs) ---
+        { id: 'pospro-91', frase: 'This book is ___.', pergunta: 'Qual a opção correta?', opcoes: ['my', 'mine', 'me', 'I'], respostaCorreta: 'mine', explicacao: 'Pronome substitui o substantivo.' },
+        { id: 'pospro-92', frase: 'Is this pen ___?', pergunta: 'Qual a opção correta?', opcoes: ['your', 'yours', 'you', 'yourself'], respostaCorreta: 'yours', explicacao: 'Pronome no final.' },
+        { id: 'pospro-93', frase: 'The blue car is ___.', pergunta: 'Qual a opção correta?', opcoes: ['his', 'him', 'he', 'himself'], respostaCorreta: 'his', explicacao: 'Pronome.' },
+        { id: 'pospro-94', frase: 'That bag is ___.', pergunta: 'Qual a opção correta?', opcoes: ['her', 'hers', 'she', 'herself'], respostaCorreta: 'hers', explicacao: 'Pronome.' },
+        { id: 'pospro-95', frase: 'The decision is ___.', pergunta: 'Qual a opção correta?', opcoes: ['our', 'ours', 'us', 'we'], respostaCorreta: 'ours', explicacao: 'Pronome.' },
+        { id: 'pospro-96', frase: 'These keys are ___.', pergunta: 'Qual a opção correta?', opcoes: ['their', 'theirs', 'they', 'them'], respostaCorreta: 'theirs', explicacao: 'Pronome.' },
+        { id: 'pospro-97', frase: 'This is my car. Where is ___?', pergunta: 'Qual a opção correta?', opcoes: ['your', 'yours', 'you', 'yourself'], respostaCorreta: 'yours', explicacao: 'Substitui "your car".' },
+        { id: 'pospro-98', frase: 'My phone is broken. Can I use ___?', pergunta: 'Qual a opção correta?', opcoes: ['your', 'yours', 'you', 'yourself'], respostaCorreta: 'yours', explicacao: 'Substitui "your phone".' },
+        { id: 'pospro-99', frase: 'It\'s not my fault. It\'s ___.', pergunta: 'Qual a opção correta?', opcoes: ['his', 'him', 'he', 'himself'], respostaCorreta: 'his', explicacao: 'Pronome.' },
+        { id: 'pospro-100', frase: 'She showed me her photos. I showed her ___.', pergunta: 'Qual a opção correta?', opcoes: ['my', 'mine', 'me', 'I'], respostaCorreta: 'mine', explicacao: 'Substitui "my photos".' },
+        { id: 'pospro-101', frase: 'This house is ___.', pergunta: 'Qual a opção correta?', opcoes: ['our', 'ours', 'us', 'we'], respostaCorreta: 'ours', explicacao: 'Pronome.' },
+        { id: 'pospro-102', frase: 'I found my shoes. Did they find ___?', pergunta: 'Qual a opção correta?', opcoes: ['their', 'theirs', 'them', 'they'], respostaCorreta: 'theirs', explicacao: 'Pronome.' },
+        { id: 'pospro-103', frase: 'This seat is ___.', pergunta: 'Qual a opção correta?', opcoes: ['my', 'mine', 'me', 'I'], respostaCorreta: 'mine', explicacao: 'Pronome.' },
+        { id: 'pospro-104', frase: 'Is this cup ___?', pergunta: 'Qual a opção correta?', opcoes: ['your', 'yours', 'you', 'yourself'], respostaCorreta: 'yours', explicacao: 'Pronome.' },
+        { id: 'pospro-105', frase: 'He has his problems and she has ___.', pergunta: 'Qual a opção correta?', opcoes: ['her', 'hers', 'she', 'herself'], respostaCorreta: 'hers', explicacao: 'Substitui "her problems".' },
+        { id: 'pospro-106', frase: 'This is not our dog. ___ is black.', pergunta: 'Qual a opção correta?', opcoes: ['Our', 'Ours', 'Us', 'We'], respostaCorreta: 'Ours', explicacao: 'Substitui "Our dog" (como sujeito).' },
+        { id: 'pospro-107', frase: 'Their team won, but ___ lost.', pergunta: 'Qual a opção correta?', opcoes: ['our', 'ours', 'us', 'we'], respostaCorreta: 'ours', explicacao: 'Substitui "our team".' },
+        { id: 'pospro-108', frase: 'Take my hand and I\'ll take ___.', pergunta: 'Qual a opção correta?', opcoes: ['your', 'yours', 'you', 'yourself'], respostaCorreta: 'yours', explicacao: 'Substitui "your hand".' },
+        { id: 'pospro-109', frase: 'Is that hat ___?', pergunta: 'Qual a opção correta?', opcoes: ['his', 'him', 'he', 'himself'], respostaCorreta: 'his', explicacao: 'Pronome.' },
+        { id: 'pospro-110', frase: 'The money is ___.', pergunta: 'Qual a opção correta?', opcoes: ['their', 'theirs', 'them', 'they'], respostaCorreta: 'theirs', explicacao: 'Pronome.' },
+        { id: 'pospro-111', frase: 'That idea was ___.', pergunta: 'Qual a opção correta?', opcoes: ['my', 'mine', 'me', 'I'], respostaCorreta: 'mine', explicacao: 'Pronome.' },
+        { id: 'pospro-112', frase: 'Are these glasses ___?', pergunta: 'Qual a opção correta?', opcoes: ['your', 'yours', 'you', 'yourself'], respostaCorreta: 'yours', explicacao: 'Pronome.' },
+        { id: 'pospro-113', frase: 'I like his style, but not ___.', pergunta: 'Qual a opção correta?', opcoes: ['her', 'hers', 'she', 'herself'], respostaCorreta: 'hers', explicacao: 'Substitui "her style".' },
+        { id: 'pospro-114', frase: 'We know our rights. Do they know ___?', pergunta: 'Qual a opção correta?', opcoes: ['their', 'theirs', 'them', 'they'], respostaCorreta: 'theirs', explicacao: 'Pronome.' },
+        { id: 'pospro-115', frase: 'This room is ___.', pergunta: 'Qual a opção correta?', opcoes: ['my', 'mine', 'me', 'I'], respostaCorreta: 'mine', explicacao: 'Pronome.' },
+        { id: 'pospro-116', frase: 'Is this coat ___?', pergunta: 'Qual a opção correta?', opcoes: ['your', 'yours', 'you', 'yourself'], respostaCorreta: 'yours', explicacao: 'Pronome.' },
+        { id: 'pospro-117', frase: 'The victory is ___.', pergunta: 'Qual a opção correta?', opcoes: ['our', 'ours', 'us', 'we'], respostaCorreta: 'ours', explicacao: 'Pronome.' },
+        { id: 'pospro-118', frase: 'The choice is ___.', pergunta: 'Qual a opção correta?', opcoes: ['their', 'theirs', 'them', 'they'], respostaCorreta: 'theirs', explicacao: 'Pronome.' },
+        { id: 'pospro-119', frase: 'No, it\'s not his. It\'s ___.', pergunta: 'Qual a opção correta?', opcoes: ['my', 'mine', 'me', 'I'], respostaCorreta: 'mine', explicacao: 'Pronome.' },
+        { id: 'pospro-120', frase: 'Are those shoes ___?', pergunta: 'Qual a opção correta?', opcoes: ['her', 'hers', 'she', 'herself'], respostaCorreta: 'hers', explicacao: 'Pronome.' },
+
+        // --- REFLEXIVE PRONOUNS (myself, yourself, himself, herself, itself, ourselves, yourselves, themselves) ---
+        { id: 'refl-121', frase: 'I cut ___ with a knife.', pergunta: 'Qual a opção correta?', opcoes: ['me', 'my', 'mine', 'myself'], respostaCorreta: 'myself', explicacao: 'Ação reflete no sujeito.' },
+        { id: 'refl-122', frase: 'Did you enjoy ___?', pergunta: 'Qual a opção correta?', opcoes: ['you', 'your', 'yours', 'yourself'], respostaCorreta: 'yourself', explicacao: 'Reflexivo singular.' },
+        { id: 'refl-123', frase: 'He looked at ___ in the mirror.', pergunta: 'Qual a opção correta?', opcoes: ['him', 'his', 'himself', 'he'], respostaCorreta: 'himself', explicacao: 'Ação reflete no sujeito.' },
+        { id: 'refl-124', frase: 'She hurt ___ playing tennis.', pergunta: 'Qual a opção correta?', opcoes: ['her', 'hers', 'she', 'herself'], respostaCorreta: 'herself', explicacao: 'Ação reflete no sujeito.' },
+        { id: 'refl-125', frase: 'The cat cleans ___ everyday.', pergunta: 'Qual a opção correta?', opcoes: ['it', 'its', 'itself', 'it\'s'], respostaCorreta: 'itself', explicacao: 'Reflexivo neutro.' },
+        { id: 'refl-126', frase: 'We enjoyed ___ at the party.', pergunta: 'Qual a opção correta?', opcoes: ['us', 'our', 'ours', 'ourselves'], respostaCorreta: 'ourselves', explicacao: 'Reflexivo plural.' },
+        { id: 'refl-127', frase: 'They blamed ___ for the mistake.', pergunta: 'Qual a opção correta?', opcoes: ['them', 'their', 'theirs', 'themselves'], respostaCorreta: 'themselves', explicacao: 'Reflexivo plural.' },
+        { id: 'refl-128', frase: 'I cooked dinner by ___.', pergunta: 'Qual a opção correta?', opcoes: ['me', 'my', 'mine', 'myself'], respostaCorreta: 'myself', explicacao: 'Sozinho (by myself).' },
+        { id: 'refl-129', frase: 'Help ___ to some food (plural).', pergunta: 'Qual a opção correta?', opcoes: ['you', 'your', 'yours', 'yourselves'], respostaCorreta: 'yourselves', explicacao: 'Imperativo plural.' },
+        { id: 'refl-130', frase: 'He built the house by ___.', pergunta: 'Qual a opção correta?', opcoes: ['him', 'his', 'himself', 'he'], respostaCorreta: 'himself', explicacao: 'Sozinho.' },
+        { id: 'refl-131', frase: 'She lives by ___.', pergunta: 'Qual a opção correta?', opcoes: ['her', 'hers', 'she', 'herself'], respostaCorreta: 'herself', explicacao: 'Sozinha.' },
+        { id: 'refl-132', frase: 'The door opened by ___.', pergunta: 'Qual a opção correta?', opcoes: ['it', 'its', 'itself', 'it\'s'], respostaCorreta: 'itself', explicacao: 'Sozinho/Automaticamente.' },
+        { id: 'refl-133', frase: 'We introduced ___ to the neighbors.', pergunta: 'Qual a opção correta?', opcoes: ['us', 'our', 'ours', 'ourselves'], respostaCorreta: 'ourselves', explicacao: 'Ação reflete no sujeito.' },
+        { id: 'refl-134', frase: 'They bought ___ a new car.', pergunta: 'Qual a opção correta?', opcoes: ['them', 'their', 'theirs', 'themselves'], respostaCorreta: 'themselves', explicacao: 'Compraram para si mesmos.' },
+        { id: 'refl-135', frase: 'I teach ___ piano.', pergunta: 'Qual a opção correta?', opcoes: ['me', 'my', 'mine', 'myself'], respostaCorreta: 'myself', explicacao: 'Ensino a mim mesmo (autodidata).' },
+        { id: 'refl-136', frase: 'You (singular) must believe in ___.', pergunta: 'Qual a opção correta?', opcoes: ['you', 'your', 'yours', 'yourself'], respostaCorreta: 'yourself', explicacao: 'Reflexivo singular.' },
+        { id: 'refl-137', frase: 'He talks to ___ sometimes.', pergunta: 'Qual a opção correta?', opcoes: ['him', 'his', 'himself', 'he'], respostaCorreta: 'himself', explicacao: 'Reflexivo.' },
+        { id: 'refl-138', frase: 'She prepared ___ for the interview.', pergunta: 'Qual a opção correta?', opcoes: ['her', 'hers', 'she', 'herself'], respostaCorreta: 'herself', explicacao: 'Reflexivo.' },
+        { id: 'refl-139', frase: 'The machine turns ___ off.', pergunta: 'Qual a opção correta?', opcoes: ['it', 'its', 'itself', 'it\'s'], respostaCorreta: 'itself', explicacao: 'Reflexivo.' },
+        { id: 'refl-140', frase: 'We proud ___ on our work.', pergunta: 'Qual a opção correta?', opcoes: ['us', 'our', 'ours', 'ourselves'], respostaCorreta: 'ourselves', explicacao: 'Verbo reflexivo (pride oneself).' },
+        { id: 'refl-141', frase: 'They can defend ___.', pergunta: 'Qual a opção correta?', opcoes: ['them', 'their', 'theirs', 'themselves'], respostaCorreta: 'themselves', explicacao: 'Reflexivo.' },
+        { id: 'refl-142', frase: 'I made ___ a sandwich.', pergunta: 'Qual a opção correta?', opcoes: ['me', 'my', 'mine', 'myself'], respostaCorreta: 'myself', explicacao: 'Fiz para mim mesmo.' },
+        { id: 'refl-143', frase: 'Behave ___! (singular)', pergunta: 'Qual a opção correta?', opcoes: ['you', 'your', 'yours', 'yourself'], respostaCorreta: 'yourself', explicacao: 'Comporte-se.' },
+        { id: 'refl-144', frase: 'He fixed the car ___.', pergunta: 'Qual a opção correta?', opcoes: ['him', 'his', 'himself', 'he'], respostaCorreta: 'himself', explicacao: 'Enfático.' },
+        { id: 'refl-145', frase: 'She paid for it ___.', pergunta: 'Qual a opção correta?', opcoes: ['her', 'hers', 'she', 'herself'], respostaCorreta: 'herself', explicacao: 'Enfático.' },
+        { id: 'refl-146', frase: 'We saw it ___.', pergunta: 'Qual a opção correta?', opcoes: ['us', 'our', 'ours', 'ourselves'], respostaCorreta: 'ourselves', explicacao: 'Enfático (nós mesmos vimos).' },
+        { id: 'refl-147', frase: 'They did it ___.', pergunta: 'Qual a opção correta?', opcoes: ['them', 'their', 'theirs', 'themselves'], respostaCorreta: 'themselves', explicacao: 'Enfático.' },
+        { id: 'refl-148', frase: 'I wrote this book ___.', pergunta: 'Qual a opção correta?', opcoes: ['me', 'my', 'mine', 'myself'], respostaCorreta: 'myself', explicacao: 'Enfático.' },
+        { id: 'refl-149', frase: 'Did you paint this ___? (singular)', pergunta: 'Qual a opção correta?', opcoes: ['you', 'your', 'yours', 'yourself'], respostaCorreta: 'yourself', explicacao: 'Enfático.' },
+        { id: 'refl-150', frase: 'History repeats ___.', pergunta: 'Qual a opção correta?', opcoes: ['it', 'its', 'itself', 'it\'s'], respostaCorreta: 'itself', explicacao: 'Reflexivo.' }
+    ];
+
+    const container = document.getElementById('exercicios-container');
+    const placarAcertosGeralEl = document.getElementById('acertos-geral');
+    const placarErrosGeralEl = document.getElementById('erros-geral');
+    const resetButton = document.getElementById('reset-btn');
+    
+    let eventListenerRef;
+
+    // Função para baralhar o array
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+    // Cria o HTML de cada cartão
+    function criarExercicioHTML(exercicioData, numeroExercicio) {
+        const opcoesEmbaralhadas = [...exercicioData.opcoes];
+        shuffleArray(opcoesEmbaralhadas);
+        const opcoesHTML = opcoesEmbaralhadas.map(opcao =>
+            `<button class="option-button" data-resposta="${opcao}">${opcao}</button>`
+        ).join('');
+        
+        const fraseFormatada = exercicioData.frase.replace('___', '<strong style="color: var(--cor-primaria-hover); border-bottom: 2px solid currentColor; padding: 0 5px;">___</strong>');
+
+        return `
+            <section class="exercicio-card" id="exercicio-${exercicioData.id}" data-id="${exercicioData.id}">
+                <h2>Exercício ${numeroExercicio}</h2>
+                <div class="question-container">
+                    <p style="font-size: 1.3em; margin-bottom: 15px;">${fraseFormatada}</p>
+                    <p style="color: var(--cor-texto-escuro); opacity: 0.8;">${exercicioData.pergunta}</p>
+                    <div class="options-container">${opcoesHTML}</div>
+                </div>
+                <div class="explanation-container" id="explicacao-${exercicioData.id}"><p>${exercicioData.explicacao}</p></div>
+            </section>
+        `;
+    }
+
+    // Verifica se a resposta está correta e atualiza o placar
+    function verificarResposta(exercicioId, btnClicado) {
+        const exercicioData = dadosPronomes.find(e => e.id === exercicioId);
+        const exercicioCard = document.getElementById(`exercicio-${exercicioData.id}`);
+        const botoes = exercicioCard.querySelectorAll('.option-button');
+        
+        botoes.forEach(btn => btn.disabled = true);
+
+        const explicacaoEl = document.getElementById(`explicacao-${exercicioData.id}`);
+        explicacaoEl.classList.add('visible');
+
+        if (btnClicado.dataset.resposta === exercicioData.respostaCorreta) {
+            btnClicado.classList.add('correto');
+            placarAcertosGeralEl.textContent = parseInt(placarAcertosGeralEl.textContent) + 1;
+        } else {
+            btnClicado.classList.add('incorreto');
+            placarErrosGeralEl.textContent = parseInt(placarErrosGeralEl.textContent) + 1;
+            
+            const respostaCorretaBtn = Array.from(botoes).find(btn => btn.dataset.resposta === exercicioData.respostaCorreta);
+            if (respostaCorretaBtn) {
+                respostaCorretaBtn.classList.add('correto');
+            }
+        }
+    }
+
+    // Reinicia o jogo
+    function iniciarJogo() {
+        placarAcertosGeralEl.textContent = '0';
+        placarErrosGeralEl.textContent = '0';
+        shuffleArray(dadosPronomes);
+        
+        // Renderiza todos os 150 cartões
+        container.innerHTML = dadosPronomes.map((dado, index) => criarExercicioHTML(dado, index + 1)).join('');
+        
+        if (eventListenerRef) {
+            container.removeEventListener('click', eventListenerRef);
+        }
+        
+        // Listener delegado para melhor performance
+        eventListenerRef = (event) => {
+            if (event.target.classList.contains('option-button') && !event.target.disabled) {
+                const btnClicado = event.target;
+                const exercicioCard = btnClicado.closest('.exercicio-card');
+                const exercicioId = exercicioCard.dataset.id;
+                verificarResposta(exercicioId, btnClicado);
+            }
+        };
+        
+        container.addEventListener('click', eventListenerRef);
+        
+        // Rola suavemente para o início do conteúdo
+        const introContainer = document.querySelector('.introducao-container');
+        if(introContainer) introContainer.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    resetButton.addEventListener('click', iniciarJogo);
+    iniciarJogo();
+});
+
+
+
+</script>
+
+</body>
+</html>
