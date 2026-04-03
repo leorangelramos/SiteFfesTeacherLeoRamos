@@ -1,70 +1,66 @@
-# Teacher Leo Ramos - Plataforma de Ensino de Inglês
+FFES Ecosystem | Sovereignty System 🚀
+Este repositório contém a infraestrutura unificada da plataforma Teacher Leo Ramos. O projeto funde um portal institucional de SEO com um Aplicativo Progressivo (PWA) de treinamento de elite.
 
-Este repositório contém o código-fonte do site oficial do **Professor Leo Ramos** (FFES). O projeto é uma plataforma web interativa focada no ensino de língua inglesa, oferecendo exercícios gramaticais, práticas de conversação com IA, artigos e informações sobre cursos.
+🔗 Acesso Principal: teacherleoramos.com.br
 
-🔗 **Website Oficial:** [teacherleoramos.com.br](https://teacherleoramos.com.br/)
+📱 Acesso App: teacherleoramos.com.br/index-app.html
 
-## 📋 Sobre o Projeto
+📋 Arquitetura do Império
+O sistema é dividido em duas camadas operacionais que compartilham o mesmo DNA de performance:
 
-O site foi desenvolvido para ser uma ferramenta centralizadora de conteúdo educacional. Ele vai além de um site institucional, funcionando como um **LMS (Learning Management System) leve**, rodando diretamente no navegador do aluno sem necessidade de login complexo ou banco de dados pesado para as funções básicas.
+1. Camada de Aquisição (Website)
+   Focada em SEO, autoridade e conversão. Utiliza semântica pesada e JSON-LD para dominar os resultados do Google.
 
-### Funcionalidades Principais
+Estrutura: Baseada em HTML5 puro e CSS modular.
 
-- **Navegação por Abas e Acordeões:** Interface organizada que permite alternar entre _Exercícios, Listening, Vocabulário, Speaking, Writing e Reading_ sem recarregar a página.
-- **Gamificação (Sistema de XP):** Os alunos ganham pontos de experiência (XP) ao completar exercícios corretamente. O progresso é salvo localmente no navegador (`localStorage`).
-- **Reconhecimento de Voz (Speaking):** Utiliza a **Web Speech API** para ouvir a pronúncia do aluno e comparar com a frase alvo, fornecendo feedback imediato (Sucesso/Erro).
-- **Busca Inteligente:** Barra de pesquisa com auto-complete que indexa todos os links de exercícios e opções do site, facilitando a navegação.
-- **Exercícios Interativos:**
-  - _Writing:_ Validação de respostas escritas com feedback de erro específico.
-  - _Reading/Ordenação:_ Funcionalidade de "arrastar e soltar" (botões de subir/descer) para reorganizar parágrafos de textos.
-- **Design Responsivo:** Layout adaptável para mobile e desktop, com menu fixo e identidade visual consistente.
+Conteúdo: Artigos técnicos, cursos e landing pages.
 
-## 🛠️ Tecnologias Utilizadas
+2. Camada de Treinamento (FFES PWA)
+   Um ambiente gamificado de alta performance que funciona como um Aplicativo Nativo.
 
-O projeto foi construído com tecnologias web padrão (Vanilla), garantindo alta performance e compatibilidade.
+Offline Total: Via sw.js (Service Worker), o sistema "suga" o conteúdo visitado para o cache, permitindo estudo sem internet.
 
-- **HTML5:** Estrutura semântica e acessibilidade (ARIA attributes).
-- **CSS3:** Variáveis CSS (`:root`), Flexbox, CSS Grid e design responsivo via Media Queries.
-- **JavaScript (ES6+):** Lógica de interação, manipulação do DOM e APIs do navegador.
-- **SEO & Metadados:** Configuração completa de Open Graph (OG Tags), Twitter Cards e JSON-LD para Rich Snippets (Schema.org).
-- **Apache (.htaccess):** Configuração de cache de navegador para otimização de performance (Expires Headers).
+Motor de Simulação: Exercícios com lógica de "Cassino" (Dopamina por acerto, combos de XP, efeitos sonoros de 8-bit).
 
-## 📂 Estrutura de Arquivos
+Gamificação: Sistema de XP persistente via localStorage.
 
-```text
+🛠️ Stack Tecnológica (Hardware)
+Core: Vanilla JavaScript (ES11+), HTML5, CSS3.
+
+PWA Engine: Service Workers (Caching Estratégico), Manifest JSON (Instalação Mobile).
+
+Audio/Visual: Web Audio API (FX de som), CSS Animations (Feedback tátil/visual).
+
+Analytics & SEO: Google Analytics 4, Schema.org (Software & Org), Open Graph 3.0.
+
+📂 Organização de Pastas
+Plaintext
 /
-├── index.html                  # Página principal e estrutura do conteúdo
-├── cursos-e-ebook.html         # Página dedicada a Cursos e E-book (NOVA)
-├── exercicios-e-artigos.html   # Página dedicada a Exercícios e Artigos (NOVA)
-├── sitemap.xml                 # Mapa do site para indexação do Google
-├── .htaccess                   # Configurações de servidor e cache
+├── index.html # Portal de entrada (Website)
+├── index-app.html # Hub Central do Aplicativo (PWA)
+├── sw.js # O Guardião (Service Worker - Offline Mode)
+├── manifest.json # O RG do App (Identidade Mobile)
 ├── CSS/
-│   └── style.css               # Estilos globais e responsividade
-├── JS/
-│   └── script.js               # Toda a lógica interativa (Search, Tabs, Speaking API)
-├── Images/                     # Logotipos, ícones e imagens de perfil
-├── Videos/                     # Vídeos de background (Hero section)
-├── Ex1/                        # Exercícios de Verbos
-├── Ex2-3-4-5-6/                # Exercícios de Gramática (Pronomes, Artigos, etc.)
-├── ExListen/                   # Exercícios de Listening e Speaking
-└── Artigos/                    # Artigos educacionais e vocabulário técnico
+│ ├── style.css # Design do Site
+│ └── style-app.css # Design do App (UI de Jogo)
+├── Images/ # Assets e Logotipos (WebP para performance)
+├── PWA/ # O Motor de Elite
+│ ├── Pasta001/ # Treinamento de Base (Fundamentos)
+│ ├── Pasta002/ # Estruturas Avançadas (Condicionais/Perfects)
+│ └── Pasta003...016/ # Especializações (Writing, Phrasal Verbs, etc.)
+└── Artigos/ # Base de Conhecimento de SEO
+🚀 Protocolo de Instalação (Deploy)
+Sincronização: Garanta que o sw.js e o manifest.json estejam sempre na raiz (/).
 
-🚀 Como Rodar Localmente
-Clone este repositório.
+Unificação de Cache: O Service Worker está configurado para o modo "Vampiro": ele cacheia automaticamente qualquer página do site ou app assim que o usuário clica.
 
-Certifique-se de que a estrutura de pastas (CSS, JS, Images, etc.) esteja mantida.
+Cross-Platform: - Android: Gatilho automático de instalação.
 
-Abra o arquivo index.html em qualquer navegador moderno (Chrome, Edge, Firefox).
+iOS: Modal explicativo de "Adicionar à Tela de Início".
 
-Nota: Para a funcionalidade de Speaking (Reconhecimento de Voz), recomenda-se o uso do Google Chrome, pois a API webkitSpeechRecognition tem melhor suporte neste navegador.
-
-📢 Contato e Redes Sociais
-Youtube: @teacherleoramos
-
-Instagram: @teacherleoramos
+📢 Contato e Inteligência
+YouTube/Instagram: @teacherleoramos
 
 WhatsApp: +55 (11) 95558-2118
 
-Desenvolvido por Leo Ramos - Todos os direitos reservados.
-
-```
+Desenvolvido por Leo Ramos | FFES - 2026

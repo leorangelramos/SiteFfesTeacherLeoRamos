@@ -1,22 +1,20 @@
 {
   "name": "Teacher Leo Ramos",
   "short_name": "Teacher Leo Ramos",
-  "description": "Plataforma de inglês.",
   "start_url": "/index-app.html",
   "display": "standalone",
   "background_color": "#0A2342",
   "theme_color": "#0A2342",
-  "orientation": "portrait",
   "icons": [
     {
-      "src": "/Images/Teacher-Leo-Ramos.webp",
+      "src": "Images/Teacher-Leo-Ramos.png",
       "sizes": "192x192",
-      "type": "image/webp"
+      "type": "image/png"
     },
     {
-      "src": "/Images/Teacher-Leo-Ramos.webp",
+      "src": "Images/Teacher-Leo-Ramos.png",
       "sizes": "512x512",
-      "type": "image/webp"
+      "type": "image/png"
     }
   ]
 }
