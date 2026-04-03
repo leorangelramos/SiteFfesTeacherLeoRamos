@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFES | Meu Progresso</title>
+    <link rel="stylesheet" href="/CSS/style-app.css">
+    <style>
+        .profile-card {
+            max-width: 500px;
+            margin: 20px auto;
+            background: var(--glass-bg);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid var(--glass-border);
+        }
+        .level-circle {
+            width: 100px;
+            height: 100px;
+            border: 5px solid var(--accent-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--accent-gold);
+            background: rgba(255,184,28,0.05);
+        }
+        .xp-bar-large {
+            width: 100%;
+            height: 12px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 6px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        .xp-progress { width: 45%; height: 100%; background: var(--accent-gold); }
+        .achievement-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 30px;
+        }
+        .badge { font-size: 1.5rem; opacity: 0.3; filter: grayscale(1); }
+        .badge.unlocked { opacity: 1; filter: grayscale(0); }
+    </style>
+</head>
+<body>
+    <div class="background-glow glow-1"></div>
+    <header class="glass-header app-header">
+        <div class="header-container">
+            <div class="header-titles">
+                <h1>MEU <span style="color: var(--accent-gold);">XP</span></h1>
+                <p class="subtitle">Estatísticas de Combate</p>
+            </div>
+            <a href="indexpasta015.html" class="btn-voltar">← Voltar</a>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="profile-card">
+            <div class="level-circle">08</div>
+            <h3>Nível Avançado</h3>
+            <div class="xp-bar-large"><div class="xp-progress"></div></div>
+            <p style="font-size: 0.8rem;">2.150 / 5.000 XP para o Nível 09</p>
+
+            <div class="achievement-grid">
+                <div class="badge unlocked" title="7 Dias de Fogo">🔥</div>
+                <div class="badge unlocked" title="Mestre do Would">🎓</div>
+                <div class="badge" title="Fluência Total">🌍</div>
+                <div class="badge unlocked" title="Primeiro Quiz">✅</div>
+                <div class="badge" title="Top 3 Ranking">🏆</div>
+                <div class="badge" title="Escritor A1">✍️</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

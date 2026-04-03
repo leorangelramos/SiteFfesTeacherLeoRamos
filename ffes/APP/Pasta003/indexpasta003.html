@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FFES | Writing Lab</title>
+    <meta name="theme-color" content="#0A2342">
+    
+    <link rel="stylesheet" href="/CSS/style-app.css">
+</head>
+<body>
+
+    <div class="background-glow glow-1"></div>
+
+    <header class="glass-header app-header">
+        <div class="header-container">
+            <div class="header-titles">
+                <h1>WRITING <span style="color: var(--accent-gold);">LAB</span></h1>
+                <p class="subtitle">Módulo 03 - FFES Exclusive</p>
+            </div>
+            
+            <a href="/index-app.html" class="btn-voltar">← Voltar ao Painel</a>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <div style="display: flex; flex-direction: column; gap: 10px; max-width: 600px; width: 100%; margin: 0 auto;">
+            
+            <a href="writing001.html" class="card-glass" style="min-height: 60px; padding: 15px;">
+                <span style="font-size: 0.85rem;">Reescrever Frases (A1)</span>
+            </a>
+
+            <hr style="border: 0; border-top: 1px solid rgba(255,184,28,0.2); margin: 20px 0;">
+
+            <a href="/index-app.html" class="card-glass destaque-gold-card" style="min-height: 60px; padding: 15px;">
+                <span style="font-size: 0.85rem; font-weight: 800;">← Voltar ao Painel Principal</span>
+            </a>
+        </div>
+    </main>
+
+    <footer id="contato" class="site-footer app-footer">
+        <div class="footer-content">
+            <div class="social-media-links">
+                <a href="https://www.youtube.com/@teacherleoramos" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube" width="22" height="22">
+                </a>
+                <a href="https://www.instagram.com/teacherleoramos/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" width="22" height="22">
+                </a>
+                <a href="https://wa.me/5511955582118" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp--v1.png" alt="WhatsApp" width="22" height="22">
+                </a>
+                <a href="/index-app.html" rel="noopener noreferrer" aria-label="FFES App">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/controller.png" alt="App" width="22" height="22">
+                </a>
+            </div>
+            
+            <div class="footer-info">
+                <p><strong>Contato:</strong> (11) 95558-2118 | @teacherleoramos</p>
+                <p>São Paulo, SP, Brasil | CNPJ: 43.226.983/0001-91</p>
+                <p class="copyright">&copy; <span id="year">2026</span> | FFES. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

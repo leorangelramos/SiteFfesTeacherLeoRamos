@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FFES | Quiz de Phrasal Verbs</title>
+    
+    <link rel="stylesheet" href="/CSS/style-app.css">
+    
+    <style>
+        .game-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            text-align: center;
+        }
+
+        .question-box {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.5;
+        }
+
+        .drop-zone {
+            display: inline-block;
+            min-width: 100px;
+            height: 35px;
+            border-bottom: 3px solid var(--accent-gold);
+            margin: 0 10px;
+            vertical-align: middle;
+            transition: all 0.3s;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .option-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 700;
+            color: var(--text-white);
+        }
+
+        .option-card:hover {
+            background: var(--accent-gold);
+            color: var(--primary-dark);
+            transform: scale(1.05);
+        }
+
+        .feedback {
+            margin-top: 20px;
+            font-weight: 800;
+            height: 24px;
+            text-transform: uppercase;
+        }
+
+        .score-panel {
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            color: var(--accent-gold);
+        }
+
+        .correct { background: #28a745 !important; color: white !important; }
+        .wrong { background: #dc3545 !important; color: white !important; }
+    </style>
+</head>
+<body>
+
+    <div class="background-glow glow-1"></div>
+
+    <header class="glass-header app-header">
+        <div class="header-container">
+            <div class="header-titles">
+                <h1>PHRASAL <span style="color: var(--accent-gold);">QUIZ</span></h1>
+                <p class="subtitle">Desafio de Fluência Real</p>
+            </div>
+            <a href="indexpasta16.html" class="btn-voltar">← Voltar</a>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="game-container">
+            <div class="score-panel">Questão: <span id="current">1</span>/5 | Acertos: <span id="score">0</span></div>
+            
+            <div class="question-box" id="question">
+                </div>
+
+            <div class="options-grid" id="options">
+                </div>
+
+            <div class="feedback" id="feedback"></div>
+        </div>
+    </main>
+
+    <footer class="site-footer app-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>FFES Sovereignty System &copy; <span id="year">2026</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const questions = [
+            { q: "Please, ________ the lights before you leave.", options: ["turn off", "look for", "get up", "take off"], correct: "turn off" },
+            { q: "I need to ________ my keys, I can't find them.", options: ["look for", "give up", "run out", "fill in"], correct: "look for" },
+            { q: "Never ________ on your dreams!", options: ["give up", "break down", "hang out", "bring up"], correct: "give up" },
+            { q: "We ________ of milk, go to the store please.", options: ["ran out", "put on", "call off", "check in"], correct: "ran out" },
+            { q: "The plane will ________ in ten minutes.", options: ["take off", "go on", "set up", "look after"], correct: "take off" }
+        ];
+
+        let currentIdx = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            const q = questions[currentIdx];
+            const qBox = document.getElementById('question');
+            const oBox = document.getElementById('options');
+            const fBack = document.getElementById('feedback');
+
+            qBox.innerHTML = q.q.replace("________", `<span class="drop-zone"></span>`);
+            oBox.innerHTML = "";
+            fBack.innerHTML = "";
+            document.getElementById('current').textContent = currentIdx + 1;
+
+            q.options.sort(() => Math.random() - 0.5).forEach(opt => {
+                const btn = document.createElement('div');
+                btn.className = 'option-card';
+                btn.textContent = opt;
+                btn.onclick = () => checkAnswer(opt, btn);
+                oBox.appendChild(btn);
+            });
+        }
+
+        function checkAnswer(answer, btn) {
+            const correct = questions[currentIdx].correct;
+            const feedback = document.getElementById('feedback');
+
+            if (answer === correct) {
+                btn.classList.add('correct');
+                feedback.style.color = "#28a745";
+                feedback.textContent = "Excelente! +10 XP";
+                score++;
+                document.getElementById('score').textContent = score;
+            } else {
+                btn.classList.add('wrong');
+                feedback.style.color = "#dc3545";
+                feedback.textContent = `Errado! O correto era: ${correct}`;
+            }
+
+            // Desabilita cliques após responder
+            const cards = document.querySelectorAll('.option-card');
+            cards.forEach(c => c.style.pointerEvents = "none");
+
+            setTimeout(() => {
+                currentIdx++;
+                if (currentIdx < questions.length) {
+                    loadQuestion();
+                } else {
+                    finishGame();
+                }
+            }, 2000);
+        }
+
+        function finishGame() {
+            const container = document.querySelector('.game-container');
+            container.innerHTML = `
+                <h2 style="color: var(--accent-gold);">Treinamento Concluído!</h2>
+                <p style="margin: 20px 0;">Você acertou ${score} de ${questions.length} desafios.</p>
+                <a href="indexpasta16.html" class="btn-voltar" style="display:inline-block; margin-top:10px;">Voltar ao Módulo</a>
+            `;
+        }
+
+        loadQuestion();
+    </script>
+</body>
+</html>

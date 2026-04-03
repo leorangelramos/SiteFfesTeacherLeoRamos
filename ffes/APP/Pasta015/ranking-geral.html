@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FFES | Leaderboard</title>
+    <link rel="stylesheet" href="/CSS/style-app.css">
+    <style>
+        .ranking-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        .rank-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+        .rank-number {
+            font-weight: 900;
+            font-size: 1.2rem;
+            width: 40px;
+            color: var(--accent-gold);
+        }
+        .rank-name { flex: 1; font-weight: 600; }
+        .rank-xp { font-weight: 800; color: #28a745; }
+        .top-1 { border: 2px solid var(--accent-gold); background: rgba(255,184,28,0.1); transform: scale(1.05); }
+    </style>
+</head>
+<body>
+    <div class="background-glow glow-1"></div>
+    <header class="glass-header app-header">
+        <div class="header-container">
+            <div class="header-titles">
+                <h1>RANKING <span style="color: var(--accent-gold);">GERAL</span></h1>
+                <p class="subtitle">Os Melhores do Mês</p>
+            </div>
+            <a href="indexpasta015.html" class="btn-voltar">← Voltar</a>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="ranking-list">
+            <div class="rank-item top-1">
+                <span class="rank-number">1º</span>
+                <span class="rank-name">👑 Gabriel Silva</span>
+                <span class="rank-xp">15.450 XP</span>
+            </div>
+            <div class="rank-item">
+                <span class="rank-number">2º</span>
+                <span class="rank-name">Lucas Oliveira</span>
+                <span class="rank-xp">12.200 XP</span>
+            </div>
+            <div class="rank-item">
+                <span class="rank-number">3º</span>
+                <span class="rank-name">Mariana Costa</span>
+                <span class="rank-xp">10.800 XP</span>
+            </div>
+            <div class="rank-item" style="opacity: 0.7;">
+                <span class="rank-number">14º</span>
+                <span class="rank-name">Você (Pablo)</span>
+                <span class="rank-xp">2.150 XP</span>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

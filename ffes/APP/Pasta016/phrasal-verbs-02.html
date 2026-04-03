@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FFES | Context Challenge</title>
+    <meta name="theme-color" content="#0A2342">
+    
+    <link rel="stylesheet" href="/CSS/style-app.css">
+    
+    <style>
+        .challenge-container {
+            max-width: 500px;
+            margin: 20px auto;
+            background: var(--glass-bg);
+            backdrop-filter: blur(15px);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .sentence-display {
+            font-size: 1.2rem;
+            color: var(--text-white);
+            margin-bottom: 30px;
+            line-height: 1.6;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sentence-display em {
+            color: var(--accent-gold);
+            font-style: normal;
+            font-weight: 800;
+            border-bottom: 2px solid var(--accent-gold);
+            padding: 0 5px;
+        }
+
+        .options-column {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .btn-option {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 12px;
+            color: var(--text-white);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-option:hover {
+            background: rgba(255, 184, 28, 0.1);
+            border-color: var(--accent-gold);
+            transform: translateY(-2px);
+        }
+
+        .btn-option.correct {
+            background: #28a745 !important;
+            border-color: #28a745 !important;
+            color: white !important;
+        }
+
+        .btn-option.wrong {
+            background: #dc3545 !important;
+            border-color: #dc3545 !important;
+            color: white !important;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: rgba(255,255,255,0.1);
+            margin-bottom: 20px;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        #progress-fill {
+            width: 0%;
+            height: 100%;
+            background: var(--accent-gold);
+            transition: width 0.4s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-glow glow-1"></div>
+
+    <header class="glass-header app-header">
+        <div class="header-container">
+            <div class="header-titles">
+                <h1>CONTEXT <span style="color: var(--accent-gold);">CHALLENGE</span></h1>
+                <p class="subtitle">Phrasal Verbs - Nível 02</p>
+            </div>
+            <a href="indexpasta16.html" class="btn-voltar">← Voltar</a>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="challenge-container">
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+            
+            <div class="sentence-display" id="sentence">
+                </div>
+
+            <div class="options-column" id="options-container">
+                </div>
+        </div>
+    </main>
+
+    <footer class="site-footer app-footer">
+        <div class="footer-content">
+            <p>FFES Sovereignty System &copy; 2026</p>
+        </div>
+    </footer>
+
+    <script>
+        const challenges = [
+            { s: "Don't forget to _____ your shoes when you enter.", opts: ["take off", "take in", "take up"], c: "take off" },
+            { s: "The car _____ down in the middle of the street.", opts: ["broke up", "broke down", "broke out"], c: "broke down" },
+            { s: "I can't _____ up with this noise anymore!", opts: ["put", "get", "set"], c: "put" },
+            { s: "We need to _____ out the truth about this.", opts: ["find", "look", "bring"], c: "find" },
+            { s: "Could you _____ after my dog while I'm away?", opts: ["look", "see", "take"], c: "look" }
+        ];
+
+        let currentStep = 0;
+
+        function loadChallenge() {
+            const data = challenges[currentStep];
+            const sentenceEl = document.getElementById('sentence');
+            const optionsEl = document.getElementById('options-container');
+            const progress = document.getElementById('progress-fill');
+
+            // Atualiza progresso
+            progress.style.width = `${(currentStep / challenges.length) * 100}%`;
+
+            // Prepara a frase com o "blank" estilizado
+            sentenceEl.innerHTML = data.s.replace("_____", "<em>_____</em>");
+            
+            // Limpa e cria opções
+            optionsEl.innerHTML = '';
+            data.opts.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = 'btn-option';
+                btn.textContent = opt;
+                btn.onclick = () => checkChoice(opt, btn);
+                optionsEl.appendChild(btn);
+            });
+        }
+
+        function checkChoice(choice, btn) {
+            const data = challenges[currentStep];
+            const allBtns = document.querySelectorAll('.btn-option');
+            
+            allBtns.forEach(b => b.style.pointerEvents = 'none');
+
+            if (choice === data.c) {
+                btn.classList.add('correct');
+                document.querySelector('em').textContent = choice;
+                setTimeout(nextStep, 1200);
+            } else {
+                btn.classList.add('wrong');
+                setTimeout(() => {
+                    btn.classList.remove('wrong');
+                    allBtns.forEach(b => b.style.pointerEvents = 'auto');
+                }, 800);
+            }
+        }
+
+        function nextStep() {
+            currentStep++;
+            if (currentStep < challenges.length) {
+                loadChallenge();
+            } else {
+                showResult();
+            }
+        }
+
+        function showResult() {
+            const container = document.querySelector('.challenge-container');
+            document.getElementById('progress-fill').style.width = '100%';
+            container.innerHTML = `
+                <h2 style="color: var(--accent-gold); margin-bottom: 15px;">Módulo Concluído!</h2>
+                <p style="color: white; margin-bottom: 25px;">Sua percepção contextual está evoluindo.</p>
+                <a href="indexpasta16.html" class="card-glass destaque-gold-card" style="text-decoration:none; display:block; padding:15px; font-weight:800;">
+                    PRÓXIMO DESAFIO →
+                </a>
+            `;
+        }
+
+        // Início
+        loadChallenge();
+    </script>
+</body>
+</html>

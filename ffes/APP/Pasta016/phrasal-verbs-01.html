@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FFES | Phrasal Verbs - Parte 01</title>
+    <link rel="stylesheet" href="/CSS/style-app.css">
+    <style>
+        .flashcard-container {
+            perspective: 1000px;
+            width: 300px;
+            height: 200px;
+            margin: 50px auto;
+            cursor: pointer;
+        }
+        .flashcard {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            text-align: center;
+        }
+        .flashcard.flipped { transform: rotateY(180deg); }
+        .front, .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            border: 2px solid var(--accent-gold);
+            background: var(--glass-bg);
+            padding: 20px;
+        }
+        .back { transform: rotateY(180deg); background: rgba(255,184,28,0.1); }
+        .btn-nav {
+            background: var(--accent-gold);
+            color: var(--primary-dark);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 800;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-glow glow-1"></div>
+    <header class="glass-header app-header">
+        <div class="header-container">
+            <div class="header-titles">
+                <h1>PHRASAL <span style="color: var(--accent-gold);">FLASHCARDS</span></h1>
+                <p class="subtitle">Memorização Ativa - Parte 01</p>
+            </div>
+            <a href="indexpasta16.html" class="btn-voltar">← Voltar</a>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="flashcard-container" onclick="this.querySelector('.flashcard').classList.toggle('flipped')">
+            <div class="flashcard" id="card">
+                <div class="front"><h2 id="verb">Go on</h2><p style="font-size: 0.7rem; margin-top: 10px;">Clique para virar</p></div>
+                <div class="back"><h3 id="meaning">Continuar</h3><p id="example" style="font-style: italic; font-size: 0.8rem; margin-top: 10px;">"The show must go on!"</p></div>
+            </div>
+        </div>
+        <div style="text-align:center">
+            <button class="btn-nav" onclick="prevCard()">Anterior</button>
+            <button class="btn-nav" onclick="nextCard()">Próximo</button>
+        </div>
+    </main>
+
+    <script>
+        const cards = [
+            {v: "Go on", m: "Continuar", e: "The show must go on!"},
+            {v: "Find out", m: "Descobrir", e: "I need to find out the truth."},
+            {v: "Break up", m: "Terminar um relacionamento", e: "They decided to break up."},
+            {v: "Look after", m: "Cuidar de algo/alguém", e: "Can you look after my cat?"}
+        ];
+        let current = 0;
+        function updateCard() {
+            document.getElementById('card').classList.remove('flipped');
+            setTimeout(() => {
+                document.getElementById('verb').textContent = cards[current].v;
+                document.getElementById('meaning').textContent = cards[current].m;
+                document.getElementById('example').textContent = `"${cards[current].e}"`;
+            }, 150);
+        }
+        function nextCard() { current = (current + 1) % cards.length; updateCard(); }
+        function prevCard() { current = (current - 1 + cards.length) % cards.length; updateCard(); }
+    </script>
+</body>
+</html>
