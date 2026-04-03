@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>FFES | Inglês de Alta Performance - APP</title>
+    <meta name="title" content="FFES | Inglês de Alta Performance">
+    <meta name="description" content="Domine a estrutura do inglês em tempo recorde com o método FFES. Treinamento de elite focado em lógica, gramática estrutural e fluência acelerada. Pare de perder tempo.">
+    <meta name="keywords" content="inglês, curso de inglês, teacher leo ramos, ffes, gramática, fluência, inglês rápido, estrutura do inglês, soberania system, pwa english">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Portuguese">
+    <meta name="revisit-after" content="7 days">
+    <meta name="author" content="Teacher Leo Ramos">
+
+    <link rel="icon" href="Images/logo novo grande.webp" type="image/png">
+    <link rel="apple-touch-icon" href="Images/logo novo grande.webp">
+
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0A2342">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="FFES App">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://teacherleoramos.com.br/index-app.html">
+    <meta property="og:title" content="FFES | Sovereignty System">
+    <meta property="og:description" content="O sistema definitivo para destravar seu inglês. Metodologia de alta performance, sem enrolação. Clique para acessar.">
+    <meta property="og:image" content="https://teacherleoramos.com.br/Images/logo%20novo%20grande.webp">
+    
+    <link rel="canonical" href="https://teacherleoramos.com.br/index-app.html">
+
+    <link rel="stylesheet" href="/CSS/style-app.css"> 
+
+
+    <style>
+        /* === ESTILOS ESPECÍFICOS DA INDEX E INSTALAÇÃO === */
+
+        /* Botão de Instalação IOS / MANUAL (Dourado) */
+        #install-btn-permanent {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #FFD700, #B8860B);
+            color: #000;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 50px;
+            font-weight: 900;
+            font-size: 0.9rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4), 0 0 15px rgba(255, 215, 0, 0.4);
+            z-index: 9999;
+            cursor: pointer;
+            display: flex; 
+            align-items: center;
+            gap: 10px;
+            text-transform: uppercase;
+            transition: transform 0.2s;
+            border: 2px solid #fff;
+            animation: pulse-gold 2s infinite;
+        }
+
+        #install-btn-permanent:active { transform: scale(0.95); }
+
+        /* === NOVO BOTÃO ANDROID AUTOMÁTICO (Verde) === */
+        #install-btn-android {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 50px;
+            font-weight: 900;
+            font-size: 0.85rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4), 0 0 10px rgba(37, 211, 102, 0.4);
+            z-index: 9999;
+            cursor: pointer;
+            display: none; 
+            align-items: center;
+            gap: 10px;
+            text-transform: uppercase;
+            transition: transform 0.2s;
+            border: 2px solid #fff;
+        }
+
+        #install-btn-android:active { transform: scale(0.95); }
+
+        @keyframes pulse-gold {
+            0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+        }
+
+        /* Modal de Instruções iOS */
+        #ios-modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 10000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background: rgba(26, 26, 26, 0.9);
+            border: 2px solid #B8860B;
+            border-radius: 24px;
+            padding: 30px;
+            max-width: 400px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 0 30px rgba(184, 134, 11, 0.3);
+        }
+
+        .step { 
+            margin: 20px 0; 
+            display: flex; 
+            align-items: center; 
+            gap: 15px; 
+            text-align: left;
+            background: rgba(255,255,255,0.05);
+            padding: 10px;
+            border-radius: 12px;
+        }
+        
+        .step-icon { 
+            background: #B8860B; 
+            color: #000; 
+            width: 30px; height: 30px; 
+            border-radius: 50%; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            flex-shrink: 0; 
+            font-weight: bold; 
+        }
+        
+        .close-modal {
+            margin-top: 20px;
+            background: transparent;
+            border: 1px solid #B8860B;
+            color: #B8860B;
+            padding: 12px 30px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+        
+        .close-modal:hover { background: #B8860B; color: #000; }
+    </style>
+</head>
+<body>
+
+    <div class="background-glow glow-1"></div>
+
+    <header class="glass-header app-header">
+        <div class="header-container">
+            <div class="header-titles">
+                <h1>FFES <span style="color: var(--accent-gold);">APP</span></h1>
+                <p class="subtitle">LeoLingo by Teacher Leo Ramos</p>
+            </div>
+            
+            <a href="/index.html" class="btn-voltar">← Voltar ao Site Principal</a>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="grid-comandos">
+            
+            <a href="Pasta001/indexpasta001.html" class="card-glass">
+                <div class="icon-glow">🏛️</div>
+                <span>Estrutura Básica</span>
+            </a>
+
+            <a href="Pasta002/indexpasta002.html" class="card-glass">
+                <div class="icon-glow">🚀</div>
+                <span>Estrutura Avançada</span>
+            </a>
+
+            <a href="Pasta003/indexpasta003.html" class="card-glass">
+                <div class="icon-glow">✍️</div>
+                <span>Writing Lab</span>
+            </a>
+
+            <a href="Pasta004/indexpasta004.html" class="card-glass">
+                <div class="icon-glow">📖</div>
+                <span>Reading Zone</span>
+            </a>
+
+            <a href="Pasta005/indexpasta005.html" class="card-glass">
+                <div class="icon-glow">🎙️</div>
+                <span>Speaking Studio</span>
+            </a>
+
+            <a href="Pasta006/indexpasta006.html" class="card-glass">
+                <div class="icon-glow">🎧</div>
+                <span>Listening Station</span>
+            </a>
+
+            <a href="Pasta007/indexpasta007.html" class="card-glass">
+                <div class="icon-glow">⚡</div>
+                <span>Quiz Rápido</span>
+            </a>
+
+            <a href="Pasta008/indexpasta008.html" class="card-glass">
+                <div class="icon-glow">✅</div>
+                <span>Múltipla Escolha</span>
+            </a>
+
+            <a href="Pasta009/indexpasta009.html" class="card-glass">
+                <div class="icon-glow">🧩</div>
+                <span>Preencher Lacunas</span>
+            </a>
+
+            <a href="Pasta010/indexpasta010.html" class="card-glass">
+                <div class="icon-glow">❌</div>
+                <span>Caça-Erros</span>
+            </a>
+
+            <a href="Pasta011/indexpasta011.html" class="card-glass">
+                <div class="icon-glow">🧠</div>
+                <span>Memory Game</span>
+            </a>
+
+            <a href="Pasta012/indexpasta012.html" class="card-glass">
+                <div class="icon-glow">🏃</div>
+                <span>Aprenda Verbos</span>
+            </a>
+
+            <a href="Pasta013/indexpasta013.html" class="card-glass">
+                <div class="icon-glow">👉</div>
+                <span>Aprenda Pronomes</span>
+            </a>
+
+            <a href="Pasta014/indexpasta014.html" class="card-glass">
+                <div class="icon-glow">🎓</div>
+                <span>Aulas Temáticas</span>
+            </a>
+
+            <a href="Pasta015/indexpasta015.html" class="card-glass destaque-gold-card">
+                <div class="icon-glow gold-pulse">🏆</div>
+                <span>Ranking & XP</span>
+            </a>
+
+            <a href="Pasta016/indexpasta16.html" class="card-glass destaque-gold-card">
+                <div class="icon-glow gold-pulse">👉</div>
+                <span>Phrasal Verbs</span>
+            </a>
+
+        </div>
+    </main>
+
+    <footer id="contato" class="site-footer app-footer">
+        <div class="footer-content">
+            <div class="social-media-links">
+                <a href="https://www.youtube.com/@teacherleoramos/videos" target="_blank" rel="noopener noreferrer" title="Canal YouTube Teacher Leo Ramos" aria-label="YouTube">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="Ícone YouTube" width="24" height="24" loading="lazy">
+                </a>
+                <a href="https://www.instagram.com/teacherleoramos/" target="_blank" rel="noopener noreferrer" title="Instagram Teacher Leo Ramos" aria-label="Instagram">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Ícone Instagram" width="24" height="24" loading="lazy">
+                </a>
+                <a href="https://www.tiktok.com/@teacherleoramos" target="_blank" rel="noopener noreferrer" title="TikTok Teacher Leo Ramos" aria-label="TikTok">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/tiktok.png" alt="Ícone TikTok" width="24" height="24" loading="lazy">
+                </a>
+                <a href="https://wa.me/5511955582118" target="_blank" rel="noopener noreferrer" title="WhatsApp Agendamento" aria-label="WhatsApp">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp--v1.png" alt="Ícone WhatsApp" width="24" height="24" loading="lazy">
+                </a>
+                <a href="/index-app.html" rel="noopener noreferrer" title="Acesse o FFES App" aria-label="FFES App">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/controller.png" alt="Ícone FFES App" width="24" height="24" loading="lazy">
+                </a>
+            </div>
+            
+            <div class="footer-info">
+                <p><strong>Contato:</strong> (11) 95558-2118 | @teacherleoramos</p>
+                <p>São Paulo, SP, Brasil | CNPJ: 43.226.983/0001-91</p>
+                <p class="copyright">&copy; <span id="year">2026</span> | FFES. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="ios-modal">
+        <div class="modal-content">
+            <h2 style="color: #FFD700; margin-bottom: 10px;">Instalar no iPhone</h2>
+            <p style="font-size: 0.9rem; opacity: 0.9;">O iOS exige instalação manual. Siga os passos:</p>
+            
+            <div class="step">
+                <div class="step-icon">1</div>
+                <div>Toque no botão <strong>Compartilhar</strong> no Safari (quadrado com seta pra cima).</div>
+            </div>
+            
+            <div class="step">
+                <div class="step-icon">2</div>
+                <div>Role para baixo e toque em <strong>"Adicionar à Tela de Início"</strong>.</div>
+            </div>
+
+            <div class="step">
+                <div class="step-icon">3</div>
+                <div>Toque em <strong>"Adicionar"</strong> no topo direito.</div>
+            </div>
+
+            <button class="close-modal" onclick="closeIosModal()">ENTENDI</button>
+        </div>
+    </div>
+
+    <button id="install-btn-android">
+        <span>ANDROID</span>
+    </button>
+
+    <button id="install-btn-permanent">
+        <span>IOS / HELP</span>
+    </button>
+
+    <script>
+        // Ano dinâmico para o footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // === 1. REGISTRO DO SERVICE WORKER ===
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+            .then(() => console.log("SW FFES: Sistema Operacional Ativo"))
+            .catch((err) => console.error("SW Erro:", err));
+        }
+
+        // === 2. LÓGICA DE INSTALAÇÃO ===
+        let deferredPrompt;
+        const installBtn = document.getElementById('install-btn-permanent');
+        const androidBtn = document.getElementById('install-btn-android'); 
+        const iosModal = document.getElementById('ios-modal');
+
+        const isInStandaloneMode = () => {
+            return ('standalone' in window.navigator) && (window.navigator.standalone) || 
+                   (window.matchMedia('(display-mode: standalone)').matches);
+        }
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            console.log("FFES: Prompt de instalação capturado e pronto.");
+            androidBtn.style.display = 'flex';
+        });
+
+        androidBtn.addEventListener('click', async () => {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                console.log(`User response: ${outcome}`);
+                deferredPrompt = null;
+                if (outcome === 'accepted') {
+                    androidBtn.style.display = 'none';
+                }
+            }
+        });
+
+        installBtn.addEventListener('click', () => {
+            iosModal.style.display = 'flex';
+        });
+
+        function closeIosModal() {
+            iosModal.style.display = 'none';
+        }
+
+        if (isInStandaloneMode()) {
+            installBtn.style.display = 'none'; 
+            androidBtn.style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
