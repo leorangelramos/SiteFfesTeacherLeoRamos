@@ -7,9 +7,14 @@
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://teacherleoramos.com.br/index.html</loc>
+    <loc>https://teacherleoramos.com.br/index-app.html</loc>
     <lastmod>2026-04-03</lastmod>
-    <priority>0.80</priority>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://teacherleoramos.com.br/exercicios-e-artigos.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <priority>0.95</priority>
   </url>
   <url>
     <loc>https://teacherleoramos.com.br/cursos-e-ebook.html</loc>
@@ -17,18 +22,18 @@
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://teacherleoramos.com.br/exercicios-e-artigos.html</loc>
+    <loc>https://teacherleoramos.com.br/index.html</loc>
     <lastmod>2026-04-03</lastmod>
-    <priority>0.95</priority>
-  </url>
-
-  <url>
-    <loc>https://teacherleoramos.com.br/index-app.html</loc>
-    <lastmod>2026-04-03</lastmod>
-    <priority>1.00</priority>
+    <priority>0.80</priority>
   </url>
 
   <url><loc>https://teacherleoramos.com.br/PWA/Pasta001/indexpasta001.html</loc><priority>0.90</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta001/presentsimple.html</loc><priority>0.85</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta001/presentcontinuous.html</loc><priority>0.85</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta001/pastsimple.html</loc><priority>0.85</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta001/pastcontinuous.html</loc><priority>0.85</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta001/futuresimple.html</loc><priority>0.85</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta001/futurecontinuous.html</loc><priority>0.85</priority></url>
   <url><loc>https://teacherleoramos.com.br/PWA/Pasta001/auxiliares3.html</loc><priority>0.85</priority></url>
   <url><loc>https://teacherleoramos.com.br/PWA/Pasta001/modal01.html</loc><priority>0.85</priority></url>
   <url><loc>https://teacherleoramos.com.br/PWA/Pasta001/modal02.html</loc><priority>0.85</priority></url>
@@ -41,55 +46,115 @@
   <url><loc>https://teacherleoramos.com.br/PWA/Pasta002/pastperfectcont.html</loc><priority>0.85</priority></url>
   <url><loc>https://teacherleoramos.com.br/PWA/Pasta002/futureperfect.html</loc><priority>0.85</priority></url>
   <url><loc>https://teacherleoramos.com.br/PWA/Pasta002/futureperfectcont.html</loc><priority>0.85</priority></url>
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta002/conditionalzero.html</loc><priority>0.85</priority></url>
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta002/conditionalfirst.html</loc><priority>0.85</priority></url>
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta002/conditionalsecond.html</loc><priority>0.85</priority></url>
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta002/conditionalthird.html</loc><priority>0.85</priority></url>
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta002/would.html</loc><priority>0.85</priority></url>
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta002/wouldcontinuous.html</loc><priority>0.85</priority></url>
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta002/wouldperfect.html</loc><priority>0.85</priority></url>
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta002/wouldperfectcont.html</loc><priority>0.85</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta002/condicional0.html</loc><priority>0.85</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta002/condicional1.html</loc><priority>0.85</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta002/condicional2.html</loc><priority>0.85</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta002/condicional3.html</loc><priority>0.85</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta002/condicionalwould1.html</loc><priority>0.85</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta002/condicionalwould2.html</loc><priority>0.85</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta002/condicionalwould3.html</loc><priority>0.85</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta002/condicionalwould4.html</loc><priority>0.85</priority></url>
 
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta003/indexpasta003.html</loc><priority>0.70</priority></url>
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta004/indexpasta004.html</loc><priority>0.70</priority></url>
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta005/indexpasta005.html</loc><priority>0.70</priority></url>
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta006/indexpasta006.html</loc><priority>0.70</priority></url>
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta007/indexpasta007.html</loc><priority>0.70</priority></url>
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta008/indexpasta008.html</loc><priority>0.70</priority></url>
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta009/indexpasta009.html</loc><priority>0.70</priority></url>
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta010/indexpasta010.html</loc><priority>0.70</priority></url>
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta011/indexpasta011.html</loc><priority>0.70</priority></url>
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta012/indexpasta012.html</loc><priority>0.70</priority></url>
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta013/indexpasta013.html</loc><priority>0.70</priority></url>
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta014/indexpasta014.html</loc><priority>0.70</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta003/indexpasta003.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta003/quiz13writing.html</loc><priority>0.70</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta004/indexpasta004.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta004/quiz12reading.html</loc><priority>0.70</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta005/indexpasta005.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta005/quiz11speaking.html</loc><priority>0.70</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta006/indexpasta006.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta006/quiz10listening.html</loc><priority>0.70</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta007/indexpasta007.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta007/quiz09quick.html</loc><priority>0.70</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta008/indexpasta008.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta008/quiz08multiple.html</loc><priority>0.70</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta009/indexpasta009.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta009/quiz07gaps.html</loc><priority>0.70</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta010/indexpasta010.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta010/quiz06errors.html</loc><priority>0.70</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta011/indexpasta011.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta011/quiz05memory.html</loc><priority>0.70</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta012/indexpasta012.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta012/quiz03verbs.html</loc><priority>0.70</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta013/indexpasta013.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta013/quiz04pronoms.html</loc><priority>0.70</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta014/indexpasta014.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta014/aulatema0001.html</loc><priority>0.70</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta014/aulatema0002.html</loc><priority>0.70</priority></url>
   <url><loc>https://teacherleoramos.com.br/PWA/Pasta015/indexpasta015.html</loc><priority>0.80</priority></url>
-  <url><loc>https://teacherleoramos.com.br/PWA/Pasta016/indexpasta016.html</loc><priority>0.70</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta015/meu-xp.html</loc><priority>0.70</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta015/ranking-geral.html</loc><priority>0.70</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta016/indexpasta016.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta016/phrasal-verbs-01.html</loc><priority>0.70</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta016/phrasal-verbs-02.html</loc><priority>0.70</priority></url>
+  <url><loc>https://teacherleoramos.com.br/PWA/Pasta016/phrasal-verbs-quiz.html</loc><priority>0.70</priority></url>
 
-  <url><loc>https://teacherleoramos.com.br/Ex1/presente-passado-futuro-simples-estruturas-em-ingles.html</loc></url>
-  <url><loc>https://teacherleoramos.com.br/Ex1/presente-passado-futuro-perfeito-estruturas-em-ingles.html</loc></url>
-  <url><loc>https://teacherleoramos.com.br/Ex1/verbos-auxiliares-be-do-have.html</loc></url>
-  <url><loc>https://teacherleoramos.com.br/Ex1/ingles-verbo-modal-verbos-modais.html</loc></url>
-  <url><loc>https://teacherleoramos.com.br/Ex1/would-estruturas-condicionais-em-ingles.html</loc></url>
-  <url><loc>https://teacherleoramos.com.br/Ex1/phrasal-verbs-tudo-sobre-ingles.html</loc></url>
-  <url><loc>https://teacherleoramos.com.br/Ex1/ingles-voz-ativa-voz-passiva-passive-voice.html</loc></url>
-  <url><loc>https://teacherleoramos.com.br/Ex1/will-going-to-diferencas.html</loc></url>
+<url><loc>https://teacherleoramos.com.br/Artigos/article-cefr-6-niveis-em-ingles.html</loc><priority>0.85</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Artigos/article-phrasal-verbs.html</loc><priority>0.85</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Artigos/article-como-usar-o-ingles.html</loc><priority>0.85</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Artigos/article-doze-verbos-importantes-em-ingles.html</loc><priority>0.80</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Artigos/article-linking-words.html</loc><priority>0.80</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Artigos/article-normal-verbs.html</loc><priority>0.80</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Artigos/article-provas-de-proficiencia-em-ingles-1.html</loc><priority>0.80</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Artigos/article-provas-de-proficiencia-em-ingles-2.html</loc><priority>0.80</priority></url>
 
-  <url><loc>https://teacherleoramos.com.br/Ex2-3-4-5-6/pronomes-em-ingles-5-tipos.html</loc></url>
-  <url><loc>https://teacherleoramos.com.br/Ex2-3-4-5-6/estrutura-da-frase-em-ingles-Sujeito-Verbo-Objeto.html</loc></url>
-  <url><loc>https://teacherleoramos.com.br/Ex2-3-4-5-6/artigos-em-ingles-articles-in-english-a-an-the.html</loc></url>
-  <url><loc>https://teacherleoramos.com.br/Ex2-3-4-5-6/adjetivos-em-ingles-comparativos-superlativos.html</loc></url>
+  <url><loc>https://teacherleoramos.com.br/Ex1/presente-passado-futuro-simples-estruturas-em-ingles.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex1/presente-passado-futuro-perfeito-estruturas-em-ingles.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex1/verbos-auxiliares-be-do-have.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex1/ingles-verbo-modal-verbos-modais.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex1/would-estruturas-condicionais-em-ingles.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex1/phrasal-verbs-tudo-sobre-ingles.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex1/ingles-voz-ativa-voz-passiva-passive-voice.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex1/will-going-to-diferencas.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex1/get-como-usar-em-ingles.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex1/make-do-diferencas-em-ingles-fazer.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex1/must-have-need-diferenca-ingles.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex1/padroes-verbais-em-ingles.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex1/semi-modal-em-ingles-como-usar.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex1/verbos-conjugacoes-irregulares-em-ingles.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex1/verbos-conjugacoes-regulares-em-ingles.html</loc><priority>0.75</priority></url>
 
-  <url><loc>https://teacherleoramos.com.br/Ex7-8-9-10-11-12/reported-speech-em-ingles-discurso-indireto.html</loc></url>
-  <url><loc>https://teacherleoramos.com.br/Ex7-8-9-10-11-12/if-clause-in-english-condicionais-em-ingles.html</loc></url>
-  <url><loc>https://teacherleoramos.com.br/Ex7-8-9-10-11-12/in-on-at-preposicoes-em-ingles.html</loc></url>
+  <url><loc>https://teacherleoramos.com.br/Ex2-3-4-5-6/pronomes-em-ingles-5-tipos.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex2-3-4-5-6/estrutura-da-frase-em-ingles-Sujeito-Verbo-Objeto.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex2-3-4-5-6/artigos-em-ingles-articles-in-english-a-an-the.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex2-3-4-5-6/adjetivos-em-ingles-comparativos-superlativos.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex2-3-4-5-6/adjetivos-em-ingles-ed-ing.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex2-3-4-5-6/adjetivos-em-ingles-ordem-correta-OSASCOMP.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex2-3-4-5-6/adjetivos-em-ingles-posicao-descritivo.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex2-3-4-5-6/substantivos-em-ingles-noun-plural-singular-1.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex2-3-4-5-6/substantivos-em-ingles-noun-possessivos-compostos-2.html</loc><priority>0.75</priority></url>
 
-  <url><loc>https://teacherleoramos.com.br/ExListen/listening.html</loc></url>
-  <url><loc>https://teacherleoramos.com.br/ExListen/speaking.html</loc></url>
-  <url><loc>https://teacherleoramos.com.br/ExListen/writing.html</loc></url>
-  <url><loc>https://teacherleoramos.com.br/ExListen/reading.html</loc></url>
+  <url><loc>https://teacherleoramos.com.br/Ex7-8-9-10-11-12/reported-speech-em-ingles-discurso-indireto.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex7-8-9-10-11-12/if-clause-in-english-condicionais-em-ingles.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex7-8-9-10-11-12/in-on-at-preposicoes-em-ingles.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex7-8-9-10-11-12/adverbios-em-ingles-frequencia-adverbs-1.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex7-8-9-10-11-12/adverbios-em-ingles-posicao-adverbs-2.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex7-8-9-10-11-12/como-formar-perguntas-em-ingles-questions.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex7-8-9-10-11-12/conjuncoes-em-ingles-conjunctions.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex7-8-9-10-11-12/preposicoes-em-ingles-prepositions.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex7-8-9-10-11-12/to-for-of-preposicoes-em-ingles.html</loc><priority>0.75</priority></url>
 
-  <url><loc>https://teacherleoramos.com.br/Artigos/article-cefr-6-niveis-em-ingles.html</loc></url>
-  <url><loc>https://teacherleoramos.com.br/Artigos/article-phrasal-verbs.html</loc></url>
-  <url><loc>https://teacherleoramos.com.br/Artigos/article-como-usar-o-ingles.html</loc></url>
+  <url><loc>https://teacherleoramos.com.br/Ex13-14-15-16-17/contaveis-incontaveis-nouns-em-ingles.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex13-14-15-16-17/contracoes-em-ingles-contractions.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex13-14-15-16-17/gerundios-infinitivos-em-ingles.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex13-14-15-16-17/perguntas-wh-wh-questions-em-ingles.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex13-14-15-16-17/pontuacao-em-ingles-punctuation.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex13-14-15-16-17/quantificadores-em-ingles-quantifiers.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex13-14-15-16-17/s-apostrofo-em-ingles-is-has-possessivo.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex13-14-15-16-17/tag-questions-em-ingles.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex13-14-15-16-17/this-that-these-those-determinantes-em-ingles.html</loc><priority>0.75</priority></url>
+
+  <url><loc>https://teacherleoramos.com.br/Ex18-19-20-21-22/expressoes-idiomaticas-em-ingles-idioms.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex18-19-20-21-22/falsos-cognatos-em-ingles-false-friends.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex18-19-20-21-22/girias-em-ingles-informal-slangs.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex18-19-20-21-22/linking-words-em-ingles.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex18-19-20-21-22/palavras-confusas-ingles-confusing-words.html</loc><priority>0.75</priority></url>
+  <url><loc>https://teacherleoramos.com.br/Ex18-19-20-21-22/prefixo-sufixo-em-ingles.html</loc><priority>0.75</priority></url>
+
+  <url><loc>https://teacherleoramos.com.br/ExListen/article-palavras-com-k-mudo-em-ingles.html</loc><priority>0.80</priority></url>
+  <url><loc>https://teacherleoramos.com.br/ExListen/article-palavras-com-p-mudo-em-ingles.html</loc><priority>0.80</priority></url>
+  <url><loc>https://teacherleoramos.com.br/ExListen/listening.html</loc><priority>0.80</priority></url>
+  <url><loc>https://teacherleoramos.com.br/ExListen/reading.html</loc><priority>0.80</priority></url>
+  <url><loc>https://teacherleoramos.com.br/ExListen/speaking.html</loc><priority>0.80</priority></url>
+  <url><loc>https://teacherleoramos.com.br/ExListen/writing.html</loc><priority>0.80</priority></url>
 
 </urlset>
