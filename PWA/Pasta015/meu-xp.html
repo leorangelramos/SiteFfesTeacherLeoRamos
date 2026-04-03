@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FFES | Minha Pontuação</title>
+    <meta name="title" content="FFES | Minha Pontuação">
+    <meta name="description" content="Verifique sua pontuação atual de XP no sistema FFES.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://teacherleoramos.com.br/PWA/Pasta015/meu-xp.html">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8ZG06010Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-M8ZG06010Q');
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "name": "Meu XP - FFES",
+      "url": "https://teacherleoramos.com.br/PWA/Pasta015/meu-xp.html"
+    }
+    </script>
+
+    <link rel="stylesheet" href="/CSS/style-app.css">
+
+    <style>
+        .xp-display {
+            background: rgba(0,0,0,0.6); border: 2px solid #FFD700;
+            border-radius: 20px; padding: 40px; text-align: center;
+            box-shadow: 0 0 30px rgba(255,215,0,0.3); margin: 30px auto; max-width: 400px;
+        }
+        .xp-number { font-size: 4rem; font-weight: 900; color: #00e676; text-shadow: 0 0 15px rgba(0,230,118,0.5); }
+    </style>
+</head>
+<body>
+    <header class="glass-header app-header" style="text-align: center; padding: 20px;">
+        <h1 style="color: #fff;">MINHA <span style="color: #FFD700;">CONTA</span></h1>
+    </header>
+
+    <main class="dashboard-container" style="text-align: center;">
+        <div class="xp-display">
+            <div style="font-size: 1.2rem; color: #fff; margin-bottom: 10px; text-transform: uppercase;">Total Acumulado</div>
+            <div class="xp-number"><span id="user-xp-display">0</span></div>
+            <div style="color: #FFD700; margin-top: 10px; font-weight: bold;">XP</div>
+        </div>
+
+        <a href="indexpasta015.html" style="color:#FFD700; text-decoration: none; border: 1px solid #FFD700; padding: 10px 20px; border-radius: 20px;">← Voltar ao Menu</a>
+    </main>
+
+    <script>
+        // Lê o XP do cache global do aparelho
+        let currentXP = parseInt(localStorage.getItem('ffes_xp') || 0);
+        document.getElementById('user-xp-display').innerText = currentXP.toLocaleString('pt-BR');
+    </script>
+</body>
+</html>

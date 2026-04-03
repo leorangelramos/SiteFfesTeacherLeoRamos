@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FFES | Modais Missão 03: Revisão Letal (Boss Fight)</title>
+    <meta name="title" content="FFES | Modais Missão 03: Revisão Letal (Boss Fight)">
+    <meta name="description" content="O desafio definitivo dos verbos modais. Revisão total de CAN, COULD, MAY, MUST, SHOULD e MIGHT com foco em precisão de contexto no método FFES.">
+    <meta name="keywords" content="revisão modais inglês, can could may must should might, gramática avançada inglês, teacher leo ramos, ffes, inglês rápido">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Portuguese">
+    <meta name="author" content="Teacher Leo Ramos">
+    
+    <link rel="canonical" href="https://teacherleoramos.com.br/PWA/Pasta001/modal03.html">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8ZG06010Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-M8ZG06010Q');
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LearningResource",
+      "name": "Simulador de Modais Master (Revisão Total) - FFES",
+      "description": "Desafio final cobrindo todos os modais essenciais com foco em micro-nuances de intenção comunicativa.",
+      "url": "https://teacherleoramos.com.br/PWA/Pasta001/modal03.html",
+      "learningResourceType": "Interactive Resource",
+      "educationalAlignment": {
+        "@type": "AlignmentObject",
+        "alignmentType": "educationalSubject",
+        "targetName": "Advanced English Modal Verbs"
+      },
+      "isPartOf": {
+        "@type": "CollectionPage",
+        "url": "https://teacherleoramos.com.br/PWA/Pasta001/indexpasta001.html"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="/CSS/style-app.css">
+
+    <style>
+        :root { --main-color: #e0e0e0; --accent: #FFD700; --success: #00e676; --error: #ff1744; }
+        .game-wrapper { width: 100%; max-width: 600px; display: flex; flex-direction: column; gap: 15px; margin: 0 auto; z-index: 10; position: relative; }
+        
+        /* Briefing de Missão */
+        .info-box { background: rgba(255, 255, 255, 0.05); border: 1px solid var(--accent); border-radius: 16px; padding: 20px; margin-bottom: 20px; color: #ccc; font-size: 0.85rem; line-height: 1.4; text-align: left; }
+        .info-box h3 { color: var(--accent); margin-bottom: 8px; text-transform: uppercase; font-size: 1rem; border-bottom: 1px solid rgba(255,215,0,0.2); padding-bottom: 5px; }
+        .info-box b { color: #fff; }
+
+        .game-card { background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(10px); border: 2px solid var(--accent); border-radius: 24px; padding: 35px 20px; text-align: center; box-shadow: 0 10px 40px rgba(255, 215, 0, 0.1); min-height: 220px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; overflow: visible;}
+        
+        #display-sentence { font-size: 1.5rem; font-weight: 900; line-height: 1.4; color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,0.8); }
+        .intent-tag { font-size: 0.85rem; color: #000; background: var(--accent); font-weight: 900; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; padding: 5px 12px; border-radius: 4px; display: inline-block; box-shadow: 0 0 10px var(--accent);}
+        .gap { color: var(--accent); border-bottom: 3px solid var(--accent); padding: 0 10px; }
+        
+        .game-controls { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; width: 100%; margin-top: 20px; }
+        .btn-option { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255,255,255,0.2); color: #fff; padding: 20px; font-size: 1.2rem; font-weight: 900; border-radius: 16px; cursor: pointer; transition: all 0.2s ease; text-transform: uppercase; }
+        .btn-option:hover { border-color: var(--accent); background: rgba(255, 215, 0, 0.1); transform: translateY(-3px); }
+        .btn-option.correct { background: var(--success) !important; color: #000 !important; border-color: var(--success) !important; }
+        .btn-option.wrong { background: var(--error) !important; opacity: 0.5; }
+
+        #feedback { height: 30px; text-align: center; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; transition: all 0.2s; opacity: 0; margin-bottom: 10px; }
+        #feedback.visible { opacity: 1; transform: translateY(-5px); }
+        
+        .xp-pill { background: rgba(0, 0, 0, 0.5); border: 1px solid var(--accent); padding: 5px 15px; border-radius: 50px; color: var(--accent); font-weight: 900; font-size: 1.1rem; margin-top: 10px; display: inline-block; }
+        .feedback-float { position: absolute; top: -15px; right: -10px; font-weight: 900; font-size: 0.9rem; color: #000; background: var(--accent); padding: 5px 12px; border-radius: 20px; border: 1px solid #fff; opacity: 0; transform: translateY(10px); transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); z-index: 5; box-shadow: 0 0 15px var(--accent); }
+        .feedback-float.show { opacity: 1; transform: translateY(0) rotate(5deg); }
+        .speed-badge { position: absolute; bottom: 10px; width: 100%; left: 0; text-align: center; font-size: 0.75rem; color: var(--success); font-weight: 900; letter-spacing: 1px; text-transform: uppercase; }
+
+        .progress-track { width: 100%; height: 5px; background: rgba(255,255,255,0.1); position: fixed; top: 0; left: 0; z-index: 1000; }
+        .progress-fill { height: 100%; background: var(--accent); width: 0%; transition: width 0.3s ease; box-shadow: 0 0 10px var(--accent); }
+
+        /* CASINO EFFECTS */
+        .casino-coin { position: fixed; width: 25px; height: 25px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 15px var(--accent); pointer-events: none; z-index: 9999; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 2px solid #fff; }
+        @keyframes coin-explosion { 0% { transform: translate(-50%, -50%) scale(0.5); opacity: 1; } 100% { transform: translate(var(--tx), var(--ty)) scale(1.2) rotate(360deg); opacity: 0; } }
+        
+        .rain-coin { position: fixed; width: 35px; height: 35px; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="%23FFD700" stroke="black" stroke-width="5"/><text x="50" y="65" font-size="25" text-anchor="middle" font-weight="bold" fill="black" font-family="Arial">BOSS</text></svg>') no-repeat center; background-size: contain; pointer-events: none; z-index: 9999; top: -50px; animation: coin-drop linear forwards; }
+        @keyframes coin-drop { 0% { transform: translateY(0) rotate(0deg); opacity: 1; } 100% { transform: translateY(110vh) rotate(360deg); opacity: 0.8; } }
+        
+        @keyframes shake { 0%, 100% { transform: translateX(0); } 20%, 60% { transform: translateX(-8px); } 40%, 80% { transform: translateX(8px); } }
+        .shake-effect { animation: shake 0.4s ease-in-out; border-color: var(--error) !important; }
+
+        .btn-voltar { display: block; margin: 30px auto; padding: 15px 30px; background: transparent; border: 2px solid var(--accent); color: var(--accent); border-radius: 50px; text-decoration: none; font-weight: 900; text-align: center; max-width: 300px; text-transform: uppercase; transition: all 0.3s; }
+        .btn-voltar:hover { background: var(--accent); color: #000; }
+    </style>
+</head>
+<body>
+
+    <div class="progress-track"><div class="progress-fill" id="progress-bar"></div></div>
+
+    <header class="glass-header" style="text-align: center; padding: 20px;">
+        <h1 style="color: #fff; margin-bottom: 5px;">REVISÃO <span style="color: var(--accent);">LETAL</span></h1>
+        <p class="subtitle" style="color: #ccc;">Boss Fight: O Domínio dos 6 Modais</p>
+        <div class="xp-pill">XP: <span id="xp-val">0</span></div>
+    </header>
+
+    <main style="max-width: 800px; margin: 0 auto; padding: 0 20px;">
+        
+        <div class="info-box">
+            <h3>⚠️ Briefing de Missão: Sniper Pro</h3>
+            <p>O radar <u>[INTENÇÃO]</u> agora exige foco total nas nuances:</p>
+            <p>• <b>CAN/MAY:</b> Informal vs Formal. <br>• <b>COULD/SHOULD:</b> Polidez vs Conselho. <br>• <b>MUST/MIGHT:</b> Obrigação vs Dúvida Remota.</p>
+            <p>Erros aqui custam o dobro de XP. O sistema não aceita hesitação.</p>
+        </div>
+
+        <div id="game-container" class="game-wrapper">
+            <div id="feedback"></div>
+            
+            <div class="game-card" id="game-card-element">
+                <div id="combo-feedback" class="feedback-float">COMBO x2</div>
+                <div id="speed-feedback" class="speed-badge"></div>
+                <div id="intent-tag" class="intent-tag">BOSS DETECTED</div>
+                <div id="display-sentence">Iniciando Protocolo de Revisão Geral...</div>
+            </div>
+
+            <div class="game-controls" id="ab-controls">
+                <button id="btn1" class="btn-option"></button>
+                <button id="btn2" class="btn-option"></button>
+            </div>
+        </div>
+
+        <a href="indexpasta001.html" class="btn-voltar">⬅ Voltar ao Hub 01</a>
+    </main>
+
+    <script>
+        // === 1. BANCO DE DADOS: O MIX DEFINITIVO ===
+        const rawDB = [
+            { q: "I ___ complete the analysis. [Obrigação Absoluta]", ans: "MUST", wrong: "SHOULD" },
+            { q: "___ you help me with this? [Pedido Polido]", ans: "COULD", wrong: "CAN" },
+            { q: "It ___ rain, but the sky is blue. [Remota Possibilidade]", ans: "MIGHT", wrong: "MUST" },
+            { q: "You ___ consult the manual. [Conselho Amigável]", ans: "SHOULD", wrong: "MUST" },
+            { q: "___ I speak to the CEO? [Permissão Formal]", ans: "MAY", wrong: "CAN" },
+            { q: "I ___ speak three languages. [Habilidade Natural]", ans: "CAN", wrong: "MAY" },
+            { q: "You ___ not enter this area. [Proibição Total]", ans: "MUST", wrong: "MIGHT" },
+            { q: "___ I use your pen? [Permissão Rápida/Amigo]", ans: "CAN", wrong: "MAY" },
+            { q: "She ___ arrive late due to traffic. [Possibilidade Real]", ans: "MAY", wrong: "SHOULD" },
+            { q: "We ___ consider a new plan. [Recomendação Técnica]", ans: "SHOULD", wrong: "CAN" },
+            { q: "___ you open the window? [Pedido Polido]", ans: "COULD", wrong: "MUST" },
+            { q: "They ___ be at home, the lights are on. [Dedução Lógica]", ans: "MUST", wrong: "MIGHT" },
+            { q: "I ___ swim when I was five. [Habilidade Passada]", ans: "COULD", wrong: "CAN" },
+            { q: "You ___ stay hydrated. [Conselho de Saúde]", ans: "SHOULD", wrong: "MAY" },
+            { q: "He ___ not come to the party. [Incerteza/Dúvida]", ans: "MIGHT", wrong: "MUST" },
+            { q: "___ we start the presentation? [Pedido de Conselho]", ans: "SHOULD", wrong: "COULD" },
+            { q: "I ___ not see anything without light. [Incapacidade]", ans: "CAN", wrong: "MAY" },
+            { q: "It ___ not work as expected. [Possibilidade Negativa]", ans: "MIGHT", wrong: "MUST" },
+            { q: "You ___ respect the laws. [Obrigação Moral/Legal]", ans: "MUST", wrong: "CAN" },
+            { q: "___ I assist you, sir? [Oferta Formal]", ans: "MAY", wrong: "COULD" }
+        ];
+
+        const cognates = ["adapt", "analyze", "approve", "calculate", "celebrate", "classify", "complete", "confirm", "control", "decide", "declare", "defend", "describe", "design", "detect", "direct", "discuss", "divide", "eliminate", "examine", "formulate", "ignore", "illustrate", "imagine", "indicate", "inform", "inspect", "install", "observe", "organize"];
+
+        let database = [];
+        // GERAÇÃO MATRICIAL (200 QUESTÕES MISTURADAS)
+        for(let i=0; i<200; i++) {
+            let base = rawDB[i % rawDB.length];
+            let verb = cognates[Math.floor(Math.random() * cognates.length)];
+            let sentence = base.q.replace("complete", verb).replace("help", verb).replace("consult", verb).replace("speak", verb).replace("enter", verb).replace("use", verb);
+            database.push({
+                q: sentence.split(" [")[0],
+                intent: base.q.match(/\[(.*?)\]/)[1],
+                ans: base.ans,
+                wrong: base.wrong
+            });
+        }
+        database = database.sort(() => Math.random() - 0.5);
+
+        // === 2. AUDIO ENGINE ===
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        function playFX(type) {
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+            const t = audioCtx.currentTime;
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.connect(gain); gain.connect(audioCtx.destination);
+            
+            if(type === 'win') {
+                osc.type = 'sine'; osc.frequency.setValueAtTime(1500, t);
+                gain.gain.setValueAtTime(0.1, t); gain.gain.exponentialRampToValueAtTime(0.01, t + 0.2);
+                osc.start(t); osc.stop(t + 0.2);
+            } else if(type === 'error') {
+                osc.type = 'sawtooth'; osc.frequency.setValueAtTime(110, t);
+                gain.gain.setValueAtTime(0.1, t); gain.gain.exponentialRampToValueAtTime(0.01, t + 0.5);
+                osc.start(t); osc.stop(t + 0.5);
+            } else if(type === 'combo') {
+                osc.type = 'square'; osc.frequency.setValueAtTime(900 + (state.combo * 50), t);
+                gain.gain.setValueAtTime(0.05, t); gain.gain.exponentialRampToValueAtTime(0.01, t + 0.1);
+                osc.start(t); osc.stop(t + 0.1);
+            }
+        }
+
+        // === 3. VISUAL EFFECTS ===
+        function triggerCasino() {
+            for (let i = 0; i < 20; i++) {
+                const coin = document.createElement('div');
+                coin.classList.add('casino-coin');
+                const angle = Math.random() * Math.PI * 2;
+                const dist = 100 + Math.random() * 150;
+                coin.style.setProperty('--tx', Math.cos(angle) * dist + 'px');
+                coin.style.setProperty('--ty', Math.sin(angle) * dist + 'px');
+                coin.style.animation = `coin-explosion 0.6s cubic-bezier(0,0,0.2,1) forwards`;
+                document.body.appendChild(coin);
+                setTimeout(() => coin.remove(), 700);
+            }
+        }
+
+        function triggerRain() {
+            for (let i = 0; i < 60; i++) {
+                const coin = document.createElement('div');
+                coin.classList.add('rain-coin');
+                coin.style.left = Math.random() * 100 + 'vw';
+                coin.style.animationDuration = (0.8 + Math.random() * 1.2) + 's';
+                document.body.appendChild(coin);
+                setTimeout(() => coin.remove(), 2000);
+            }
+        }
+
+        // === 4. STATE & LOGIC ===
+        let xp = parseInt(localStorage.getItem('ffes_xp') || 0);
+        document.getElementById('xp-val').innerText = xp;
+        let state = { currentQ: null, combo: 0, startTime: 0, questionIndex: 0 };
+
+        function generate() {
+            if(state.questionIndex >= 100) {
+                document.getElementById('display-sentence').innerHTML = "SOBERANIA ATINGIDA!<br><span style='color:var(--accent); font-size:1.5rem;'>100/100 MODAIS</span>";
+                document.getElementById('ab-controls').style.display = 'none';
+                document.getElementById('intent-tag').style.display = 'none';
+                triggerRain(); return;
+            }
+            const fb = document.getElementById('feedback');
+            fb.className = ''; document.getElementById('speed-feedback').innerText = "";
+            
+            const item = database[state.questionIndex];
+            state.currentQ = item;
+            state.startTime = Date.now();
+
+            document.getElementById('intent-tag').innerText = item.intent;
+            document.getElementById('display-sentence').innerHTML = item.q.replace("___", "<span class='gap'>___</span>");
+            
+            let btn1 = document.getElementById('btn1');
+            let btn2 = document.getElementById('btn2');
+            if (Math.random() > 0.5) {
+                btn1.innerText = item.ans; btn1.onclick = () => check(item.ans);
+                btn2.innerText = item.wrong; btn2.onclick = () => check(item.wrong);
+            } else {
+                btn1.innerText = item.wrong; btn1.onclick = () => check(item.wrong);
+                btn2.innerText = item.ans; btn2.onclick = () => check(item.ans);
+            }
+        }
+
+        function check(choice) {
+            const timeDelta = Date.now() - state.startTime;
+            const isSpeed = timeDelta < 2000;
+            const fb = document.getElementById('feedback');
+
+            if (choice === state.currentQ.ans) {
+                state.combo++;
+                let gain = 20 + (state.combo * 5); // XP de Boss Fight é maior
+                if(isSpeed) { gain += 10; document.getElementById('speed-feedback').innerText = "⚡ ELITE REFLEX!"; }
+                xp += gain; localStorage.setItem('ffes_xp', xp);
+                document.getElementById('xp-val').innerText = xp;
+                
+                fb.innerText = "CRITICAL HIT!"; fb.style.color = "var(--success)"; fb.className = "visible";
+                playFX('win'); triggerCasino();
+                if(state.combo % 5 === 0) { playFX('combo'); triggerRain(); }
+
+                const comboEl = document.getElementById('combo-feedback');
+                comboEl.innerText = `COMBO x${state.combo}`; comboEl.classList.add('show');
+                document.getElementById('progress-bar').style.width = (state.questionIndex + 1) + '%';
+                
+                setTimeout(() => { comboEl.classList.remove('show'); state.questionIndex++; generate(); }, 700);
+            } else {
+                state.combo = 0; xp = Math.max(0, xp - 20); // Punição de Boss Fight é maior
+                localStorage.setItem('ffes_xp', xp); document.getElementById('xp-val').innerText = xp;
+                fb.innerText = "DEFESA QUEBRADA!"; fb.style.color = "var(--error)"; fb.className = "visible";
+                playFX('error');
+                const card = document.getElementById('game-card-element');
+                card.classList.add('shake-effect');
+                setTimeout(() => card.classList.remove('shake-effect'), 400);
+                document.getElementById('combo-feedback').classList.remove('show');
+            }
+        }
+
+        window.onload = generate;
+    </script>
+</body>
+</html>
