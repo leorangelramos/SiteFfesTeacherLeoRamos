@@ -31,7 +31,25 @@
 
     <style>
         /* === UI DO RANKING === */
-        .ranking-container { background: rgba(0,0,0,0.6); padding: 15px; border-radius: 20px; border: 1px solid rgba(255,215,0,0.4); max-width: 600px; margin: 0 auto; }
+        
+        /* Contêiner principal centralizando tudo absolutamente */
+        .dashboard-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centraliza tudo no eixo X */
+            padding-top: 20px;
+            width: 100%;
+        }
+
+        .ranking-container { 
+            background: rgba(0,0,0,0.6); 
+            padding: 15px; 
+            border-radius: 20px; 
+            border: 1px solid rgba(255,215,0,0.4); 
+            width: 100%;
+            max-width: 450px; 
+        }
+        
         .ranking-row { display: flex; justify-content: space-between; padding: 12px 10px; border-bottom: 1px solid rgba(255,255,255,0.05); color: #fff; align-items: center; }
         .ranking-row:last-child { border-bottom: none; }
         
@@ -50,8 +68,26 @@
         .modal-box { background: #111; border: 2px solid #FFD700; padding: 30px; border-radius: 15px; text-align: center; max-width: 350px; width: 90%; }
         .modal-box input { padding: 15px; width: 100%; border-radius: 8px; border: 1px solid #FFD700; background: #000; color: #fff; text-transform: uppercase; margin: 15px 0; font-weight: bold; text-align: center;}
         .modal-box button { background: #FFD700; color: #000; font-weight: 900; padding: 12px 30px; border:none; border-radius: 50px; cursor:pointer; text-transform: uppercase; width: 100%;}
+
+        /* ESTILO DO BOTÃO DE VOLTAR - BEM PEQUENO E CENTRALIZADO */
+        .btn-voltar { 
+            margin-bottom: 15px; 
+            padding: 6px 12px; 
+            font-size: 0.65rem; /* Fonte muito menor */
+            background: transparent; 
+            border: 1px solid #FFD700; /* Borda mais fina */
+            color: #FFD700; 
+            border-radius: 30px; 
+            text-decoration: none; 
+            font-weight: 900; 
+            text-transform: uppercase; 
+            transition: all 0.3s; 
+            letter-spacing: 1px;
+        }
+        .btn-voltar:hover { background: #FFD700; color: #000; box-shadow: 0 0 10px #FFD700; }
     </style>
 </head>
+
 <body>
     <header class="glass-header app-header" style="text-align: center; padding: 20px;">
         <h1 style="color: #fff;">LEADER<span style="color: #FFD700;">BOARD</span></h1>
@@ -59,11 +95,10 @@
     </header>
 
     <main class="dashboard-container">
+        <a href="indexpasta015.html" class="btn-voltar">← Sair do Ranking</a>
+        
         <div class="ranking-container" id="ranking-list">
             </div>
-        <div style="text-align: center; margin-top: 30px;">
-            <a href="indexpasta015.html" style="color:#FFD700; text-decoration: none; border: 1px solid #FFD700; padding: 10px 20px; border-radius: 20px;">← Sair do Ranking</a>
-        </div>
     </main>
 
     <div class="modal-overlay" id="name-modal">
@@ -173,5 +208,6 @@
 
         window.onload = renderRanking;
     </script>
+    
 </body>
 </html>
