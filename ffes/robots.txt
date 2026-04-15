@@ -1,0 +1,13 @@
+# Robots.txt para https://teacherleoramos.com.br/
+
+User-agent: *
+Allow: /
+
+# Bloquear pastas de sistema ou recursos que não precisam aparecer na busca
+Disallow: /CSS/
+Disallow: /JS/
+Disallow: /Images/
+Disallow: /Audios/
+
+# Indicar o caminho oficial do sitemap para os motores de busca
+Sitemap: https://teacherleoramos.com.br/sitemap.xml
